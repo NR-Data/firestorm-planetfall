@@ -1,0 +1,1720 @@
+{
+  "catalogue": {
+    "name": "Heroes of Tarxon VI - Terrans",
+    "id": "113a879f-c44e-7068-0356-4c02bb12f399",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve",
+    "authorUrl": "http://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "gameSystemRevision": 1,
+    "revision": 4,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [
+      {"name": "Heroes of Tarxon VI - Dindrenzi ORBATS", "id": "113a879f--pub1"},
+      {"name": "Core Rulebook", "id": "113a879f--pub2"},
+      {"name": "Heroes of Tarxon VI - Terran ORBAT", "id": "113a879f--pub3"},
+      {"name": "Terran Alliance ORBAT", "id": "113a879f--pub4"},
+      {"name": "Terran Alliance ORBATS", "id": "113a879f--pub5"}
+    ],
+    "rules": [
+      {
+        "name": "Artillery Attacks",
+        "id": "0007fd6b-efc1-202b-30de-2e264ad798df",
+        "description": "All Terran Artillery Attacks use the Corrosive, Barrage and Scatter MARs.",
+        "hidden": false
+      },
+      {"name": "Artillery Dice", "id": "adfd70e0-1053-9eb5-9710-a14fa809f07d", "description": "Terran Forces use Artillery with 4D6 Attack Dice.", "hidden": false},
+      {
+        "name": "Sky Drop Capability",
+        "id": "068736f7-9d9b-3191-2925-fb433ad8376a",
+        "description": "Initial Drop Site Markers are set to 5. Initial Artillery Markers are set to 5.",
+        "hidden": false
+      },
+      {"name": "Tactical Bonus", "id": "e374e7cc-66fc-c275-be79-b6b57fdda0aa", "description": "Terran forces have a Tactics Bonus of +2.", "hidden": false}
+    ],
+    "selectionEntries": [
+      {
+        "name": "Anti-Aircraft Tank Squadron (Assault Helix)",
+        "id": "cee545bf-87b3-31ad-c150-b0b206ab647e",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "cee545bf-87b3-31ad-c150-b0b206ab647e-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Anti-Aircraft Tank Class",
+            "id": "15814b29-1420-225b-4553-d95dd94b864a",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Nidhogg",
+                "id": "67a96703-be29-7428-afa6-a09f7da02b1b",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 100}],
+                "infoLinks": [
+                  {"id": "0027a2b6-843b-7e0e-9cc3-006fa002f5d8", "targetId": "5dc59e46-c71e-4741-ac38-107eb4ecc43c", "type": "rule"},
+                  {"id": "693c069c-4107-3985-5cc4-2b43dc447069", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "5ccf219d-39aa-eab0-f178-304fa5de0b9f", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Anti-Aircraft Tank - Nidhogg",
+                    "id": "4b947919-fef5-3710-0179-86285e8eb8da",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Nidhogg - Shrike Heavy Rotor Guns",
+                    "id": "e1c7d1ad-e278-aedd-ce2c-b201e0ef1fa8",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Corrosive / Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anti-Aircraft Tank Squadron (Field Support Helix)",
+        "id": "fc3ea1c2-ed52-b8bb-c2c5-c2a57df2b32f",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "fc3ea1c2-ed52-b8bb-c2c5-c2a57df2b32f-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Anti-Aircraft Tank Class",
+            "id": "a53f8009-c9e1-0117-e53b-ec2f3d0149c9",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Nidhogg",
+                "id": "9117dd0d-a652-9b03-d5f0-920705966894",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 85}],
+                "infoLinks": [
+                  {"id": "d001fce1-2e51-c9d6-2f18-e7ce22303a10", "targetId": "5dc59e46-c71e-4741-ac38-107eb4ecc43c", "type": "rule"},
+                  {"id": "4fa08b51-48b4-1960-2ea5-61674e6b6416", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "17a1734c-c058-9898-7198-8cb676cc3447", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Anti-Aircraft Tank - Nidhogg",
+                    "id": "abc53c54-9f3e-3fc0-b8d7-1f21c4eb5f1f",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Nidhogg - Shrike Heavy Rotor Guns",
+                    "id": "881a020b-a656-44b7-402e-876a62640658",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Corrosive / Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Anti-Aircraft Tank Squadron (Heavy Helix)",
+        "id": "4c9f3110-054a-c2c5-2d52-cec4b8addb6e",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "4c9f3110-054a-c2c5-2d52-cec4b8addb6e-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Anti-Aircraft Tank Class",
+            "id": "450caaa5-7b70-1a1e-af91-d210f7ae0343",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Nidhogg",
+                "id": "a265c3b8-344a-f849-9180-83f477fc51fe",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 100}],
+                "infoLinks": [
+                  {"id": "ee89bdc1-51cb-d1a0-5a32-947b984b9363", "targetId": "5dc59e46-c71e-4741-ac38-107eb4ecc43c", "type": "rule"},
+                  {"id": "8ce7f48b-7bae-6c9b-01ee-206273b83ea8", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "c5a9903c-c102-f9db-6d7d-4c0f4bc84c8c", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Anti-Aircraft Tank - Nidhogg",
+                    "id": "4f8b54fe-670b-2f2c-70ed-8c5f6f6c014e",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Nidhogg - Shrike Heavy Rotor Guns",
+                    "id": "0d86ae13-61be-3c18-70df-e0a0b1bdd085",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Corrosive / Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Battle Robot Squadron",
+        "id": "06ce15e4-3e2a-f127-6cb1-789b172bd3f5",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "06ce15e4-3e2a-f127-6cb1-789b172bd3f5-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Battle Robot Class",
+            "id": "fb8c69e0-14d8-e2d7-1447-678e43487b15",
+            "collective": false,
+            "hidden": false,
+            "constraints": [{"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "min", "value": 0}],
+            "modifiers": [
+              {
+                "field": "minInForce",
+                "type": "set",
+                "value": 1,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "cee545bf-87b3-31ad-c150-b0b206ab647e",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "48421f7d-700c-4f05-0194-eae87aca22e9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "MAW-09 'Spider'",
+                "id": "d80689ee-a77c-6a40-681b-72216e9b2846",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 210}],
+                "infoLinks": [
+                  {"id": "1879c5b6-afc0-1e75-0e15-6adde6591c96", "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9", "type": "rule"},
+                  {"id": "7148dd4c-08cc-01e2-4797-87a1e2c78354", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"},
+                  {"id": "083acaf5-eb4d-7c92-9a34-0a045df70b99", "targetId": "5dc59e46-c71e-4741-ac38-107eb4ecc43c", "type": "rule"},
+                  {"id": "00470483-085d-e877-53a8-13528d2809d6", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"},
+                  {"id": "17a7c5eb-339d-7658-755d-a2d82e8f126d", "targetId": "c40f15e0-8c0a-e522-a4ee-43181065da64", "type": "rule"},
+                  {"id": "0cda9317-d653-bab7-f7a8-bff37eb672e8", "targetId": "384811d2-862a-3a36-ac0f-841f6b88fad1", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Battle Robot - MAW-09 'Spider'",
+                    "id": "f6a8e765-cd6d-4cc9-4d7b-b3e412b1b653",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "8", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "11", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "8", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "7", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "7 / 12", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "8", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "MAW-09 'Spider' - Dual G-72 Legacy Laser",
+                    "id": "aca40ab8-9b8e-9bcf-d60f-152686e42c27",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Pinpoint (4)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  },
+                  {
+                    "name": "MAW-09 'Spider' - Shrike Heavy Rotor Guns",
+                    "id": "11495e96-aa98-dde8-def0-d8242e8cf85d",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Corrosive / Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Close Support Vehicle Squadron",
+        "id": "6d427239-1595-b213-6655-c81ea1630e2e",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "6d427239-1595-b213-6655-c81ea1630e2e-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+        "constraints": [
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "min", "value": 1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Close Support Vehicle Class",
+            "id": "d94632ab-9b3b-3e32-829f-4754a29b1610",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Armed with Nexus Designator",
+                "id": "80107442-90ef-453a-7052-5117ac8b1ee9",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "selectionEntries": [
+                  {
+                    "name": "Close Support Vehicle - Tryptich (Designator)",
+                    "id": "0f0f8183-b5cf-b96e-e4c9-940c768abef1",
+                    "collective": false,
+                    "hidden": false,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                      {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 85}],
+                    "infoLinks": [
+                      {"id": "cf97e82f-c432-f923-4a20-1d2bcf1eda4b", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                      {"id": "8df87f2e-860d-e936-a055-1666fc5cb550", "targetId": "8273195e-78a8-0b2f-9dcb-05cd5c0caa67", "type": "rule"},
+                      {"id": "c0d0e303-8588-0470-7a40-0951831c0709", "targetId": "4bec51c1-8ed1-8edf-6e58-4e1ea62124a2", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Close Support Tank - Stormcaller",
+                        "id": "4903c570-93d3-3bb9-87e9-1e69857b9b95",
+                        "hidden": false,
+                        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                        "characteristics": [
+                          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                          {"name": "Mv FO", "$text": "12", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                          {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                        ]
+                      },
+                      {
+                        "name": "Stormcaller - Nexus Designator",
+                        "id": "99ece35a-007f-4fad-439d-84d6a2b7a8d4",
+                        "hidden": false,
+                        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                        "characteristics": [
+                          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                          {"name": "MARs", "$text": "Nexus Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Transport Unit",
+                "id": "93925daf-2d3b-6cbd-4246-f8b20bfb2f53",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "selectionEntries": [
+                  {
+                    "name": "Close Support Vehicle - Tryptich (Transport)",
+                    "id": "1616f7c7-c4f4-cccd-a794-846f949b21ab",
+                    "collective": false,
+                    "hidden": false,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                      {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 85}],
+                    "infoLinks": [
+                      {"id": "04634694-cbe5-bb91-98be-34612ae289ba", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                      {"id": "75f5d4aa-7894-5b2a-354f-49522cd470e2", "targetId": "8d8b46e8-9fca-9d13-cfa7-3ab3e6bd9e48", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Close Support Tank - Stormcaller",
+                        "id": "b260d3fa-3ad7-f261-06be-975a624bd951",
+                        "hidden": false,
+                        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                        "characteristics": [
+                          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                          {"name": "Mv FO", "$text": "12", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                          {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Command Barge Squadron",
+        "id": "4df72fa1-22e6-021d-8215-49cb620bfa0b",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "4df72fa1-22e6-021d-8215-49cb620bfa0b-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Command Barge Class",
+            "id": "3bee8a14-8ec8-f802-b202-1d80c6520368",
+            "collective": false,
+            "hidden": false,
+            "constraints": [{"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "min", "value": 0}],
+            "modifiers": [
+              {
+                "field": "minInForce",
+                "type": "set",
+                "value": 1,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "fc3ea1c2-ed52-b8bb-c2c5-c2a57df2b32f",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "53ef6693-dda0-a528-0b78-d6c7771839b9",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Atlas",
+                "id": "67920daa-b6af-ad3b-2f83-03e11662bc79",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 365}],
+                "infoLinks": [
+                  {"id": "61310edf-7aec-1b65-a328-b0ae8ba3a6a6", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+                  {"id": "88c8698c-7b15-3d34-23b6-0f40eeaff998", "targetId": "da743f0f-7783-543b-812d-ff7fd0df67e2", "type": "rule"},
+                  {"id": "51a29bc5-d369-0032-3f26-6dfd54d648e6", "targetId": "97b6d0f6-7005-2856-e522-efbd39955197", "type": "rule"},
+                  {"id": "42539251-a2e6-466a-2f01-766548b9d6c0", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "0b8a1006-69dd-0e4e-4a36-e9d8345ec5df", "targetId": "036d9b9e-ad2d-977e-feea-1472c2ddd8ff", "type": "rule"},
+                  {"id": "c94482f8-5f34-a755-0ae6-bdbfc1e8a36b", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Atlas - Hammerstrike Missile System",
+                    "id": "09138a19-d549-207b-6485-7c284479ed96",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "18", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "36", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Anti-Personnel / Corrosive", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  },
+                  {
+                    "name": "Atlas - Raised M205 Magellan Cannon",
+                    "id": "5576e57c-0188-55fc-6fb6-05ee412bd805",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "15", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "7", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Barrage / Terror Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  },
+                  {
+                    "name": "Atlas - M205 Magellan Cannon",
+                    "id": "597d21ed-1a8b-a033-6db5-faf62950915a",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "15", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "7", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Barrage / Terror Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  },
+                  {
+                    "name": "Command Barge - Atlas",
+                    "id": "78fec6a0-2be7-000e-52f6-169ab5a026b2",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "5", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "9", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "9", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "9", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "4", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "8", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Additional Tactical Action Card",
+                    "id": "dbdb5f11-d87f-cd8d-70d1-17454aeb04b3",
+                    "description": "A force containing this model may take an additional Tactical Action Card over and above the number stated for the game size.",
+                    "hidden": false,
+                    "publicationId": "113a879f--pub1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gunship Squadron",
+        "id": "cd908c7d-8e37-0dad-f541-8f7fcd469a61",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "cd908c7d-8e37-0dad-f541-8f7fcd469a61-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Gunship Class",
+            "id": "d4a5d8de-f6cd-e586-8f8d-b1021b9dccfe",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Shikra",
+                "id": "b030eab2-a103-435d-ab06-8ed5c4a2c24b",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 140}],
+                "infoLinks": [
+                  {"id": "beb68db7-e7da-28bb-0b20-905e22dfcfed", "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9", "type": "rule"},
+                  {"id": "e26d33a4-41e7-e81f-0b35-fe3bea025392", "targetId": "e4e94a1b-4d17-3381-7560-56ec8b0ce611", "type": "rule"},
+                  {"id": "108c4563-249b-e2f9-589e-faad9872b8d0", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+                  {"id": "0cdaed51-6b91-a6b5-b8e8-978d4bc5b885", "targetId": "0ca10ced-c7fe-8575-2a37-ddc2c1b60825", "type": "rule"},
+                  {"id": "6fd23ee9-50af-cd59-b85d-6a50b9e88dee", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"},
+                  {"id": "ea29fb18-25c6-74fb-1bcc-c89bbd082a5b", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Gunship - Shikra",
+                    "id": "094dcb56-fe15-55d4-eaeb-916a21adca59",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "18", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "30", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "6", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "3", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Shikra - Hammerstrike Missile System",
+                    "id": "714fe590-8735-582f-5b46-b5d5786e29e2",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "18", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "36", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F + L + R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Anti-Personnel / Corrosive", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Battle Tank Squadron",
+        "id": "d63ab029-a14d-d225-ef63-dac5bc82bc42",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "d63ab029-a14d-d225-ef63-dac5bc82bc42-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Heavy Battle Tank Class",
+            "id": "52ee3da9-e16a-c371-0ba1-e5dc3c0fc922",
+            "collective": false,
+            "hidden": false,
+            "constraints": [{"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "min", "value": 0}],
+            "modifiers": [
+              {
+                "field": "minInForce",
+                "type": "set",
+                "value": 1,
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "childId": "3e594b3f-452a-3bc3-efbe-7bcab24aeefb",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "4c9f3110-054a-c2c5-2d52-cec4b8addb6e",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      },
+                      {
+                        "childId": "5d261200-4f11-7531-8baf-e7ba27581932",
+                        "field": "selections",
+                        "includeChildSelections": true,
+                        "scope": "force",
+                        "shared": true,
+                        "type": "atLeast",
+                        "value": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "Paladin",
+                "id": "c4801745-bb22-1eac-a51c-e34950822b1b",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 290}],
+                "infoLinks": [
+                  {"id": "569f79d4-ae30-b97e-d84e-5d7c4e7a0532", "targetId": "a88fff3a-7d2e-e3c0-6c13-770c54f391f4", "type": "rule"},
+                  {"id": "db56d678-8fe3-315c-3101-c884c1aa7f82", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "d545132d-1b6f-9ad3-b482-af7692872710", "targetId": "da743f0f-7783-543b-812d-ff7fd0df67e2", "type": "rule"},
+                  {"id": "a1e7d8a1-ff40-c1e4-8815-151c8b5e0886", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+                  {"id": "3894f95b-9c23-741d-e231-e4d83449bdd0", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Heavy Battle Tank - Paladin",
+                    "id": "f3c2ec16-8b1f-d5df-e61f-6b11ace8729a",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "8", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "12", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "6", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "4", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "7", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "7", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Paladin - Lower M127 Drake Cannon",
+                    "id": "d4f32b18-878a-077d-a5e4-01b39664090f",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F + L + R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  },
+                  {
+                    "name": "Paladin - Raised M127 Drake Cannon",
+                    "id": "8352f7d1-f7e2-2afe-2ac7-324cc024b701",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  },
+                  {
+                    "name": "Paladin - Hammerstrike Missile System",
+                    "id": "3d8158e0-5426-c3d2-ee84-17d31f151b97",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "18", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "36", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Anti-Personnel / Corrosive", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Infantry Squadron",
+        "id": "5608fb32-7fd8-ca84-1b27-9569b2b7d0f0",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "5608fb32-7fd8-ca84-1b27-9569b2b7d0f0-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Heavy Infantry Class",
+            "id": "74760cb6-bf4d-dc48-c1f4-3ec6fe9fe6f2",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Goliath Cadre",
+                "id": "6e7c4396-ef23-55cd-7841-3217be89da68",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 55}],
+                "infoLinks": [
+                  {"id": "e55e2727-6d02-b7b8-e70d-d1b0aeaed68e", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+                  {"id": "cbcbdfab-9392-9b19-0cb1-874e843657c0", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+                  {"id": "aca9224c-8f6b-e61f-09ef-93455d8c2480", "targetId": "6c5c30be-9145-ce42-666a-411e6dc223d0", "type": "rule"},
+                  {"id": "b2f52c00-9a1d-16b3-3c55-85ee67b1ce02", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Heavy Infantry - Goliath Cadre",
+                    "id": "4e15170e-497a-9a5d-de80-2bd5b430f475",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "4", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "6", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Goliath Cadre - Heavy Raptor Launchers",
+                    "id": "3942ab71-2df8-5d2a-fe09-ec9488608cd2",
+                    "hidden": true,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Tank Squadron (Assault Helix)",
+        "id": "48421f7d-700c-4f05-0194-eae87aca22e9",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "48421f7d-700c-4f05-0194-eae87aca22e9-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Light Tank Class",
+            "id": "ffc6f054-1a03-576f-5db3-dfed5af4338e",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Valkyrie",
+                "id": "1c923252-6931-a4b7-2bd0-d6d5f150bc57",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 60}],
+                "infoLinks": [
+                  {"id": "fc799ed0-8ac6-d5e3-c8ab-6650cd39c1f7", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+                  {"id": "213e1a56-1810-a06e-db87-721657c5b6de", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+                  {"id": "2e18b7a5-8309-60fb-a293-333b07b71e5e", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "29d4554e-9d0b-08e3-69cf-bcb726b610bb", "targetId": "f43cc78d-e856-80aa-d39a-258b80f8c907", "type": "rule"},
+                  {"id": "1ea7abb8-7b5c-e4dc-0076-cb58590ec6b6", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+                  {"id": "7b6271ed-71fd-045d-477a-f9c559ccc439", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Light Tank - Valkyrie",
+                    "id": "d290d10a-43bb-f486-8a88-f401086c49d6",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "15", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Valkyrie - Heavy Harvester Coil Guns",
+                    "id": "0025c88e-47db-80f2-57c0-bfb651f63a37",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Tank Squadron (Field Support Helix)",
+        "id": "53ef6693-dda0-a528-0b78-d6c7771839b9",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "53ef6693-dda0-a528-0b78-d6c7771839b9-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Light Tank Class",
+            "id": "d0d160aa-e5c6-c7d4-6578-0d71e8d6da33",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Valkyrie",
+                "id": "292a0f99-4c60-8849-8e1e-52ac126331e0",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 60}],
+                "infoLinks": [
+                  {"id": "efd91aac-86cb-7aac-c8d2-212432c24313", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+                  {"id": "9c9306a0-388e-1456-4e9a-3446202ed58d", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+                  {"id": "5e009aa1-945c-1411-e170-9bd504d19070", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "68afc1dd-7e46-e401-fc96-21ec4d5e0c43", "targetId": "f43cc78d-e856-80aa-d39a-258b80f8c907", "type": "rule"},
+                  {"id": "b80afe56-8408-b970-7ba0-ba133a8fbe75", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+                  {"id": "4e0dd02d-1e64-e6bd-576c-c7ce33c4de8b", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Light Tank - Valkyrie",
+                    "id": "61b6586a-d957-01c9-0331-6857be3107b9",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "15", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Valkyrie - Heavy Harvester Coil Guns",
+                    "id": "8f630820-3854-132e-fd2e-0839264d953f",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Tank Squadron (Heavy Helix)",
+        "id": "5d261200-4f11-7531-8baf-e7ba27581932",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "5d261200-4f11-7531-8baf-e7ba27581932-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Light Tank Class",
+            "id": "658115c3-92ce-0455-5726-c3d1c742de9c",
+            "collective": false,
+            "defaultSelectionEntryId": "426b2bb9-e152-1db1-bc4b-fdca61c957bc",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Valkyrie",
+                "id": "426b2bb9-e152-1db1-bc4b-fdca61c957bc",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 60}],
+                "infoLinks": [
+                  {"id": "97554e50-ebad-3497-9be2-d9db2bb03326", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+                  {"id": "cee0f11f-85fe-debf-edc0-7a4ffeeabd5d", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+                  {"id": "fa1cfebe-4f27-d15a-efe6-ce53757fb016", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"},
+                  {"id": "abb438c4-8dc2-9156-c0f1-257fb4a786e6", "targetId": "f43cc78d-e856-80aa-d39a-258b80f8c907", "type": "rule"},
+                  {"id": "8ada50ea-da9a-0b37-0c81-834cbd717442", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+                  {"id": "8ec5fa3b-b815-757c-0e18-10a95cade06a", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Light Tank - Valkyrie",
+                    "id": "d6dcd02b-28df-ea78-8951-559a19b863f4",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "15", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Valkyrie - Heavy Harvester Coil Guns",
+                    "id": "aa34653c-fc43-b1ce-4721-1143e3b01450",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Logistics Points",
+        "id": "411524c3-ee1d-7f4c-323d-cdea07ccf266",
+        "collective": false,
+        "hidden": false,
+        "page": 58,
+        "publicationId": "113a879f--pub2",
+        "type": "upgrade",
+        "categoryLinks": [{"id": "411524c3-ee1d-7f4c-323d-cdea07ccf266-6124ca5f-4ae5-6c10-6b25-01af704031f6", "primary": true, "targetId": "6124ca5f-4ae5-6c10-6b25-01af704031f6"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "infoLinks": [{"id": "e0fc1aef-489d-6573-e45a-43db8393c3d2", "targetId": "addb3847-bb04-e2d0-60a0-7368597abb91", "type": "rule"}],
+        "selectionEntries": [
+          {
+            "name": "Logistics Points",
+            "id": "2733f214-ba88-d610-6c9a-857e3194f073",
+            "collective": false,
+            "hidden": false,
+            "page": 58,
+            "publicationId": "113a879f--pub2",
+            "type": "upgrade",
+            "costs": [{"name": "pts", "typeId": "points", "value": 25}]
+          }
+        ]
+      },
+      {
+        "name": "Medium Battle Tank Squadron",
+        "id": "5dc93ad0-5cad-61ef-7e78-8b027ecf8ef4",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "5dc93ad0-5cad-61ef-7e78-8b027ecf8ef4-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+        "constraints": [
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 3},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "min", "value": 1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Medium Battle Tank Class",
+            "id": "724b458c-f824-179c-d31e-4ea3db609450",
+            "collective": false,
+            "defaultSelectionEntryId": "8efc0501-d6f6-ce91-fad4-0a0908e94107",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Valenfyre",
+                "id": "8efc0501-d6f6-ce91-fad4-0a0908e94107",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 125}],
+                "infoLinks": [
+                  {"id": "179a62b7-09e1-fe7c-ac16-235e9cb640c3", "targetId": "da743f0f-7783-543b-812d-ff7fd0df67e2", "type": "rule"},
+                  {"id": "dd5d9a17-e013-7978-fffc-00ac92511f2b", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Medium Battle Tank - Valenfyre",
+                    "id": "d09b3c80-a1a2-3cbc-b55c-33afc8f89a46",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "6", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "7", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Valenfyre - M127 Drake Cannon",
+                    "id": "e60f69ee-7370-e49b-43db-93c1c4384390",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Primary Battle Tank",
+                    "id": "399d981b-1216-15a4-d0ec-65fae4368080",
+                    "description": "Only the first Medium Battle Tank Squadron may get the Command Element (12\") MAR per Helix.",
+                    "hidden": false,
+                    "page": 3,
+                    "publicationId": "113a879f--pub3"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sky Drop Field Gun",
+        "id": "b5396b54-b6f4-4d50-cff4-1f54547c4477",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "categoryLinks": [{"id": "b5396b54-b6f4-4d50-cff4-1f54547c4477-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Sky Drop Field Gun Emplacement",
+            "id": "8f14e559-f35a-10be-85b3-fffa0eb9c31a",
+            "collective": false,
+            "hidden": false,
+            "type": "model",
+            "categoryLinks": [{"id": "8f14e559-f35a-10be-85b3-fffa0eb9c31a-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 80}],
+            "infoLinks": [
+              {"id": "c6b8c77e-f1f6-b71f-ab75-4cb4cfb5ab3a", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+              {"id": "32cf3f60-13bd-7923-61aa-d1306a3c1369", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"},
+              {"id": "f780f424-72b4-8920-44f2-60c25e3a8f99", "targetId": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7", "type": "rule"},
+              {"id": "fe64988c-a67d-159a-c485-f3f2ad4dae12", "targetId": "2510f61e-150a-c7d7-8899-791a3c45b424", "type": "rule"}
+            ],
+            "profiles": [
+              {
+                "name": "Sky Drop Field Gun - Hellstream",
+                "id": "e5d70f34-802d-1606-57a2-1db9153002b7",
+                "hidden": false,
+                "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                "characteristics": [
+                  {"name": "Mv Cr", "$text": "0", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                  {"name": "Mv FO", "$text": "0", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                  {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                  {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                  {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                  {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                  {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                  {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                  {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                  {"name": "Quality", "$text": "Militia", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                  {"name": "TV", "$text": "2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Weapon",
+                "id": "5c333843-ac9e-e084-61fe-31f4095aac1b",
+                "collective": false,
+                "hidden": false,
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "M127 Drake Cannon",
+                    "id": "cf0be7a8-edbc-9952-f681-2fb0f2a29f8e",
+                    "collective": false,
+                    "hidden": false,
+                    "type": "upgrade",
+                    "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                    "infoLinks": [{"id": "2afc8ac2-ad7d-8969-3cb2-46604a4c88c0", "targetId": "da743f0f-7783-543b-812d-ff7fd0df67e2", "type": "rule"}],
+                    "profiles": [
+                      {
+                        "name": "Hellstream - M127 Drake Cannon",
+                        "id": "ad91edae-a827-e0bf-1835-fcb85f09b6af",
+                        "hidden": false,
+                        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                        "characteristics": [
+                          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                          {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                          {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                          {"name": "MARs", "$text": "Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Shrike Heavy Rotor Guns",
+                    "id": "ec1d4513-37c3-4e4a-4775-c9da1ee12aea",
+                    "collective": false,
+                    "hidden": false,
+                    "type": "upgrade",
+                    "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                    "infoLinks": [
+                      {"id": "bd891944-e945-5445-6abb-4aa4174b3e5f", "targetId": "5dc59e46-c71e-4741-ac38-107eb4ecc43c", "type": "rule"},
+                      {"id": "543b7c0d-24fe-36a2-12ad-c1798c4533e8", "targetId": "1261f07d-d02e-be6e-3da8-3286f9a5b84b", "type": "rule"}
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Hellstream - Shrike Heavy Rotor Guns",
+                        "id": "b197b42c-c79e-1171-09d1-7c56e34aea60",
+                        "hidden": false,
+                        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                        "characteristics": [
+                          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                          {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                          {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                          {"name": "MARs", "$text": "Corrosive / Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Tank Destroyer Squadron",
+        "id": "3e594b3f-452a-3bc3-efbe-7bcab24aeefb",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "3e594b3f-452a-3bc3-efbe-7bcab24aeefb-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "constraints": [{"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Tank Destroyer Tank Class",
+            "id": "e97b4e55-2eac-98b7-10d9-91bcad73909c",
+            "collective": false,
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "name": "Lancer",
+                "id": "4544943d-7d0b-7b5a-4516-41556d260f3c",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 120}],
+                "infoLinks": [
+                  {"id": "0065d0e1-b639-3f38-c3cd-befa9b2aab96", "targetId": "6ae82f48-a98d-9fb8-458c-a3ba6109c603", "type": "rule"},
+                  {"id": "4381dd2a-b4a9-6e56-8b99-06dac2af82cf", "targetId": "9360a443-1d70-4a1b-4db5-c96b565cc9f7", "type": "rule"}
+                ],
+                "profiles": [
+                  {
+                    "name": "Tank Destroyer Tank - Lancer",
+                    "id": "7d8a9933-199b-6067-7599-843fe551f5b9",
+                    "hidden": false,
+                    "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+                    "characteristics": [
+                      {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+                      {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+                      {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+                      {"name": "DR2", "$text": "4", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+                      {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+                      {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+                      {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+                      {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+                      {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+                      {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+                      {"name": "TV", "$text": "7", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+                    ]
+                  },
+                  {
+                    "name": "Lancer - G-38 Heritage Laser",
+                    "id": "4de7902a-54cd-a9ad-1539-d2b59deea23d",
+                    "hidden": false,
+                    "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+                    "characteristics": [
+                      {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+                      {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+                      {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+                      {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+                      {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+                      {"name": "MARs", "$text": "Pinpoint (2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Artillery Support (2)",
+        "id": "864e8edc-3886-ece2-4a99-7bdee790085c",
+        "description": "May use the Artillery Support rules on Page 82.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Assault Vehicle",
+        "id": "c8e09cc3-0f8a-2c53-2b7b-64f024f66d20",
+        "description": "Models embarked may elect to activate immediately after the Assault Vehicle has finished its activation.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Bulky (2)",
+        "id": "6c5c30be-9145-ce42-666a-411e6dc223d0",
+        "description": "These units take up 2 slots in transports.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Command Element (12\")",
+        "id": "a88fff3a-7d2e-e3c0-6c13-770c54f391f4",
+        "description": "All helix squadrons in 12\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Command Element (16\")",
+        "id": "97b6d0f6-7005-2856-e522-efbd39955197",
+        "description": "All helix squadrons in 16\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Command Element (8\")",
+        "id": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9",
+        "description": "All helix squadrons in 8\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Fearless",
+        "id": "3905b541-9c28-1031-afee-524491234379",
+        "description": "Unit never takes Disordered Tests.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Flying",
+        "id": "0ca10ced-c7fe-8575-2a37-ddc2c1b60825",
+        "description": "When moving at Cruising Speed the unit gains Hard Target (-1), when moving at Flat Out the unit gains Hard Target (-2).",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Hard Target (-1)",
+        "id": "3bcba4d4-a9c4-4114-ee86-7720a79eb203",
+        "description": "Main Ordnance is -1 to hit this unit.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Hit & Run",
+        "id": "2ed1a424-15a7-f77a-a41c-d7801ec890cc",
+        "description": "May shoot and move OR move and move. May not move Flat Out if this rule is used. When shooting then moving, the unit cannot take advantage of Target Locks or Specialist Fire Orders such as Overwatch or Focused Fire.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Logistics Points",
+        "id": "addb3847-bb04-e2d0-60a0-7368597abb91",
+        "description": "May use up to 5 points to bid on an Opposed Tactics test.",
+        "hidden": false,
+        "page": 58,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Must Sky Drop",
+        "id": "2510f61e-150a-c7d7-8899-791a3c45b424",
+        "description": "This squadron MUST deploy via Sky Drop (Page 79 of Core Rulebook)",
+        "hidden": false
+      },
+      {
+        "name": "Ordnance When Flat Out",
+        "id": "e4e94a1b-4d17-3381-7560-56ec8b0ce611",
+        "description": "This squadron may fire its Main Ordnance while moving Flat Out, but may only target Surface models. These shots are considered to be Rushed.",
+        "hidden": false,
+        "page": 7,
+        "publicationId": "113a879f--pub4"
+      },
+      {
+        "name": "Rear Echelon",
+        "id": "477a69dc-8258-f309-8b27-6ea67902b2a9",
+        "description": "A model with this MAR is considered to be activated on the turn it is deployed.",
+        "hidden": false,
+        "page": 120,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Recon Specialist",
+        "id": "f43cc78d-e856-80aa-d39a-258b80f8c907",
+        "description": "May move in the Recon Phase.",
+        "hidden": false,
+        "page": 120,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Sky Drop",
+        "id": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7",
+        "description": "May use the Sky Drop Deployment rules on Page 79.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Sky Drop Nexus (1)",
+        "id": "8273195e-78a8-0b2f-9dcb-05cd5c0caa67",
+        "description": "Places 1 Drop Site Marker in the Place Drop-Sites Segment of the Pre-Game Phase.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Strengthened Shields",
+        "id": "f38d0b06-9a4b-e2df-05d7-d9af20f780a7",
+        "description": "All Terran Armoured Squadrons may re-roll any Initial Dice rolls of a 1 when defending with Shields. The second roll must be accepted.",
+        "hidden": false,
+        "page": 2,
+        "publicationId": "113a879f--pub5"
+      },
+      {
+        "name": "Take & Hold",
+        "id": "105c9cd2-5e9a-2489-46a1-5a1cce963098",
+        "description": "This unit may claim objectives.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Tracked/Wheeled Vehicle",
+        "id": "9360a443-1d70-4a1b-4db5-c96b565cc9f7",
+        "description": "Impassable Terrain : Vegetation/Forests/Jungle, Huge Rocks/Spires, Rivers (Non Lethal), Walkway (Buildings Only).\nMay not Flat Out over Rough Ground / Craters.\nIncrease Movement by 3\" on  Roads.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Transport (6)",
+        "id": "8d8b46e8-9fca-9d13-cfa7-3ab3e6bd9e48",
+        "description": "May act as a transport for 6 slots worth of Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Walker",
+        "id": "c40f15e0-8c0a-e522-a4ee-43181065da64",
+        "description": "May not move Flat Out through Vegation or Rivers.",
+        "hidden": false,
+        "page": 77,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Anti-Personnel",
+        "id": "b8c0d6fe-07e5-3745-cd0e-632f784170c9",
+        "description": "Weapon ignores Hard Target rules when targeting Infantry.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Barrage",
+        "id": "da743f0f-7783-543b-812d-ff7fd0df67e2",
+        "description": "Models targeted by a Barrage weapon do not receive cover saves.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Corrosive",
+        "id": "1261f07d-d02e-be6e-3da8-3286f9a5b84b",
+        "description": "Models damaged by this weapon, but not destroyed receive a Debilitating Effect Marker. These markets give -1 DR until repaired. Multiple Markers may be placed, but the effect is not cumulative.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Interceptor",
+        "id": "5dc59e46-c71e-4741-ac38-107eb4ecc43c",
+        "description": "Flying targets do not gain the benefit of Hard Target against these weapons.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Nexus Designator",
+        "id": "4bec51c1-8ed1-8edf-6e58-4e1ea62124a2",
+        "description": "Weapon is used to reduce Sky Drop Markers micro dice.",
+        "hidden": false,
+        "page": 79,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Pinpoint (2)",
+        "id": "6ae82f48-a98d-9fb8-458c-a3ba6109c603",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 2d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Pinpoint (4)",
+        "id": "384811d2-862a-3a36-ac0f-841f6b88fad1",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 4d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "113a879f--pub2"
+      },
+      {
+        "name": "Weapon MAR:Terror Weapon",
+        "id": "036d9b9e-ad2d-977e-feea-1472c2ddd8ff",
+        "description": "Disorder Tests caused by this weapon roll one less die.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "113a879f--pub2"
+      }
+    ]
+  }
+}

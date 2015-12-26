@@ -1,0 +1,190 @@
+{
+  "gameSystem": {
+    "name": "Firestorm-Planetfall",
+    "id": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve_990",
+    "authorUrl": "http://community.spartangames.co.uk",
+    "battleScribeVersion": 2.03,
+    "revision": 3,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Alliance Air / Recon Helices", "id": "b5e3-9583-3fcd-2774"},
+      {"name": "Alliance Heavy / Leviathan Helices", "id": "8a0e-13df-2db9-14b3"},
+      {"name": "Alliance Assault / Field Support Helices", "id": "bfb8-a2d8-3a3e-a671"},
+      {"name": "Command Points", "id": "6124ca5f-4ae5-6c10-6b25-01af704031f6"},
+      {"name": "Core Helix", "id": "b3b00e3b-81d8-1d89-9804-56bb2487197f"},
+      {"name": "Read Me", "id": "b538-646f-440e-a734"}
+    ],
+    "costTypes": [{"name": "pts", "id": "points"}],
+    "forceEntries": [
+      {
+        "name": "Main Force",
+        "id": "8fa1bb48-be76-b6ab-cbfc-405e1a5d8d34",
+        "categoryLinks": [
+          {
+            "name": "Command Points",
+            "id": "8fa1bb48-be76-b6ab-cbfc-405e1a5d8d34-6124ca5f-4ae5-6c10-6b25-01af704031f6",
+            "targetId": "6124ca5f-4ae5-6c10-6b25-01af704031f6"
+          },
+          {
+            "name": "Core Helix",
+            "id": "8fa1bb48-be76-b6ab-cbfc-405e1a5d8d34-b3b00e3b-81d8-1d89-9804-56bb2487197f",
+            "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 1}
+            ]
+          },
+          {
+            "name": "Air / Recon Helix",
+            "id": "8fa1bb48-be76-b6ab-cbfc-405e1a5d8d34-b5e3-9583-3fcd-2774",
+            "targetId": "b5e3-9583-3fcd-2774",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+          },
+          {
+            "name": "Heavy / Leviathan Helix",
+            "id": "8fa1bb48-be76-b6ab-cbfc-405e1a5d8d34-8a0e-13df-2db9-14b3",
+            "targetId": "8a0e-13df-2db9-14b3",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+          },
+          {
+            "name": "Assault / Field Support Helix",
+            "id": "8fa1bb48-be76-b6ab-cbfc-405e1a5d8d34-bfb8-a2d8-3a3e-a671",
+            "targetId": "bfb8-a2d8-3a3e-a671",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+          },
+          {
+            "name": "Read Me",
+            "id": "8fa1bb48-be76-b6ab-cbfc-405e1a5d8d34-b538-646f-440e-a734",
+            "targetId": "b538-646f-440e-a734",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 1}]
+          }
+        ],
+        "forceEntries": [
+          {
+            "name": "Alliance Battle Group",
+            "id": "307063a2-13f2-71c8-ec9e-b5bdd3c5c6ac",
+            "categoryLinks": [
+              {
+                "name": "Alliance Air / Recon Helices",
+                "id": "307063a2-13f2-71c8-ec9e-b5bdd3c5c6ac-b5e3-9583-3fcd-2774",
+                "targetId": "b5e3-9583-3fcd-2774",
+                "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+              },
+              {
+                "name": "Alliance Heavy / Leviathan Helices",
+                "id": "307063a2-13f2-71c8-ec9e-b5bdd3c5c6ac-8a0e-13df-2db9-14b3",
+                "targetId": "8a0e-13df-2db9-14b3",
+                "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+              },
+              {
+                "name": "Alliance Assault / Field Support Helices",
+                "id": "307063a2-13f2-71c8-ec9e-b5bdd3c5c6ac-bfb8-a2d8-3a3e-a671",
+                "targetId": "bfb8-a2d8-3a3e-a671",
+                "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+              }
+            ]
+          },
+          {
+            "name": "Natural-Allied Battle Group",
+            "id": "083c07c6-01aa-69ef-2006-a9f7da7f45f0",
+            "categoryLinks": [
+              {
+                "name": "Natural Alliance Air / Recon Helices",
+                "id": "083c07c6-01aa-69ef-2006-a9f7da7f45f0-b5e3-9583-3fcd-2774",
+                "targetId": "b5e3-9583-3fcd-2774",
+                "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+              },
+              {
+                "name": "Natural Alliance Heavy / Leviathan Helices",
+                "id": "083c07c6-01aa-69ef-2006-a9f7da7f45f0-8a0e-13df-2db9-14b3",
+                "targetId": "8a0e-13df-2db9-14b3",
+                "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+              },
+              {
+                "name": "Natural Alliance Assault / Field Support Helices",
+                "id": "083c07c6-01aa-69ef-2006-a9f7da7f45f0-bfb8-a2d8-3a3e-a671",
+                "targetId": "bfb8-a2d8-3a3e-a671",
+                "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Unit",
+        "id": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristicTypes": [
+          {"name": "Mv Cr", "id": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "id": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "id": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "id": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "id": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "id": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "id": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "id": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "id": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "id": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "id": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Ordnance",
+        "id": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristicTypes": [
+          {"name": "EF", "id": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "id": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "id": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "id": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "id": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "id": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Leviathan CQB Weapon",
+        "id": "e0e86e6f-7cbc-581b-fc4d-e8a96c3e497f",
+        "characteristicTypes": [{"name": "MARs", "id": "da4d7de0-2bb3-70e7-a3f0-4ba3afccbcae"}]
+      },
+      {
+        "name": "Transport Unit",
+        "id": "989c-c094-2fc0-1425",
+        "characteristicTypes": [
+          {"name": "Mv Cr", "id": "1830-0f0d-6c85-d36a"},
+          {"name": "Mv FO", "id": "c78c-566f-a867-13d6"},
+          {"name": "DR1", "id": "d1f6-6edb-94f2-f92f"},
+          {"name": "DR2", "id": "adfc-f620-9862-1fbb"},
+          {"name": "DR3", "id": "b63d-d916-e34e-addc"},
+          {"name": "DR4", "id": "c7fa-2588-cdb5-34e7"},
+          {"name": "SH", "id": "a9fe-493a-6b3e-0d4f"},
+          {"name": "CBQ", "id": "60ae-7166-154f-029d"},
+          {"name": "LoS Class", "id": "f21a-976b-63fa-5dac"},
+          {"name": "Quality", "id": "eee7-9e4e-867f-ac89"},
+          {"name": "TV", "id": "1737-60c5-d802-282f"},
+          {"name": "Trans Cap", "id": "e59d-8ba5-c6ee-b696"}
+        ]
+      },
+      {
+        "name": "Infantry Unit",
+        "id": "b18a-ec12-ebd2-4467",
+        "characteristicTypes": [
+          {"name": "Mv Cr", "id": "7f79-7751-617e-623e"},
+          {"name": "Mv FO", "id": "c2c7-ba3f-d9f0-9f2e"},
+          {"name": "DR1", "id": "1ca8-bbf5-74a2-4235"},
+          {"name": "DR2", "id": "18ad-511b-512d-97fb"},
+          {"name": "DR3", "id": "a2a2-b6fc-2f26-aeb2"},
+          {"name": "DR4", "id": "4ecd-561c-f819-c863"},
+          {"name": "SH", "id": "eda0-3ec3-cc78-11db"},
+          {"name": "CBQ", "id": "6a9b-3e43-76dc-eaf1"},
+          {"name": "LoS Class", "id": "cbe2-f4a4-03e0-b8f3"},
+          {"name": "Quality", "id": "b8e0-af5e-8f0f-5f9b"},
+          {"name": "TV", "id": "2b11-c9ba-283b-f463"},
+          {"name": "Trans Sz", "id": "880a-2e3d-773e-7d80"}
+        ]
+      }
+    ]
+  }
+}
