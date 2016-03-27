@@ -1,0 +1,572 @@
+{
+  "catalogue": {
+    "name": "Rense System Navy",
+    "id": "b9ff-fd74-7692-94f3",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve",
+    "authorUrl": "http://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "gameSystemRevision": 1,
+    "revision": 3,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [{"name": "Core Rulebook", "id": "b9ff-fd74-pub1"}, {"name": "Dindrenzi ORBATS", "id": "b9ff-fd74-pub2"}, {"name": "Dindrenzi ORBATs", "id": "b9ff-fd74-pub3"}],
+    "rules": [
+      {
+        "name": "Rense_System_Navy---Artillery_Attacks",
+        "id": "3cc90eb2-41dc-129b-7e96-feee57b0e5bb",
+        "description": "All Rense System Navy Artillery Attacks use the Barrage and Scatter MARs with 4D6 Attack Dice.",
+        "hidden": false
+      },
+      {
+        "name": "Rense_System_Navy---Sky_Drop_Capability",
+        "id": "d5ffc1f2-766e-cfc1-ec39-694a12333eb1",
+        "description": "Initial Drop Site Markers are set to 4. Initial Artillery Markers are set to 6.",
+        "hidden": false
+      },
+      {
+        "name": "Rense_System_Navy---Tactical_Bonus",
+        "id": "49d2fb24-b1a5-f567-954d-1aa4fe5e01ce",
+        "description": "Rense System Navy forces have a Tactics Bonus of +3.",
+        "hidden": false
+      },
+      {
+        "name": "Rense_System_Navy---Logistical_Strength",
+        "id": "f13c-d766-9e50-2f81",
+        "description": "Up to 3 Logistics Points in a single Bid Action.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Rense_System_Navy_Assault_Helix",
+        "id": "47bf-9747-0b73-aa76",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "47bf-9747-0b73-aa76-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Archangel_Battle_Robot",
+            "id": "a4d7-0dac-a49f-2adf",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "a4d7-0dac-a49f-2adf-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "selectionEntryGroups": [
+              {
+                "name": "Battle_Robot",
+                "id": "9203-0d83-2475-7229",
+                "collective": false,
+                "defaultSelectionEntryId": "159b-b512-2eca-765c",
+                "hidden": false,
+                "entryLinks": [{"id": "159b-b512-2eca-765c", "targetId": "5fa7-86ca-44ce-7c23", "type": "selectionEntry"}]
+              }
+            ]
+          },
+          {
+            "name": "Temple_of_Dramos_Sky_Drop_Emplacement",
+            "id": "0e9c-3346-d487-f473",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "6f71-4007-d989-cf81", "targetId": "42c8-f25f-0f25-2d40", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Embarked_Seraph_Light_Drone_Tank",
+                "id": "5d2a-bf53-8cda-a170",
+                "collective": false,
+                "hidden": false,
+                "type": "unit",
+                "categoryLinks": [{"id": "5d2a-bf53-8cda-a170-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "2316-805c-ab90-a48c", "targetId": "dccd-53e8-3d7f-aa02", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Select_if_an_Assault_or_Field_Support_Helix_is_taken_as_an_Allied_Helix",
+        "id": "85a8-1d75-2ef7-ed79",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "85a8-1d75-2ef7-ed79-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [{"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Archange_Battle_Robot",
+        "id": "12fd-48b7-02c4-1f28",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "9", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "8", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "8", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "8/16", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "6", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Archangel---Clamare_Missiles_(Left_Arm)",
+        "id": "718d-f868-a915-7770",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "16", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "32", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "8", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F/L/R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Archangel---Nexus_Designator",
+        "id": "7054-d323-92d3-85e4",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "30", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Archangel---Shard_of_Dramos_(Right_Arm)",
+        "id": "3934-a96c-e178-65e1",
+        "hidden": false,
+        "typeId": "e0e86e6f-7cbc-581b-fc4d-e8a96c3e497f",
+        "characteristics": [{"name": "MARs", "$text": "Pinpoint(4)", "typeId": "da4d7de0-2bb3-70e7-a3f0-4ba3afccbcae"}]
+      },
+      {
+        "name": "Seraph---Asmodian_Laser",
+        "id": "561b-215b-e597-0222",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "3", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "2", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Seraph_Light_Drone_Tank",
+        "id": "5af6-292c-52ae-c072",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "14", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "1", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Militia", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Temple_of_Dramos---Clamare_Missiles",
+        "id": "3d92-c01c-bc9e-f4be",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "16", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "32", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "9", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Temple_of_Dramos---Nexus_Designator",
+        "id": "5a35-340f-52e9-83e8",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "30", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Temple_of_Dramos_Sky_Drop_Transport/Emplacement",
+        "id": "4d25-c3fd-78c9-f4e7",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "0", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "0", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "10", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "10", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "9", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "15", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Assault_Vehicle",
+        "id": "9a6378e7-4fe0-d97d-0dd4-0b547c672db7",
+        "description": "Models embarked may elect to activate immediately after the Assault Vehicle has finished its activation.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Built_to_Last",
+        "id": "34bb965a-75d5-909e-b0a7-21704d463208",
+        "description": "All Rense System Navy elements ignore the effects of Damage on their Attack Successes during Main Ordnance Attacks.",
+        "hidden": false,
+        "page": 2,
+        "publicationId": "b9ff-fd74-pub2"
+      },
+      {
+        "name": "Cloaked",
+        "id": "e494-fa7e-a647-762a",
+        "description": "Explosive Dice (red) ordnance is rolled as Heavy Dice (blue) instead.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Command_Centre",
+        "id": "7b19-63d3-964d-b166",
+        "description": "A Force that contains this model may take an ADDITIONAL Tactical Action Card over and above the number stated for the game size.",
+        "hidden": false,
+        "page": 11,
+        "publicationId": "b9ff-fd74-pub3"
+      },
+      {
+        "name": "Command_Element(12\")",
+        "id": "e5e5c646-f5bc-5c85-8af0-b10457704edc",
+        "description": "All helix squadrons in 12\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {"name": "Conditional_Deployment", "id": "8846-34c0-0025-98ab", "description": "Seraph Squadrons MUST be deployed via a Temple of Dramos.", "hidden": false},
+      {
+        "name": "Drone",
+        "id": "064598f7-0c15-ec8a-aacf-fb40d8519488",
+        "description": "Drones within range of a Drone Nexus become Regular and gain +1 CQB.",
+        "hidden": false,
+        "page": 117,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Drone_Nexus(12\")",
+        "id": "a4c7-b0b5-7aaf-dfdd",
+        "description": "Boosts Drones to Regular and gives them +1 CQB within 12\". Each point of damage lowers the Nexus range by 4\".",
+        "hidden": false,
+        "page": 117,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Drone_Nexus(8\")",
+        "id": "d22fe4d8-71d2-b293-38cf-b5db9f768a1d",
+        "description": "Boosts Drones to Regular and gives them +1 CQB within 8\". Each point of damage lowers the Nexus range by 4\".",
+        "hidden": false,
+        "page": 117,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Fearless",
+        "id": "82856ae3-a39a-94fd-a699-3c82332b51de",
+        "description": "Unit never takes Disordered Tests.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Hard_Target(-1)",
+        "id": "5249f2ef-39ba-92cf-881c-227d5b46c9a2",
+        "description": "Main Ordnance is -1 to hit this unit.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Hover_Vehicle",
+        "id": "2ee48f64-c695-16f1-c321-58961a2f3690",
+        "description": "Vehicles with this MAR is treated as Hard Target (-1) when fired at with weapons in Long Range. This does not combine with other Hard Target rules.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Improved_Target_Nexus",
+        "id": "db65-4e85-2ec1-646b",
+        "description": "If the Temple of Dramos successfully targets an enemy target squadron with its Target Lock, all Seraph Drones within Drone Nexus Range gain a Placed Bonus when firing at the same target squadron with Main Ordnance Weapons for that turn only!",
+        "hidden": false,
+        "page": 11,
+        "publicationId": "b9ff-fd74-pub3"
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "9a98-0a4c-8b57-6456",
+        "description": "May use up to 4 points to bid on an Opposed Tactics test.",
+        "hidden": false,
+        "page": 58,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Reflective_Inner_Plating",
+        "id": "6f86-6068-fea2-f890",
+        "description": "All successful Pinpoint rolls that would cause additional Damage to this element must be re-rolled.",
+        "hidden": false
+      },
+      {
+        "name": "Remember_Dramos",
+        "id": "4b80a0ed-dc68-270a-4d84-7c5eb8aa5046",
+        "description": "Once deployed, all friendly Dindrenzi or Rense System Navy Elements within 16” gain the Fearless MAR if there are any Terran Alliance or Hawker Industries forces on the Battlefield.",
+        "hidden": false,
+        "page": 11,
+        "publicationId": "b9ff-fd74-pub2"
+      },
+      {
+        "name": "Sectored_Armour",
+        "id": "b853-b8cd-3195-ab54",
+        "description": "Model never suffers penalties to DR from Flank or Aft Main Ordnance attacks.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Sky_Drop",
+        "id": "f952dfe9-2c8a-7f89-8063-e277b8006f7a",
+        "description": "May use the Sky Drop Deployment rules on Page 79.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Sky_Drop_Asset",
+        "id": "047c5a03-e8a3-5771-00f3-3f4477fe7d16",
+        "description": "This squadron MUST deploy via Sky Drop (Page 79 of Core Rulebook)",
+        "hidden": false
+      },
+      {
+        "name": "Sky_Drop_Nexus(1)",
+        "id": "3d36-9301-7893-1195",
+        "description": "Places 1 Drop Site Markers in the Place Drop-Sites Segment of the Pre-Game Phase.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Target_Lock",
+        "id": "0157-e9f1-834f-6437",
+        "description": "May use Nexus Designator to target an enemy unit befor the rest of the unit fires Main Ordnance. 0-3 hits : No Effect. 4+ Hits : Firing Squadron gains a placed bonus when firing their Main Ordnance.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {"name": "Thunderous_Charge", "id": "dfdd-1bd7-d42c-952e", "description": "The model may perform a Leviathan CQB Action after moving Flat Out", "hidden": false},
+      {
+        "name": "Tracked/Wheeled_Vehicle",
+        "id": "4784ab0d-7313-f92a-f5e1-9bfc36d11c5b",
+        "description": "Impassable Terrain : Vegetation/Forests/Jungle, Huge Rocks/Spires, Rivers (Non Lethal), Walkway (Buildings Only).\nMay not Flat Out over Rough Ground / Craters.\nIncrease Movement by 3\" on  Roads.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Transport_(Seraph_Light_Drones_Only,_6)",
+        "id": "73f23270-e577-c50f-68e6-b27141363ec2",
+        "description": "May act as a transport for 6 slots worth of Seraph Light Drone Tanks.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Interceptor",
+        "id": "089f3202-6c90-42cf-9e58-e1f5af7e5da2",
+        "description": "Flying targets do not gain the benefit of Hard Target against these weapons.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Nexus_Designator",
+        "id": "e758-888a-4e0b-c003",
+        "description": "Weapon is used to reduce Sky Drop Markers micro dice.",
+        "hidden": false,
+        "page": 79,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(2)",
+        "id": "de2fcfac-b113-e86d-1300-b5ce4e28fb8e",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 2d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(4)",
+        "id": "8d5f9c5b-5a3d-4fb2-cbd3-eddc07ab9f50",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 4d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "b9ff-fd74-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Terror_Weapon",
+        "id": "47d398bd-45e4-164a-212e-263cbfecbe83",
+        "description": "Disorder Tests caused by this weapon roll one less die.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "b9ff-fd74-pub1"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Archangel",
+        "id": "5fa7-86ca-44ce-7c23",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 290}],
+        "infoLinks": [
+          {"id": "8786-74e4-2f01-8e81", "targetId": "34bb965a-75d5-909e-b0a7-21704d463208", "type": "rule"},
+          {"id": "c4b3-e4be-5355-e740", "targetId": "e5e5c646-f5bc-5c85-8af0-b10457704edc", "type": "rule"},
+          {"id": "9f9f-d667-af32-0197", "targetId": "82856ae3-a39a-94fd-a699-3c82332b51de", "type": "rule"},
+          {"id": "b328-d0b8-3fa2-4929", "targetId": "2ee48f64-c695-16f1-c321-58961a2f3690", "type": "rule"},
+          {"id": "e74b-f910-a3de-012a", "targetId": "d22fe4d8-71d2-b293-38cf-b5db9f768a1d", "type": "rule"},
+          {"id": "4d5e-a96a-3802-a9ce", "targetId": "f952dfe9-2c8a-7f89-8063-e277b8006f7a", "type": "rule"},
+          {"id": "7dd5-882f-9978-0518", "targetId": "8d5f9c5b-5a3d-4fb2-cbd3-eddc07ab9f50", "type": "rule"},
+          {"id": "96dd-ce28-0309-b0d3", "targetId": "089f3202-6c90-42cf-9e58-e1f5af7e5da2", "type": "rule"},
+          {"id": "97a6-7556-6c58-5da0", "targetId": "47d398bd-45e4-164a-212e-263cbfecbe83", "type": "rule"},
+          {"id": "3788-3be0-ec33-1939", "targetId": "e494-fa7e-a647-762a", "type": "rule"},
+          {"id": "511b-0a83-9ee3-c06c", "targetId": "3d36-9301-7893-1195", "type": "rule"},
+          {"id": "f9d3-8ace-9d62-4239", "targetId": "718d-f868-a915-7770", "type": "profile"},
+          {"id": "bd36-c89c-4908-e4dd", "targetId": "3934-a96c-e178-65e1", "type": "profile"},
+          {"id": "a915-286b-f43f-a656", "targetId": "12fd-48b7-02c4-1f28", "type": "profile"},
+          {"id": "c55a-eb60-6d2b-3f54", "targetId": "7054-d323-92d3-85e4", "type": "profile"},
+          {"id": "b76c-de4b-0ea2-58f7", "targetId": "dfdd-1bd7-d42c-952e", "type": "rule"},
+          {"id": "b3d6-5fe6-6ef8-a3b5", "targetId": "6f86-6068-fea2-f890", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Seraph",
+        "id": "dccd-53e8-3d7f-aa02",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 6},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 6},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 45}],
+        "infoLinks": [
+          {"id": "7f60-d593-df75-dfd4", "targetId": "064598f7-0c15-ec8a-aacf-fb40d8519488", "type": "rule"},
+          {"id": "b31c-3e97-49f9-b65d", "targetId": "5249f2ef-39ba-92cf-881c-227d5b46c9a2", "type": "rule"},
+          {"id": "f25e-59ae-16e5-2f9b", "targetId": "4784ab0d-7313-f92a-f5e1-9bfc36d11c5b", "type": "rule"},
+          {"id": "2d76-6019-7c9c-fb43", "targetId": "de2fcfac-b113-e86d-1300-b5ce4e28fb8e", "type": "rule"},
+          {"id": "6a2d-90bc-1342-844d", "targetId": "34bb965a-75d5-909e-b0a7-21704d463208", "type": "rule"},
+          {"id": "ab13-4987-22f3-f9ca", "targetId": "e494-fa7e-a647-762a", "type": "rule"},
+          {"id": "f4f3-3ffa-6efa-2a0f", "targetId": "5af6-292c-52ae-c072", "type": "profile"},
+          {"id": "504b-1595-e3d0-9721", "targetId": "561b-215b-e597-0222", "type": "profile"},
+          {"id": "2f37-4c3b-193c-d762", "targetId": "8846-34c0-0025-98ab", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Temple_of_Dramos",
+        "id": "42c8-f25f-0f25-2d40",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 240}],
+        "infoLinks": [
+          {"id": "1ced-bb39-a1b8-dc88", "targetId": "047c5a03-e8a3-5771-00f3-3f4477fe7d16", "type": "rule"},
+          {"id": "5fd7-6046-3a33-2f33", "targetId": "4b80a0ed-dc68-270a-4d84-7c5eb8aa5046", "type": "rule"},
+          {"id": "29b1-9171-e593-18c7", "targetId": "e494-fa7e-a647-762a", "type": "rule"},
+          {"id": "0666-8081-e55c-db28", "targetId": "a4c7-b0b5-7aaf-dfdd", "type": "rule"},
+          {"id": "f946-95da-7152-e510", "targetId": "82856ae3-a39a-94fd-a699-3c82332b51de", "type": "rule"},
+          {"id": "9836-ab7c-9d0a-b3e2", "targetId": "f952dfe9-2c8a-7f89-8063-e277b8006f7a", "type": "rule"},
+          {"id": "e87a-7c1b-38e6-e199", "targetId": "73f23270-e577-c50f-68e6-b27141363ec2", "type": "rule"},
+          {"id": "6824-cc22-0349-624f", "targetId": "34bb965a-75d5-909e-b0a7-21704d463208", "type": "rule"},
+          {"id": "0ddb-4a46-1cb8-4035", "targetId": "0157-e9f1-834f-6437", "type": "rule"},
+          {"id": "e5be-aa98-741e-2f56", "targetId": "7b19-63d3-964d-b166", "type": "rule"},
+          {"id": "8b54-12ce-d010-1fe6", "targetId": "db65-4e85-2ec1-646b", "type": "rule"},
+          {"id": "f874-6626-82bc-7d13", "targetId": "089f3202-6c90-42cf-9e58-e1f5af7e5da2", "type": "rule"},
+          {"id": "bdfb-43fe-8898-32d3", "targetId": "47d398bd-45e4-164a-212e-263cbfecbe83", "type": "rule"},
+          {"id": "a706-db43-6210-8625", "targetId": "e758-888a-4e0b-c003", "type": "rule"},
+          {"id": "50c6-df89-fe80-93b9", "targetId": "3d92-c01c-bc9e-f4be", "type": "profile"},
+          {"id": "5a25-97fe-6759-30c3", "targetId": "5a35-340f-52e9-83e8", "type": "profile"},
+          {"id": "4d2d-e60c-e51e-6b48", "targetId": "4d25-c3fd-78c9-f4e7", "type": "profile"},
+          {"id": "bec3-86cc-239b-008c", "targetId": "b853-b8cd-3195-ab54", "type": "rule"}
+        ]
+      }
+    ]
+  }
+}

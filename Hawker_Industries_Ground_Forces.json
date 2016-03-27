@@ -1,0 +1,434 @@
+{
+  "catalogue": {
+    "name": "Hawker Industries",
+    "id": "0610-e4cd-4be0-d78c",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve",
+    "authorUrl": "http://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "gameSystemRevision": 1,
+    "revision": 3,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [
+      {"name": "Core Rulebook", "id": "0610-e4cd-pub1"},
+      {"name": "Terran Alliance ORBATs", "id": "0610-e4cd-pub2"},
+      {"name": "Terran Alliance ORBATS", "id": "0610-e4cd-pub3"},
+      {"name": "Terran Alliance ORBAT", "id": "0610-e4cd-pub4"}
+    ],
+    "rules": [
+      {
+        "name": "Hawker_Industries---Artillery_Attacks",
+        "id": "b956-c67d-20f7-18b2",
+        "description": "All Hawker Industries Artillery Attacks use the Corrosive, Barrage and Scatter MARs  with 4D6 Attack Dice.",
+        "hidden": false
+      },
+      {
+        "name": "Hawker_Industries---Sky_Drop_Capability",
+        "id": "9e545086-1c35-b094-b0de-5104d6fce761",
+        "description": "Initial Drop Site Markers are set to 5. Initial Artillery Markers are set to 5.",
+        "hidden": false
+      },
+      {
+        "name": "Hawker_Industries---Tactical_Bonus",
+        "id": "8467d8a0-2704-cd03-6831-4fde507b2e19",
+        "description": "Hawker Industries forces have a Tactics Bonus of +2.",
+        "hidden": false
+      },
+      {
+        "name": "Hawker_Industries---Logistical_Strength",
+        "id": "32d5-6a93-90db-2376",
+        "description": "Up to 4 Logistics Points in a single Bid Action.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Hawker_Industries_Aerial_Helix",
+        "id": "1b0f-0492-47cd-f0e4",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "1b0f-0492-47cd-f0e4-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Sheriff_Heavy_Gunship_Squadron",
+            "id": "4529-ddda-6a15-1552",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "4529-ddda-6a15-1552-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "selectionEntryGroups": [
+              {
+                "name": "Heavy_Gunship",
+                "id": "4483-b91e-37d2-4810",
+                "collective": false,
+                "defaultSelectionEntryId": "bf34-6146-30dc-1c07",
+                "hidden": false,
+                "entryLinks": [{"id": "bf34-6146-30dc-1c07", "targetId": "c74f-830b-9d55-df9d", "type": "selectionEntry"}]
+              }
+            ]
+          },
+          {
+            "name": "Guardsman_Heavy_Attack_Fighter",
+            "id": "a78b-129c-fa76-da7b",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "a78b-129c-fa76-da7b-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "selectionEntryGroups": [
+              {
+                "name": "Heavy_Attack_Fighter",
+                "id": "af15-676b-d463-d8c9",
+                "collective": false,
+                "defaultSelectionEntryId": "44d9-601b-86d2-8001",
+                "hidden": false,
+                "entryLinks": [{"id": "44d9-601b-86d2-8001", "targetId": "81e7-23f4-6448-6768", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Select_if_an_Air_or_Recon_Helix_is_taken_as_an_Allied_Helix",
+        "id": "f910-660a-d08f-8cf5",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "f910-660a-d08f-8cf5-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "constraints": [{"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Guardsman---UX-4B_Shredder_Cannon",
+        "id": "5f77-8cad-7f81-754a",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "15", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel/Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Guardsman_Heavy_Attack_Fighter",
+        "id": "86d0-a1f6-a306-262b",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "20", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "30", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Sheriff---Nexus_Designator(1)",
+        "id": "c1af-8ddc-3cc2-a6a1",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Sheriff---Nexus_Designator(2)",
+        "id": "0db6-bb85-03de-e94f",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Sheriff---Swift_Spear_Missiles",
+        "id": "8067-b5c3-3479-3879",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "16", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Corrosive/Interceptor/Pinpoint(1)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Sheriff_Heavy_Gunship",
+        "id": "1ed6-31ba-d61a-c30e",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "16", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "24", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "5", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "4", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "6", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Artillery_Support(2)",
+        "id": "e6fc0961-ace1-c55e-b401-4acca8ef380f",
+        "description": "May use the Artillery Support rules on Page 82.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Command_Element(16\")",
+        "id": "78d324e1-26b5-599c-6902-cadeeef9985c",
+        "description": "All helix squadrons in 16\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Flying_Vehicle",
+        "id": "501a8e86-3401-faef-7aff-9f1094200595",
+        "description": "When moving at Cruising Speed the unit gains Hard Target (-1), when moving at Flat Out the unit gains Hard Target (-2).",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Ground_Attack",
+        "id": "29d9-0d96-60ff-510f",
+        "description": "This Squadron may fire its Main Ordnance while moving Flat Out provided the target squadron are Surface models. These shots are considered to be Rushed.",
+        "hidden": false,
+        "page": 10,
+        "publicationId": "0610-e4cd-pub2"
+      },
+      {
+        "name": "Legacy_Through_Fortitude",
+        "id": "a2aa82e1-7bf4-e124-39ab-b4615695055e",
+        "description": "All Hawker Industries Armoured adn Aerial elements may attempt to remove a single point of Damage from each Squadron during the Repair Segment of the End Phase on the roll of a 4+.",
+        "hidden": false,
+        "page": 2,
+        "publicationId": "0610-e4cd-pub3"
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "165a2748-17cf-41f6-039e-98d07da4d54a",
+        "description": "May use up to 5 points to bid on an Opposed Tactics test.",
+        "hidden": false,
+        "page": 58,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Multipurpose_Assault",
+        "id": "61bddc41-0441-5f4d-2773-89dc5a700c7c",
+        "description": "This Squadron may fire its Main Ordnance while moving Flat Out. These shots are considered to be Rushed.",
+        "hidden": false,
+        "page": 10,
+        "publicationId": "0610-e4cd-pub4"
+      },
+      {
+        "name": "Overwatch_Capable",
+        "id": "d10b-7f9b-d475-e54d",
+        "description": "This Model may be placed on Overwatch using Logistics Points at the start of a Game Turn. It costs 3 Logistics Points to put this Model in Overwatch",
+        "hidden": false
+      },
+      {
+        "name": "Recon_Specialist",
+        "id": "8774c1ed-d743-feda-ac5e-58258e685dec",
+        "description": "May move in the Recon Phase.",
+        "hidden": false,
+        "page": 120,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Sectored_Armour",
+        "id": "1126-1b44-48ca-a3b7",
+        "description": "Model never suffers penalties to DR from Flank or Aft Main Ordnance attacks.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Take_&_Hold",
+        "id": "a12256c4-fb47-7fca-9af4-a413c5387d63",
+        "description": "This unit may claim objectives.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Tracked/Wheeled_Vehicle",
+        "id": "4e3ac4b5-c681-822a-31cc-b829972c8fd6",
+        "description": "Impassible Terrain : Vegetation/Forests/Jungle, Huge Rocks/Spires, Rivers (Non Lethal), Walkway (Buildings Only).\nMay not Flat Out over Rough Ground / Craters.\nIncrease Movement by 3\" on  Roads.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Transport(9)",
+        "id": "ad0a4ad2-e83a-de34-51c9-ea59b788289a",
+        "description": "May act as a transport for 9 slots worth of Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Anti-Personnel",
+        "id": "d94bfcdd-e185-0337-aad7-c7bbd7b1b8ce",
+        "description": "Weapon ignores Hard Target rules when targeting Infantry.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Barrage",
+        "id": "33b6e081-d57d-37ec-141a-8005f443649c",
+        "description": "Models targeted by a Barrage weapon do not receive cover saves.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Corrosive",
+        "id": "8ed47ace-e091-ff8d-c8b2-c8e68670b620",
+        "description": "Models damaged by this weapon, but not destroyed receive a Debilitating Effect Marker. These markets give -1 DR until repaired. Multiple Markers may be placed, but the effect is not cumulative.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Interceptor",
+        "id": "fa6a026d-b99b-78e4-9187-1778fab44641",
+        "description": "Flying targets do not gain the benefit of Hard Target against these weapons.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Nexus_Designator",
+        "id": "9fc80aca-61a6-7e09-cd30-760244644f3d",
+        "description": "Weapon is used to reduce Sky Drop Markers micro dice.",
+        "hidden": false,
+        "page": 79,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(1)",
+        "id": "34197a14-0bc0-8cfd-d73b-4d3a7ebf8a2f",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 1d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "0610-e4cd-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Terror_Weapon",
+        "id": "de5b2eaa-1c18-3a7a-31ae-c81487b5f5bd",
+        "description": "Disorder Tests caused by this weapon roll one less die.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "0610-e4cd-pub1"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Guardsman",
+        "id": "81e7-23f4-6448-6768",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 4},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 80}],
+        "infoLinks": [
+          {"id": "7d87-f901-a252-37a8", "targetId": "d94bfcdd-e185-0337-aad7-c7bbd7b1b8ce", "type": "rule"},
+          {"id": "2b42-1dbe-b472-30c3", "targetId": "501a8e86-3401-faef-7aff-9f1094200595", "type": "rule"},
+          {"id": "4743-66ac-f795-f64c", "targetId": "33b6e081-d57d-37ec-141a-8005f443649c", "type": "rule"},
+          {"id": "4297-81c1-0245-8482", "targetId": "a2aa82e1-7bf4-e124-39ab-b4615695055e", "type": "rule"},
+          {"id": "f29f-114c-3db7-9ae3", "targetId": "5f77-8cad-7f81-754a", "type": "profile"},
+          {"id": "f339-3942-833b-55c3", "targetId": "86d0-a1f6-a306-262b", "type": "profile"},
+          {"id": "d811-dcc6-0bba-efe8", "targetId": "1126-1b44-48ca-a3b7", "type": "rule"},
+          {"id": "3774-31c6-0dbf-4e3c", "targetId": "61bddc41-0441-5f4d-2773-89dc5a700c7c", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Sheriff",
+        "id": "c74f-830b-9d55-df9d",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 260}],
+        "infoLinks": [
+          {"id": "4bbd-20fc-cbe3-b242", "targetId": "e6fc0961-ace1-c55e-b401-4acca8ef380f", "type": "rule"},
+          {"id": "41a5-2820-8b4d-e4e8", "targetId": "8ed47ace-e091-ff8d-c8b2-c8e68670b620", "type": "rule"},
+          {"id": "0d46-6dff-0991-765b", "targetId": "501a8e86-3401-faef-7aff-9f1094200595", "type": "rule"},
+          {"id": "684f-9605-6551-43b3", "targetId": "a2aa82e1-7bf4-e124-39ab-b4615695055e", "type": "rule"},
+          {"id": "3edc-f3ab-75c9-4c5d", "targetId": "61bddc41-0441-5f4d-2773-89dc5a700c7c", "type": "rule"},
+          {"id": "87ef-ed3f-354e-4cac", "targetId": "fa6a026d-b99b-78e4-9187-1778fab44641", "type": "rule"},
+          {"id": "84a7-7feb-2159-593c", "targetId": "9fc80aca-61a6-7e09-cd30-760244644f3d", "type": "rule"},
+          {"id": "6226-ae51-a95c-15d1", "targetId": "78d324e1-26b5-599c-6902-cadeeef9985c", "type": "rule"},
+          {"id": "5a32-1624-a9ea-d763", "targetId": "34197a14-0bc0-8cfd-d73b-4d3a7ebf8a2f", "type": "rule"},
+          {"id": "6bf4-77d3-8bca-cdae", "targetId": "1ed6-31ba-d61a-c30e", "type": "profile"},
+          {"id": "9326-4aa6-cafa-7c10", "targetId": "c1af-8ddc-3cc2-a6a1", "type": "profile"},
+          {"id": "d707-417e-c8a9-cf85", "targetId": "0db6-bb85-03de-e94f", "type": "profile"},
+          {"id": "9d58-f4f4-00d2-ee8f", "targetId": "8067-b5c3-3479-3879", "type": "profile"},
+          {"id": "1aa6-b97f-da78-1b44", "targetId": "1126-1b44-48ca-a3b7", "type": "rule"},
+          {"id": "7e28-df76-13f6-44e8", "targetId": "d10b-7f9b-d475-e54d", "type": "rule"}
+        ]
+      }
+    ]
+  }
+}

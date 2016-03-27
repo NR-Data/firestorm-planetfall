@@ -1,0 +1,356 @@
+{
+  "catalogue": {
+    "name": "Veydreth_Tribes",
+    "id": "37d6-1c53-7683-e408",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve",
+    "authorUrl": "http://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "gameSystemRevision": 1,
+    "revision": 3,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [
+      {"name": "Core Rulebook", "id": "37d6-1c53-pub1"},
+      {"name": "Sorylian and Veydreth ORBATs", "id": "37d6-1c53-pub2"},
+      {"name": "Sorylian ORBATS", "id": "37d6-1c53-pub3"}
+    ],
+    "rules": [
+      {
+        "name": "Veydreth_Tribes---Artillery_Attacks",
+        "id": "900d4605-02a4-76ce-0978-4ba9dddc4a8e",
+        "description": "All Veydreth Tribe Artillery Attacks use the Barrage and Scatter MARs with 5D6 Attack Dice.",
+        "hidden": false
+      },
+      {
+        "name": "Veydreth_Tribes---Sky_Drop_Capability",
+        "id": "7d202cfd-369d-2dd3-a1d9-dd6b456e85e2",
+        "description": "Initial Drop Site Markers are set to 6. Initial Artillery Markers are set to 4.",
+        "hidden": false
+      },
+      {
+        "name": "Veydreth_Tribes---Tactical_Bonus",
+        "id": "09617fe3-a35d-f5ff-9d57-25af292161a0",
+        "description": "Veydreth Tribe forces have a Tactics Bonus of +2.",
+        "hidden": false
+      },
+      {
+        "name": "Veydreth_Tribes---Logistical_Strength",
+        "id": "f528-af48-fe69-a7e0",
+        "description": "Up to 4 Logistics Points in a single Bid Action.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Select_if_an_Air_or_Recon_Helix_is_taken_as_an_Allied_Helix",
+        "id": "8183-7970-a64e-2019",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "8183-7970-a64e-2019-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "constraints": [{"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}]
+      },
+      {
+        "name": "Veydreth_Tribes_Recon_Helix",
+        "id": "07aa-8376-ebe5-2fd2",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "07aa-8376-ebe5-2fd2-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Yok-Ta_Medium_Recon_Skiff(Command)",
+            "id": "c7bd-e898-d718-b424",
+            "collective": false,
+            "hidden": false,
+            "type": "model",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "1986-b099-27db-51d7", "targetId": "497b-a452-f36f-af3c", "type": "selectionEntry"}],
+            "infoLinks": [{"id": "735a-c22c-16b7-2c19", "targetId": "0dbc2ae4-8c5e-a3bd-e9af-5c70610971b5", "type": "rule"}],
+            "selectionEntries": [
+              {
+                "name": "Light_Recon_Skiff",
+                "id": "5bdf-ce06-9266-82d9",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "0bd5-e1f8-3c2f-fc52", "targetId": "799f-5e6d-5a8c-b584", "type": "selectionEntry"}]
+              }
+            ]
+          },
+          {
+            "name": "Yok-Ta_Medium_Recon_Skiff",
+            "id": "588e-dc92-7e13-283f",
+            "collective": false,
+            "hidden": false,
+            "type": "model",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "59fe-835d-6c6d-f5d6", "targetId": "497b-a452-f36f-af3c", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Light_Recon_Skiff",
+                "id": "2690-fde2-34ee-ceee",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "adc3-ee6d-1712-7118", "targetId": "799f-5e6d-5a8c-b584", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Nuk-Su---Ikori_Beam_Lance",
+        "id": "dfa2-29c8-95bf-08ce",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "16", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "3", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Pinpoint(1)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Nuk-Su_Light_Recon_Skiff",
+        "id": "af33-d028-7f57-ddb4",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "11", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Yok-Ta---Dual_Ikori_Beam_Lance",
+        "id": "8af7-26a3-ef3d-78db",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "16", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Pinpoint(1)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Yok-Ta---Nexus_Designator",
+        "id": "e044-c70b-2230-6ab0",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "24", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Yok-Ta_Medium_Recon_Skiff",
+        "id": "5525-7f9e-d56b-454a",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "11", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "+3", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Artillery_Support(1)",
+        "id": "20448c6d-96ee-1465-dfaf-2faa1239aec8",
+        "description": "May use the Artillery Support rules on Page 82.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Command_Element(8\")",
+        "id": "0dbc2ae4-8c5e-a3bd-e9af-5c70610971b5",
+        "description": "All helix squadrons in 8\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Dark_Stone_Targeting_Array",
+        "id": "fa01-f9ce-e0c4-bc87",
+        "description": "When performing a Target Lock Action, a Yok-Ta may re-roll any Initial rolls of a 1.",
+        "hidden": false,
+        "page": 9,
+        "publicationId": "37d6-1c53-pub2"
+      },
+      {
+        "name": "Hard_Target(-1)",
+        "id": "f69641b9-7a48-9d9e-7020-423c885cf21d",
+        "description": "Main Ordnance is -1 to hit this unit.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Hover_Vehicle",
+        "id": "a85459e2-b85f-fec7-eb38-615507af1dc4",
+        "description": "Vehicles with this MAR is treated as Hard Target (-1) when fired at with weapons in Long Range. This does not combine with other Hard Target rules.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "96ee851c-9c37-40da-f8ad-cac05dd96d0f",
+        "description": "May use up to 4 points to bid on an Opposed Tactics test.",
+        "hidden": false,
+        "page": 58,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Recon_Specialist",
+        "id": "da1f5ad5-1fbd-38e8-30ff-1c5b03a7e223",
+        "description": "The Squadron chosen may choose to make a free Flat Out Movement Action during the Recon Phase provided the move does not bring the Element within 16\" of an enemy Model at any time during its movement.",
+        "hidden": false,
+        "page": 120,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Supreme_Hunters",
+        "id": "1d9d980a-371e-0ac9-c27e-983297d7e2a4",
+        "description": "Any Veydreth Attacks using Pinpoint Weapons during a Main Ordnance Attack may re-roll a single dice when determining if a Pinpoint Attack has successful.",
+        "hidden": false,
+        "page": 2,
+        "publicationId": "37d6-1c53-pub3"
+      },
+      {
+        "name": "Target_Lock",
+        "id": "25015a86-21a2-911a-aa69-6f9a20620507",
+        "description": "May use Nexus Designator to target an enemy unit befor the rest of the unit fires Main Ordnance. 0-3 hits : No Effect. 4+ Hits : Firing Squadron gains a placed bonus when firing their Main Ordnance.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Nexus_Designator",
+        "id": "b372d823-80b5-4b48-f2e0-f990abd5304a",
+        "description": "Weapon is used to reduce Sky Drop Markers micro dice.",
+        "hidden": false,
+        "page": 79,
+        "publicationId": "37d6-1c53-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(1)",
+        "id": "5db56ae3-2cea-496d-291b-16c428c5d305",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 1d6. If a 6 is rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "37d6-1c53-pub1"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Nuk-Su",
+        "id": "799f-5e6d-5a8c-b584",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 4},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 60}],
+        "infoLinks": [
+          {"id": "6e7e-8c21-7530-c682", "targetId": "f69641b9-7a48-9d9e-7020-423c885cf21d", "type": "rule"},
+          {"id": "42bd-2fcd-f60a-95cc", "targetId": "a85459e2-b85f-fec7-eb38-615507af1dc4", "type": "rule"},
+          {"id": "9afc-9226-4d25-5bb9", "targetId": "da1f5ad5-1fbd-38e8-30ff-1c5b03a7e223", "type": "rule"},
+          {"id": "4637-a933-d479-601c", "targetId": "5db56ae3-2cea-496d-291b-16c428c5d305", "type": "rule"},
+          {"id": "3137-f39a-69bd-13d6", "targetId": "1d9d980a-371e-0ac9-c27e-983297d7e2a4", "type": "rule"},
+          {"id": "6274-b5ba-1542-11dd", "targetId": "af33-d028-7f57-ddb4", "type": "profile"},
+          {"id": "7bb8-3da8-baa2-a04e", "targetId": "dfa2-29c8-95bf-08ce", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Yok-Ta",
+        "id": "497b-a452-f36f-af3c",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 130}],
+        "infoLinks": [
+          {"id": "678f-0705-0a66-faf6", "targetId": "b372d823-80b5-4b48-f2e0-f990abd5304a", "type": "rule"},
+          {"id": "1f62-d889-873e-02ed", "targetId": "20448c6d-96ee-1465-dfaf-2faa1239aec8", "type": "rule"},
+          {"id": "2916-8d9f-a464-1293", "targetId": "f69641b9-7a48-9d9e-7020-423c885cf21d", "type": "rule"},
+          {"id": "1417-126b-1e4e-913b", "targetId": "a85459e2-b85f-fec7-eb38-615507af1dc4", "type": "rule"},
+          {"id": "1b3f-293e-1144-e309", "targetId": "da1f5ad5-1fbd-38e8-30ff-1c5b03a7e223", "type": "rule"},
+          {"id": "0c82-2e82-6163-14af", "targetId": "25015a86-21a2-911a-aa69-6f9a20620507", "type": "rule"},
+          {"id": "8f60-42c8-4e6c-46de", "targetId": "5db56ae3-2cea-496d-291b-16c428c5d305", "type": "rule"},
+          {"id": "88d7-023e-de25-f44b", "targetId": "1d9d980a-371e-0ac9-c27e-983297d7e2a4", "type": "rule"},
+          {"id": "6109-82f9-14b2-2d6e", "targetId": "fa01-f9ce-e0c4-bc87", "type": "rule"},
+          {"id": "7584-9f34-048f-962a", "targetId": "5525-7f9e-d56b-454a", "type": "profile"},
+          {"id": "b4c5-9249-eb7f-b36a", "targetId": "8af7-26a3-ef3d-78db", "type": "profile"},
+          {"id": "4ab1-389c-2fe3-fbf9", "targetId": "e044-c70b-2230-6ab0", "type": "profile"}
+        ]
+      }
+    ]
+  }
+}

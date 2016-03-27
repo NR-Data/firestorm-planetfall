@@ -1,0 +1,318 @@
+{
+  "catalogue": {
+    "name": "Ba'Kash Clan",
+    "id": "80a9-5f12-c236-f6e9",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve",
+    "authorUrl": "http://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "gameSystemRevision": 1,
+    "revision": 3,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [{"name": "Relthozan ORBATS", "id": "80a9-5f12-pub1"}, {"name": "Core Rulebook", "id": "80a9-5f12-pub2"}, {"name": "Relthozan ORBAT", "id": "80a9-5f12-pub3"}],
+    "rules": [
+      {
+        "name": "Ba'Kash_Clan---Artillery_Attacks",
+        "id": "ae9673ed-e86d-3991-6638-b7992854f11d",
+        "description": "All Ba'Kash Clans Artillery Attacks use the Barrage and Scatter MARs with 4D6 Attack Dice.",
+        "hidden": false
+      },
+      {
+        "name": "Ba'Kash_Clan---Sky_Drop_Capability",
+        "id": "9e545086-1c35-b094-b0de-5104d6fce761",
+        "description": "Initial Drop Site Markers are set to 4. Initial Artillery Markers are set to 6.",
+        "hidden": false
+      },
+      {
+        "name": "Ba'Kash_Clan---Tactical_Bonus",
+        "id": "8467d8a0-2704-cd03-6831-4fde507b2e19",
+        "description": "Hawker Industries forces have a Tactics Bonus of +2.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Ba’Kash_Aerial_Helix",
+        "id": "f4cb-8f2f-1a99-a8f5",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "f4cb-8f2f-1a99-a8f5-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Novian_Heavy_Gunship",
+            "id": "a222-8322-0e09-c134",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "1abd-5852-d0d3-4dd3", "targetId": "b0ed-3086-2b61-0863", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Varuko_Heavy_Ground_Attack_Flyer",
+            "id": "65e4-172a-6dd2-df2f",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "e59b-e676-fe65-efab", "targetId": "9040-ae7f-0200-c62c", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Select_if_a_Air_or_Recon_Helix_is_taken_as_an_Allied_Helix",
+        "id": "7bd2-c97c-7d02-c878",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "7bd2-c97c-7d02-c878-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "constraints": [{"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "max", "value": 1}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Novian---Dual_Dirge_Missiles",
+        "id": "8dfc-ab58-3aa3-5bbe",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "10", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel/Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Novian---Shriek_Cannons",
+        "id": "7f83-0846-97e2-a287",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "8", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Novian_Heavy_Gunship",
+        "id": "2657-a05e-3942-0f53",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "16", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "32", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "7", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "6", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "5", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "7", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Varuko---Dirge_Missiles",
+        "id": "9e0f-1032-6df1-1fb8",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "16", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel/Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Varuko_Heavy_Ground_Attack_Flyer",
+        "id": "b2ea-d5c3-8805-800b",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "18", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "36", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "7", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Apex_Predators",
+        "id": "ce26cd29-4c63-94b0-b7bd-3b3e47bb4103",
+        "description": "All Ba’Kash Aerial and Light elements have the Recon Specialist MAR.",
+        "hidden": false,
+        "page": 2,
+        "publicationId": "80a9-5f12-pub1"
+      },
+      {
+        "name": "Command_Element(12\")",
+        "id": "78d324e1-26b5-599c-6902-cadeeef9985c",
+        "description": "All helix squadrons in 12\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Fearless",
+        "id": "181a03e8-a501-b720-01fb-ad6ad2a97200",
+        "description": "Unit never takes Disordered Tests.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Flying_Vehicle",
+        "id": "501a8e86-3401-faef-7aff-9f1094200595",
+        "description": "When moving at Cruising Speed the unit gains Hard Target (-1), when moving at Flat Out the unit gains Hard Target (-2).",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Ground_Attack",
+        "id": "61bddc41-0441-5f4d-2773-89dc5a700c7c",
+        "description": "This squadron may fire its Main Ordnance while moving Flat Out, but may only target Surface models. These shots are considered to be Rushed.",
+        "hidden": false,
+        "page": 10,
+        "publicationId": "80a9-5f12-pub3"
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "165a2748-17cf-41f6-039e-98d07da4d54a",
+        "description": "May use up to 4 points to bid on an Opposed Tactics test.",
+        "hidden": false,
+        "page": 58,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Sectored_Armour",
+        "id": "12d9-b68d-cf09-2d66",
+        "description": "Model never suffers penalties to DR from Flank or Aft Main Ordnance attacks.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Weapon_MAR:Anti-Personnel",
+        "id": "d94bfcdd-e185-0337-aad7-c7bbd7b1b8ce",
+        "description": "Weapon ignores Hard Target rules when targeting Infantry.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Weapon_MAR:Barrage",
+        "id": "33b6e081-d57d-37ec-141a-8005f443649c",
+        "description": "Models targeted by a Barrage weapon do not receive cover saves.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Weapon_MAR:Scatter",
+        "id": "796c596b-4df4-8aa5-c7db-e26ec670a62d",
+        "description": "Scatter Weapons ignore any negative modifiers from the Hard Taret MAR when firing at non-flying Targets.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "80a9-5f12-pub2"
+      },
+      {
+        "name": "Weapon_MAR:Terror_Weapon",
+        "id": "de5b2eaa-1c18-3a7a-31ae-c81487b5f5bd",
+        "description": "Disorder Tests caused by this weapon roll one less die.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "80a9-5f12-pub2"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Novian",
+        "id": "b0ed-3086-2b61-0863",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 220}],
+        "infoLinks": [
+          {"id": "fa64-a517-e10b-472b", "targetId": "d94bfcdd-e185-0337-aad7-c7bbd7b1b8ce", "type": "rule"},
+          {"id": "e8d6-2b17-7603-2901", "targetId": "78d324e1-26b5-599c-6902-cadeeef9985c", "type": "rule"},
+          {"id": "c3ec-e0e9-5dae-2587", "targetId": "61bddc41-0441-5f4d-2773-89dc5a700c7c", "type": "rule"},
+          {"id": "be3b-b208-1118-78a0", "targetId": "181a03e8-a501-b720-01fb-ad6ad2a97200", "type": "rule"},
+          {"id": "d645-414d-db4d-9b5b", "targetId": "501a8e86-3401-faef-7aff-9f1094200595", "type": "rule"},
+          {"id": "8248-0779-bebc-56a1", "targetId": "796c596b-4df4-8aa5-c7db-e26ec670a62d", "type": "rule"},
+          {"id": "c60d-b6d8-2b42-3188", "targetId": "de5b2eaa-1c18-3a7a-31ae-c81487b5f5bd", "type": "rule"},
+          {"id": "981e-cbe3-1ac6-8ca0", "targetId": "33b6e081-d57d-37ec-141a-8005f443649c", "type": "rule"},
+          {"id": "1a80-e90f-9786-2c41", "targetId": "2657-a05e-3942-0f53", "type": "profile"},
+          {"id": "ffdc-530e-5387-6949", "targetId": "8dfc-ab58-3aa3-5bbe", "type": "profile"},
+          {"id": "03a6-8f56-bfef-d135", "targetId": "7f83-0846-97e2-a287", "type": "profile"},
+          {"id": "9577-b13f-5a7d-e777", "targetId": "12d9-b68d-cf09-2d66", "type": "rule"},
+          {"id": "5f4c-1ef9-2aa9-ac0f", "targetId": "ce26cd29-4c63-94b0-b7bd-3b3e47bb4103", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Varuko",
+        "id": "9040-ae7f-0200-c62c",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 80}],
+        "infoLinks": [
+          {"id": "564a-11bb-1632-0130", "targetId": "501a8e86-3401-faef-7aff-9f1094200595", "type": "rule"},
+          {"id": "241f-ab04-01e6-f4d0", "targetId": "181a03e8-a501-b720-01fb-ad6ad2a97200", "type": "rule"},
+          {"id": "5d76-2c9e-6b4e-0d50", "targetId": "61bddc41-0441-5f4d-2773-89dc5a700c7c", "type": "rule"},
+          {"id": "7bd0-65a7-9f42-5c2e", "targetId": "33b6e081-d57d-37ec-141a-8005f443649c", "type": "rule"},
+          {"id": "c478-dcad-0b36-bfc8", "targetId": "d94bfcdd-e185-0337-aad7-c7bbd7b1b8ce", "type": "rule"},
+          {"id": "8a92-bdd6-1d42-cc63", "targetId": "b2ea-d5c3-8805-800b", "type": "profile"},
+          {"id": "f748-00fb-5f83-47bc", "targetId": "9e0f-1032-6df1-1fb8", "type": "profile"},
+          {"id": "d2eb-2640-3d00-8355", "targetId": "12d9-b68d-cf09-2d66", "type": "rule"},
+          {"id": "5acc-51a1-2d7e-42cd", "targetId": "ce26cd29-4c63-94b0-b7bd-3b3e47bb4103", "type": "rule"}
+        ]
+      }
+    ]
+  }
+}
