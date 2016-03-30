@@ -1,0 +1,3013 @@
+{
+  "catalogue": {
+    "name": "Dindrenzi Federation",
+    "id": "3342-0906-2375-ede5",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve",
+    "authorUrl": "http://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "gameSystemRevision": 1,
+    "revision": 6,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [{"name": "Core Rulebook", "id": "3342-0906-pub1"}, {"name": "Dindrenzi ORBATs", "id": "3342-0906-pub2"}, {"name": "Dindrenzi ORBATS", "id": "3342-0906-pub3"}],
+    "rules": [
+      {
+        "name": "Dindrenzi_Federation---Artillery_Attacks",
+        "id": "0007fd6b-efc1-202b-30de-2e264ad798df",
+        "description": "All Dindrenzi Artillery Attacks use the Barrage and Scatter MARs with 4D6 Attack Dice.",
+        "hidden": false
+      },
+      {
+        "name": "Dindrenzi_Federation---Sky_Drop_Capability",
+        "id": "068736f7-9d9b-3191-2925-fb433ad8376a",
+        "description": "Initial Drop Site Markers are set to 5. Initial Artillery Markers are set to 6.",
+        "hidden": false
+      },
+      {
+        "name": "Dindrenzi_Federation---Tactical_Bonus",
+        "id": "e374e7cc-66fc-c275-be79-b6b57fdda0aa",
+        "description": "Dindrenzi forces have a Tactics Bonus of +3.",
+        "hidden": false
+      },
+      {
+        "name": "Dindrenzi_Federation---Logistical_Strength",
+        "id": "d6e8-bf3a-d425-12f1",
+        "description": "Dindrenzi Forces may spend up to 3 Logistics Points in a single Bid Action.\n• Dindrenzi Forces may elect to spend Logistics Points during the Play TACs Step of the Pre-Turn Phase to place Squadrons on Overwatch:\n• It costs 1 Logistics Point to place a Light Squadron on Overwatch.\n• It costs 2 Logistics Points to place an Armoured Squadron on Overwatch, unless it is a Heavy Armoured Squadron (identified as having the word Heavy in its designation) or Leviathan Squadron (identified as having the word Leviathan in its designation) which\ncost 3 Logistics Points to place on Overwatch.\n• Aerial Forces may NOT use Logistics Points to be placed on Overwatch unless specifically noted.\n• In the case of mixed Squadrons (A Squadron made up of Light and Armoured Elements for example) use the largest Logistics Cost.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Dindrenzi_Federation_Assault_Helix",
+        "id": "974a-475c-a430-8f45",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "974a-475c-a430-8f45-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Iapetus_Robot",
+            "id": "7c17-e0cd-d1f2-4db0",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "7c17-e0cd-d1f2-4db0-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "ec4b-3d46-2a06-293b", "targetId": "ae62-2272-8038-0601", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Hades_Medium_Tank",
+            "id": "08ad-ff69-afc4-d223",
+            "collective": false,
+            "hidden": false,
+            "type": "model",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "fca5-6294-ce40-5fd6", "targetId": "9ff8-b8c7-b079-7ec3", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Dindrenzi_Federation_Core_Helix",
+        "id": "cc52-a0a1-bd75-c845",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "cc52-a0a1-bd75-c845-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Kratos_Heavy_Battle_Tank",
+            "id": "0aac-ab5f-ca32-6df5",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "0aac-ab5f-ca32-6df5-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "603e-f64f-562d-54c4", "targetId": "2763-6beb-8183-9189", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Circe_Medium_Specialist",
+                "id": "ae76-1a83-6200-3ee8",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+                  {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [
+                  {
+                    "id": "178a-1dc0-4059-1b44",
+                    "targetId": "bf4b-3fee-45b2-457e",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "maxSelections",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [
+                          {"childId": "bf4b-3fee-45b2-457e", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 3}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Eris_Medium_Battle_Tank",
+            "id": "c0fe-e6db-bf2d-08a7",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "c0fe-e6db-bf2d-08a7-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "0eff-f39f-6ec4-dad4", "targetId": "1193-fed4-33a5-6fbc", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Circe_Medium_Specialist",
+                "id": "2530-ebd2-32a1-9eec",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+                  {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [
+                  {
+                    "id": "c4e9-48e4-fa24-e524",
+                    "targetId": "bf4b-3fee-45b2-457e",
+                    "type": "selectionEntry",
+                    "modifiers": [
+                      {
+                        "field": "maxSelections",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [
+                          {"childId": "bf4b-3fee-45b2-457e", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 3}
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Leto_Light_Tank",
+            "id": "349d-2066-b95b-7d22",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "349d-2066-b95b-7d22-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "e1b5-e460-97aa-fd78", "targetId": "5948-ff84-835b-4698", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Nyx_Light_Infantry_Cadre",
+            "id": "882a-e753-524b-90ca",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "0f8f-4138-d204-e180", "targetId": "9729-3ac9-4ff1-389d", "type": "selectionEntryGroup"}],
+            "selectionEntries": [
+              {
+                "name": "Damocles_MKII_Sky_Pod_Transport",
+                "id": "2b9e-1cce-acef-ca01",
+                "collective": false,
+                "hidden": false,
+                "type": "model",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "0528-10f0-a539-1e5e", "targetId": "858b7c7d-a4b2-f869-9bfb-3e7919db1c2b", "type": "selectionEntryGroup"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dindrenzi_Federation_Firepower_Leviathan_Helix",
+        "id": "0338-298d-2744-4cf0",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "0338-298d-2744-4cf0-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Hyperion_Firepower_Leviathan",
+            "id": "1f3a-f3d9-e28f-dd9f",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "1f3a-f3d9-e28f-dd9f-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "d211-61a7-c97f-063c", "targetId": "d2c4-3c36-cc7f-8f80", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Leto_Light_Tank",
+            "id": "a93b-5065-7b98-b706",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "a93b-5065-7b98-b706-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "c7ed-f119-f768-26c5", "targetId": "5948-ff84-835b-4698", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Orbital_Insertion_(Hyperion_and_Leto_Tanks_Gain_Sky_Drop)",
+            "id": "b5cd-6a78-bff3-d63c",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 40}],
+            "modifiers": [
+              {
+                "field": "points",
+                "type": "increment",
+                "value": 5,
+                "repeats": [{"childId": "5948-ff84-835b-4698", "field": "selections", "repeats": 1, "scope": "0338-298d-2744-4cf0", "shared": true, "value": 1}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dindrenzi_Federation_Ground_Attack_Aerial_Helix",
+        "id": "0a36-0905-d209-f193",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "0a36-0905-d209-f193-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Daedalus_Heavy_Ground_Attack_Gunship",
+            "id": "37b5-98d0-de23-5e51",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "37b5-98d0-de23-5e51-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "7114-b375-8cd2-ab3c", "targetId": "785b-2dcb-f3fa-67e4", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Icarus_Ground_Attack_Gunship",
+            "id": "3d26-ba38-f577-ee59",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "3d26-ba38-f577-ee59-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "8f77-4c17-c80c-28bb", "targetId": "0021-9374-4ed6-06d5", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Dindrenzi_Federation_Ground_Command_Helix",
+        "id": "220d-a525-21fb-b436",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "220d-a525-21fb-b436-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Charon_Command_Drop_Pod",
+            "id": "2513-f485-3e2c-8cc1",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "2513-f485-3e2c-8cc1-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "6488-2d4e-be86-171b", "targetId": "7dcb-59ba-3293-2eb0", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Nyx_Light_Infantry_Grand_Company",
+                "id": "bdf1-015d-bde0-24c7",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "cb2f-47a7-ac67-c97c", "targetId": "9729-3ac9-4ff1-389d", "type": "selectionEntryGroup"}]
+              }
+            ]
+          },
+          {
+            "name": "Damocles_MkI_Sky_Drop_Field_Gun",
+            "id": "a06a-afad-fc3f-cdac",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "a06a-afad-fc3f-cdac-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "53b2-5d1f-f153-749b", "targetId": "c099-c501-a99c-cfac", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Dindrenzi_Federation_Heavy_Helix",
+        "id": "2cb2-2235-83d8-2900",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "2cb2-2235-83d8-2900-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Ares_Heavy_Support_Tank",
+            "id": "7b26-a35a-513a-b222",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "7b26-a35a-513a-b222-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "076f-b739-c4f2-193a", "targetId": "cd30-f324-9f6e-1759", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Circe_Medium_Specialist",
+                "id": "7532-f6bd-9eba-8d6e",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+                  {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "95b3-efe3-4856-48de", "targetId": "90b25066-2bed-69c0-536b-589734ad9516", "type": "selectionEntryGroup"}]
+              }
+            ]
+          },
+          {
+            "name": "Gorgos_Medium_Tank_Hunter",
+            "id": "8b6c-ab96-f4a9-645c",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "8b6c-ab96-f4a9-645c-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "2ec2-14bd-c5c3-7298", "targetId": "fedb-3c58-4234-5dfc", "type": "selectionEntry"}],
+            "selectionEntries": [
+              {
+                "name": "Circe_Medium_Specialist",
+                "id": "e359-fec4-475c-6ca4",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+                  {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "type": "max", "value": 2}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "46d9-4398-c3b9-2493", "targetId": "90b25066-2bed-69c0-536b-589734ad9516", "type": "selectionEntryGroup"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dindrenzi_Federation_Interceptor_Aerial_Helix",
+        "id": "8b2d-8348-6db7-30e2",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "8b2d-8348-6db7-30e2-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Orestes_Heavy_Interceptor_Gunship",
+            "id": "f33c-d4c0-9ca9-5afe",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "f33c-d4c0-9ca9-5afe-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "1aaf-5451-217d-53ae", "targetId": "38c8-075f-f829-f803", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Erinyes_Interceptor",
+            "id": "623a-f858-4d3c-b3cd",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "623a-f858-4d3c-b3cd-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "ebd9-c6bc-a7f0-0b83", "targetId": "0b10-a1a9-5041-e563", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Dindrenzi_Federation_Recon_Helix",
+        "id": "785d-d3d4-a132-8fbf",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "785d-d3d4-a132-8fbf-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Damocles_MkI_Sky_Drop_Field_Gun",
+            "id": "93ce-f405-1add-4ead",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "93ce-f405-1add-4ead-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "75e2-6e9c-f039-04a1", "targetId": "c099-c501-a99c-cfac", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Damocles_MKII_Sky_Pod_Recon_Transport",
+            "id": "8400-e4ab-0187-7c0c",
+            "collective": false,
+            "hidden": false,
+            "type": "model",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "864a-299f-de4a-3fce", "targetId": "858b7c7d-a4b2-f869-9bfb-3e7919db1c2b", "type": "selectionEntryGroup"}],
+            "selectionEntries": [
+              {
+                "name": "Nyx_Light_Infantry_Cadre_(Embarked)",
+                "id": "7f66-2d91-f8f1-a9a2",
+                "collective": false,
+                "hidden": false,
+                "type": "upgrade",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "ccd6-b25f-131b-6959", "targetId": "9729-3ac9-4ff1-389d", "type": "selectionEntryGroup"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy_Infantry_Cadre",
+        "id": "7aaa-292d-4950-a174",
+        "collective": false,
+        "hidden": true,
+        "type": "unit",
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "entryLinks": [{"id": "4aad-587e-1b8b-a0d6", "targetId": "4938-bca7-e71b-1520", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Instructions",
+        "id": "1e66-ad21-733e-75e6",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "rules": [
+          {
+            "name": "Instructions",
+            "id": "072a-770b-c097-2bba",
+            "description": "****** REMOVE THIS SELECTION BEFORE PRINTING ******\n\nNatural Allies will appropriately be removed from the roster, but Allied forces require the appropriate \"Select if a x or y Helix is taken as an Allied Helix\" to be added in order to calculate.\n\n****** NOVEMBER 26th ORBAT ******\n\nThe Infantry from the Nov 26th ORBAT have been added in combination with the infantry from the Sept 1st ORBAT so you can choose which stats to use until one is made official.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "411524c3-ee1d-7f4c-323d-cdea07ccf266",
+        "collective": false,
+        "hidden": false,
+        "page": 58,
+        "publicationId": "3342-0906-pub1",
+        "type": "upgrade",
+        "categoryLinks": [{"id": "411524c3-ee1d-7f4c-323d-cdea07ccf266-6124ca5f-4ae5-6c10-6b25-01af704031f6", "primary": true, "targetId": "6124ca5f-4ae5-6c10-6b25-01af704031f6"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "entryLinks": [{"id": "25c3-cd63-c7ab-8b66", "targetId": "d68d-203e-93ad-4a9b", "type": "selectionEntry"}],
+        "infoLinks": [{"id": "e0fc1aef-489d-6573-e45a-43db8393c3d2", "targetId": "addb3847-bb04-e2d0-60a0-7368597abb91", "type": "rule"}]
+      },
+      {
+        "name": "Select_if_a_Air_or_Recon_Helix_is_taken_as_an_Allied_Helix",
+        "id": "c225-ecca-55ac-33fd",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "c225-ecca-55ac-33fd-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "max", "value": 1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "cc52-a0a1-bd75-c845", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "equalTo", "value": 0}]
+          }
+        ]
+      },
+      {
+        "name": "Select_if_a_Leviathan_or_Heavy_Helix_is_taken_as_an_Allied_Helix",
+        "id": "2b06-ed8b-586c-dfb4",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "2b06-ed8b-586c-dfb4-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "max", "value": 1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "cc52-a0a1-bd75-c845", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "equalTo", "value": 0}]
+          }
+        ]
+      },
+      {
+        "name": "Select_if_an_Assault_or_Field_Support_Helix_is_taken_as_an_Allied_Helix",
+        "id": "a522-f5e9-f26a-718a",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "a522-f5e9-f26a-718a-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "type": "max", "value": 1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [{"childId": "cc52-a0a1-bd75-c845", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "equalTo", "value": 0}]
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Ares---Linked_Skorpio_Rail_Guns",
+        "id": "9481-d2fc-af5d-8dd7",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "24", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Ares---Mangonel_Rail_Gun",
+        "id": "e6f5-313d-d28c-ad42",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic/Pinpoint(1)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Ares_Heavy_Support_Tank",
+        "id": "9e0a-987e-d90d-5154",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "7", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "11", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "8", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "7", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Charon---Estock_Flak_Launcher",
+        "id": "8636-05e1-ae0b-80ea",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "15", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Charon---Heavy_Mangonel_Rail_Gun",
+        "id": "b254-7fec-49bb-e5ff",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "15", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic/Pinpoint(1)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Charon---Nexus_Designator",
+        "id": "b80b-2652-f455-88ac",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "30", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Charon_Command_Drop_Pod",
+        "id": "65eb-67d8-ae8f-4db1",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "0", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "0", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "12", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "12", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "11", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "12", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Elevated", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "9", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Circe---Nexus_Designator",
+        "id": "88a9-0f7e-592d-295c",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "24", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Circe_Medium_Support_Tank",
+        "id": "02f0-a011-b507-a353",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "6", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "+2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Daedalus---Heavy_Vulcan_Missiles",
+        "id": "717b-2def-1a5c-5be1",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "10", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "8", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Daedalus_Heavy_Ground_Attack_Gunship",
+        "id": "0de5-01c9-9ff4-6e3a",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "18", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "30", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "6", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "8", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_9", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Damocles_MkI---(Dialed_in_Asset)_Estock_Flak_Launcher",
+        "id": "9435-9676-42e7-a848",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Damocles_MkI---(Dialed_in_Asset)_Flambard_Assault_Launcher",
+        "id": "d227-e710-4fa5-29eb",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel/Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Damocles_MkI_Sky_Drop_Field_Gun",
+        "id": "9874-b09d-3d18-79ac",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "0", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "0", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Militia", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Damocles_MkII_Sky_Pod_Sky_Drop_Transport",
+        "id": "6251-9300-ca37-02fb",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "0", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "0", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "6", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Militia", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "0", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Erebus---Heavy_Harvester_Coil_Guns",
+        "id": "ca52-f382-587a-22be",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Erebus_Heavy_Infantry_Cadre",
+        "id": "3178-c00e-6229-97df",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "4", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "6", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Erinyes---Estock_Flak_Launchers",
+        "id": "4375-9b57-38d1-90ff",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "3", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Erinyes_Interceptor",
+        "id": "3ff2-98ca-2fce-9186",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "20", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "30", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "7", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Eris---Ballista_Rail_Gun",
+        "id": "12cb-f42d-ef3b-b109",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "16", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "32", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "4", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Eris_Medium_Battle_Tank",
+        "id": "efce-729e-3906-5bf0",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_6", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Gorgos---Onager_Rail_Gun",
+        "id": "7946-d930-386a-fedd",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "18", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "8", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "36", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Gorgos_Medium_Tank_Hunter",
+        "id": "4b96-74bf-9531-c062",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "7", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "11", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "7", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "6", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "1", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "7", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Hades---Estock_Flak_Launcher",
+        "id": "b468-b834-e6b7-aeb0",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "4", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Hades_Medium_Tank",
+        "id": "9065-f3ad-420a-75c0",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "12", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "6", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Hyperion---Estock_x2_Flak_Launchers",
+        "id": "d9a3-3e08-1e55-2ed9",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F / L / R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Hyperion---Mangonel_Rail_Gun_(Left_Arm)",
+        "id": "d24a-937b-17e0-1a37",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F/L/R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic/Pinpoint(1)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Hyperion---Mangonel_Rail_Gun_(Right_Arm)",
+        "id": "a43e-99f9-b3f5-9147",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F/L/R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic/Pinpoint(1)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Hyperion---Nexus_Designator",
+        "id": "6bba-438f-0b64-bf70",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "30", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Hyperion_Firepower_Leviathan",
+        "id": "aeda-8bc8-de08-f9d6",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "9", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "13", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "13", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "12", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "12", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "15/8", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Elevated", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "13", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Iapetus---Flambard_Coil_Launchers_(Left_Arm)",
+        "id": "bb25-dde6-bf01-5062",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "10", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "8", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F/L/R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel/Barrage", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Iapetus---Xiphos_Wrist_Blade_(Right_Arm)",
+        "id": "e973-3662-344b-09b1",
+        "hidden": false,
+        "typeId": "e0e86e6f-7cbc-581b-fc4d-e8a96c3e497f",
+        "characteristics": [{"name": "MARs", "$text": "Pinpoint(3)", "typeId": "da4d7de0-2bb3-70e7-a3f0-4ba3afccbcae"}]
+      },
+      {
+        "name": "Iapetus_Battle_Robot",
+        "id": "b025-bc3c-cbde-b459",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "8", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "9", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "8", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "8", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "6/12", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Elevated", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_9", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Icarus Ground Attack Gunship",
+        "id": "77f7-7683-2b7b-3de3",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "18", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "32", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Icarus---Vulcan_Missiles",
+        "id": "b638-97f4-3d23-ce4a",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "4", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Kratos---Linked_Skorpio_Rail_Guns",
+        "id": "96ab-0016-52b6-b266",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "7", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "24", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "5", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Kratos---Onager_Rail_Gun",
+        "id": "6c28-3973-94c4-8572",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "18", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "8", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "36", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Kinetic", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Kratos_Heavy_Battle_Tank",
+        "id": "b778-1629-7c71-3f97",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "8", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "12", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "7", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_8", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Leto---Harvester_Coil_Guns",
+        "id": "4904-a590-95d2-4de5",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Leto_Light_Tank",
+        "id": "b465-ddd9-54e0-eb88",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "12", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3_or_5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Nyx Light Infantry Cadre",
+        "id": "beb1-aec1-8065-0f76",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Nyx---Harvester_Coil_Guns",
+        "id": "8969-9259-bb14-e464",
+        "hidden": true,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Nyx_Gun_Team_Light_Infantry_Cadre",
+        "id": "e195-12d7-726e-2d45",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Nyx_Officer_Light_Infantry_Cadre",
+        "id": "4923-fdc7-01ed-7f35",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Nyx_Sweeper_Team_Light_Infantry_Cadre",
+        "id": "8d0c-241f-d179-a4b5",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Orestes---Heavy_Estock_Flak_Launchers",
+        "id": "2165-7705-8ab6-893f",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "16", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "12", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Orestes---Nexus_Designator",
+        "id": "ab7b-7ca5-c054-5e48",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "30", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Orestes_Heavy_Interceptor_Gunship",
+        "id": "3c64-5688-11db-2fe3",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "14", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "28", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "9", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "8", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "7", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "6", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Aerial_Assault",
+        "id": "228b-3d34-8fc8-ea14",
+        "description": "This Squadron may fire its Main Ordnance while moving Flat Out provided the target squadron are Flying models – These shots are considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Artillery_Support(2)",
+        "id": "2a72-8708-2cd5-c82a",
+        "description": "May use the Artillery Support rules on Page 82.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Assault_Vehicle",
+        "id": "c8e09cc3-0f8a-2c53-2b7b-64f024f66d20",
+        "description": "Models embarked may elect to activate immediately after the Assault Vehicle has finished its activation.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Bulky(2)",
+        "id": "6c5c30be-9145-ce42-666a-411e6dc223d0",
+        "description": "These units take up 2 slots in transports.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Command_Centre",
+        "id": "10d4-ac8d-4cc8-6c38",
+        "description": "A Force that contains a Charon Command Drop Pod may take an ADDITIONAL Tactical Action Card over and above the number stated for the game size. In addition no friendly Dindrenzi forces within the Charon’s Command Radius are required to take Disorder Tests due to the loss of their own Command Element",
+        "hidden": false
+      },
+      {
+        "name": "Command_Element(12\")",
+        "id": "a88fff3a-7d2e-e3c0-6c13-770c54f391f4",
+        "description": "All helix squadrons in 12\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Command_Element(16\")",
+        "id": "7f28-9301-ed84-d282",
+        "description": "All helix squadrons in 16\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Command_Element(8\")",
+        "id": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9",
+        "description": "All helix squadrons in 8\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Dialled_In_Asset",
+        "id": "7955-95f2-158c-2106",
+        "description": "Dindrenzi Commanders need not specify which type of weapon the squadron will be armed with until the models are nominated for Sky Drop deployment during a Game Turn.",
+        "hidden": false,
+        "page": 8,
+        "publicationId": "3342-0906-pub2"
+      },
+      {
+        "name": "Dogfighter",
+        "id": "e707-f177-408f-53fd",
+        "description": "This Squadron may ignore the Sectored Armour MAR when targeting Flying models. Flying Target models may therefore suffer Flanking or Rear penalties to their Damage Rating when attacked by a Dogfighter!",
+        "hidden": false
+      },
+      {
+        "name": "Expert_Targeting",
+        "id": "7fef-ddf3-7e50-cac8",
+        "description": "All Ranged Attacks made using the Mangonel Rail Gun whilst firing with a Placed Shot bonus gain the Pinpont (4) MAR",
+        "hidden": false
+      },
+      {
+        "name": "Fearless",
+        "id": "3905b541-9c28-1031-afee-524491234379",
+        "description": "Unit never takes Disordered Tests.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Flying_Vehicle",
+        "id": "91e7-f755-2493-8f01",
+        "description": "When moving at Cruising Speed the unit gains Hard Target (-1), when moving at Flat Out the unit gains Hard Target (-2).",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Focused_Assault",
+        "id": "2124-9633-3d90-a5ed",
+        "description": "When Nyx Cadres perform a Storming Action. resolve their Attacks simultaneously with the Defenders rather than afterwards",
+        "hidden": false,
+        "page": 9,
+        "publicationId": "3342-0906-pub2"
+      },
+      {
+        "name": "Ground_Attack",
+        "id": "2ecf-c685-09b4-230a",
+        "description": "This Squadron may fire its Main Ordnance while moving Flat Out provided the target squadron are Flying models – These shots are considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Hard_Target(-1)",
+        "id": "3bcba4d4-a9c4-4114-ee86-7720a79eb203",
+        "description": "Main Ordnance is -1 to hit this unit.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Hard_Target(-2)",
+        "id": "f9c92945-534f-5c0d-d35d-21336a7622af",
+        "description": "Main Ordnance is -2 to hit this unit.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Hit_&_Run",
+        "id": "2ed1a424-15a7-f77a-a41c-d7801ec890cc",
+        "description": "May shoot and move OR move and move. May not move Flat Out if this rule is used. When shooting then moving, the unit cannot take advantage of Target Locks or Specialist Fire Orders such as Overwatch or Focused Fire.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Hover_Vehicle",
+        "id": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737",
+        "description": "Vehicles with this MAR is treated as Hard Target (-1) when fired at with weapons in Long Range. This does not combine with other Hard Target rules.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Independent_Targeting",
+        "id": "175e-c834-ee03-496b",
+        "description": "May target any target in range regardless of what the rest of the Squadron targets.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Kill_Team",
+        "id": "8695-3c09-c163-c151",
+        "description": "+1 CQB stat when initiating CQB.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "addb3847-bb04-e2d0-60a0-7368597abb91",
+        "description": "May use up to 3 points to bid on an Opposed Tactics test.",
+        "hidden": false,
+        "page": 58,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Lumbering",
+        "id": "5763-9b1b-500f-b3d6",
+        "description": "The model must use the turning template.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Punishing_CQB",
+        "id": "9708a154-3267-b441-cd5b-b2fe69190f8d",
+        "description": "All Dindrenzi Non-Infantry Elements may re-roll any INITIAL rolls of a 1 during any CQB Engagement, (Ranged or Leviathan CQB), the second result must be accepted.",
+        "hidden": false,
+        "page": 2,
+        "publicationId": "3342-0906-pub3"
+      },
+      {
+        "name": "Quake_Deployment",
+        "id": "a91e-9cfd-f223-166e",
+        "description": "When this model deploys into the battlefield from Sky Drop, all enemy Squadrons within 12” of its eventual entry point must take a Disorder Test requiring TWO successes",
+        "hidden": false
+      },
+      {
+        "name": "Rear_Echelon",
+        "id": "477a69dc-8258-f309-8b27-6ea67902b2a9",
+        "description": "A model with this MAR is considered to be activated on the turn it is deployed.",
+        "hidden": false,
+        "page": 120,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Recon_Specialist",
+        "id": "f43cc78d-e856-80aa-d39a-258b80f8c907",
+        "description": "The Squadron chosen may choose to make a free Flat Out Movement Action during the Recon Phase provided the move does not bring the Element within 16\" of an enemy Model at any time during its movement.",
+        "hidden": false,
+        "page": 120,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Reflective_Inner_Plating",
+        "id": "8f9d-2801-d11e-0a00",
+        "description": "All successful Pinpoint rolls that would cause additional Damage to this element must be re-rolled.",
+        "hidden": false
+      },
+      {
+        "name": "Sectored_Armour",
+        "id": "b5da-13eb-c81c-554d",
+        "description": "Model never suffers penalties to DR from Flank or Aft Main Ordnance attacks.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Sky_Drop",
+        "id": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7",
+        "description": "May use the Sky Drop Deployment rules on Page 79.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Sky_Drop_Asset",
+        "id": "cac3-87ae-c391-5a10",
+        "description": "Unless a Scenario Condition applies, this model MUST deploy via Sky Drop.",
+        "hidden": false,
+        "page": 8,
+        "publicationId": "3342-0906-pub3"
+      },
+      {
+        "name": "Sky_Drop_Nexus(1)",
+        "id": "3d8d-2c4a-9a00-881f",
+        "description": "Places 1 Drop Site Markers in the Place Drop-Sites Segment of the Pre-Game Phase.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Sky_Drop_Nexus(2)",
+        "id": "8273195e-78a8-0b2f-9dcb-05cd5c0caa67",
+        "description": "Places 2 Drop Site Markers in the Place Drop-Sites Segment of the Pre-Game Phase.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Strafing_Run",
+        "id": "9641-e0e3-90bc-70f3",
+        "description": "This Squadron may initiate a CQB Attack during its own activation while moving Flat Out provided the target squadron are Surface Models. These shots are considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Take_&_Hold",
+        "id": "105c9cd2-5e9a-2489-46a1-5a1cce963098",
+        "description": "This unit may claim objectives.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Target_Lock",
+        "id": "2c2792dc-c0fc-a93e-2b9b-303b78b28965",
+        "description": "May use Nexus Designator to target an enemy unit befor the rest of the unit fires Main Ordnance. 0-3 hits : No Effect. 4+ Hits : Firing Squadron gains a placed bonus when firing their Main Ordnance.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Thunderous_Charge",
+        "id": "59d4-7c24-96e0-ec18",
+        "description": "The Leviathan may perform a Leviathan CQB Action after moving Flat Out. These attacks are considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Transport(16)",
+        "id": "a666-ce2c-44bc-c1cd",
+        "description": "May act as a transport for 16 slots worth of Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Transport(8)",
+        "id": "8d8b46e8-9fca-9d13-cfa7-3ab3e6bd9e48",
+        "description": "May act as a transport for 8 slots worth of Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Walker",
+        "id": "1dfd-7b9f-f4c7-ca2b",
+        "description": "May not move Flat Out through Vegation or Rivers.",
+        "hidden": false,
+        "page": 77,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Anti-Personnel",
+        "id": "b8c0d6fe-07e5-3745-cd0e-632f784170c9",
+        "description": "Weapon ignores Hard Target rules when targeting Infantry.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Barrage",
+        "id": "4e6c-b6b1-7fbe-4715",
+        "description": "Models targeted by a Barrage weapon do not receive cover saves.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Interceptor",
+        "id": "85dd-fb63-ac39-f0f4",
+        "description": "Flying targets do not gain the benefit of Hard Target against these weapons.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Kinetic",
+        "id": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba",
+        "description": "Shield saves against this weapon use the Blue Heavy Dice mechanic if the weapon is in Effective Range.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Nexus_Designator",
+        "id": "4bec51c1-8ed1-8edf-6e58-4e1ea62124a2",
+        "description": "Weapon is used to reduce Sky Drop Markers micro dice.",
+        "hidden": false,
+        "page": 79,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(1)",
+        "id": "bca0-2cf3-45b5-e65b",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 1d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(2)",
+        "id": "0868-2f08-d419-519f",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 2d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(3)",
+        "id": "60b7-8676-02d1-980b",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 3d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "3342-0906-pub1"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Ares",
+        "id": "cd30-f324-9f6e-1759",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 250}],
+        "infoLinks": [
+          {"id": "1d88-b906-be6b-745c", "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9", "type": "rule"},
+          {"id": "d195-57be-7f67-3f24", "targetId": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737", "type": "rule"},
+          {"id": "0cbb-b965-c089-d48f", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "5724-c9bb-a76c-fba8", "targetId": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba", "type": "rule"},
+          {"id": "05f7-df14-63d4-48f6", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "37e7-d9fb-70f7-b2e8", "targetId": "bca0-2cf3-45b5-e65b", "type": "rule"},
+          {"id": "94fe-2dee-7047-e3de", "targetId": "9481-d2fc-af5d-8dd7", "type": "profile"},
+          {"id": "dc80-eb54-5fa4-c287", "targetId": "e6f5-313d-d28c-ad42", "type": "profile"},
+          {"id": "b63b-416a-e243-d24b", "targetId": "9e0a-987e-d90d-5154", "type": "profile"},
+          {"id": "8029-b625-5514-0dab", "targetId": "7fef-ddf3-7e50-cac8", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Charon",
+        "id": "7dcb-59ba-3293-2eb0",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 500}],
+        "infoLinks": [
+          {"id": "1f54-db30-b582-f221", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"},
+          {"id": "e28c-6c5a-1d19-9e6d", "targetId": "8636-05e1-ae0b-80ea", "type": "profile"},
+          {"id": "ecb5-c5d3-4200-4713", "targetId": "b80b-2652-f455-88ac", "type": "profile"},
+          {"id": "31e2-080a-a6e2-b691", "targetId": "2a72-8708-2cd5-c82a", "type": "rule"},
+          {"id": "4709-d63f-c1f6-773f", "targetId": "a88fff3a-7d2e-e3c0-6c13-770c54f391f4", "type": "rule"},
+          {"id": "2b26-ae44-6912-8c39", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "d299-3101-6689-8a3e", "targetId": "65eb-67d8-ae8f-4db1", "type": "profile"},
+          {"id": "c95f-06fd-efe0-6360", "targetId": "b254-7fec-49bb-e5ff", "type": "profile"},
+          {"id": "91bc-32fb-aa2a-3c77", "targetId": "175e-c834-ee03-496b", "type": "rule"},
+          {"id": "ece7-d15c-87ff-fd54", "targetId": "b5da-13eb-c81c-554d", "type": "rule"},
+          {"id": "53ea-5156-01f2-a12b", "targetId": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7", "type": "rule"},
+          {"id": "1799-dedf-bfa7-1800", "targetId": "2c2792dc-c0fc-a93e-2b9b-303b78b28965", "type": "rule"},
+          {"id": "5b85-5885-5763-9142", "targetId": "cac3-87ae-c391-5a10", "type": "rule"},
+          {"id": "ffb2-e10d-fbaa-8a17", "targetId": "a666-ce2c-44bc-c1cd", "type": "rule"},
+          {"id": "51dd-930b-92be-e62c", "targetId": "a91e-9cfd-f223-166e", "type": "rule"},
+          {"id": "01c2-89d3-f9f5-51c5", "targetId": "10d4-ac8d-4cc8-6c38", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Circe",
+        "id": "bf4b-3fee-45b2-457e",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 120}],
+        "infoLinks": [
+          {"id": "16ea-9bca-79a4-81d1", "targetId": "4bec51c1-8ed1-8edf-6e58-4e1ea62124a2", "type": "rule"},
+          {"id": "bf26-d260-da05-7eb9", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "ef27-6716-c27f-36b2", "targetId": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737", "type": "rule"},
+          {"id": "4e4e-7359-9508-8859", "targetId": "8273195e-78a8-0b2f-9dcb-05cd5c0caa67", "type": "rule"},
+          {"id": "0231-c034-4d87-2f9f", "targetId": "2c2792dc-c0fc-a93e-2b9b-303b78b28965", "type": "rule"},
+          {"id": "1756-a523-04f3-5811", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "92ed-94da-b358-fb09", "targetId": "88a9-0f7e-592d-295c", "type": "profile"},
+          {"id": "6981-336b-add6-3d45", "targetId": "02f0-a011-b507-a353", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Daedalus",
+        "id": "785b-2dcb-f3fa-67e4",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 200}],
+        "infoLinks": [
+          {"id": "5774-bbba-8744-b455", "targetId": "b5da-13eb-c81c-554d", "type": "rule"},
+          {"id": "3901-2f32-0339-a86e", "targetId": "9641-e0e3-90bc-70f3", "type": "rule"},
+          {"id": "66f3-485a-3066-8841", "targetId": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba", "type": "rule"},
+          {"id": "0d16-15e0-2a66-2a79", "targetId": "91e7-f755-2493-8f01", "type": "rule"},
+          {"id": "1699-7cf9-8682-574f", "targetId": "0868-2f08-d419-519f", "type": "rule"},
+          {"id": "8194-9be4-eb73-ed17", "targetId": "0de5-01c9-9ff4-6e3a", "type": "profile"},
+          {"id": "1cb7-83ac-b9e9-c1db", "targetId": "717b-2def-1a5c-5be1", "type": "profile"},
+          {"id": "e2d0-6e03-4167-5204", "targetId": "7f28-9301-ed84-d282", "type": "rule"},
+          {"id": "e95a-98bd-3c02-255b", "targetId": "2ecf-c685-09b4-230a", "type": "rule"},
+          {"id": "824d-7500-028d-5c32", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Damocles_MkI",
+        "id": "c099-c501-a99c-cfac",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 70}],
+        "infoLinks": [
+          {"id": "140b-7cdc-2ed5-888a", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"},
+          {"id": "f8f0-8661-278b-0922", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+          {"id": "fc92-bb85-07c5-ef9f", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "92b0-9f8d-9697-5eac", "targetId": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7", "type": "rule"},
+          {"id": "6f34-5758-8fd6-7234", "targetId": "cac3-87ae-c391-5a10", "type": "rule"},
+          {"id": "675a-6900-2c16-2ce8", "targetId": "7955-95f2-158c-2106", "type": "rule"},
+          {"id": "8176-0d2c-1d48-229f", "targetId": "9874-b09d-3d18-79ac", "type": "profile"},
+          {"id": "4a5f-d067-571f-46ab", "targetId": "d227-e710-4fa5-29eb", "type": "profile"},
+          {"id": "6350-6da0-ecbb-7757", "targetId": "4e6c-b6b1-7fbe-4715", "type": "rule"},
+          {"id": "e76a-605e-b61e-e4f7", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+          {"id": "4bf6-51bb-b4d5-73db", "targetId": "85dd-fb63-ac39-f0f4", "type": "rule"},
+          {"id": "2a0c-f833-5607-cbf8", "targetId": "9435-9676-42e7-a848", "type": "profile"},
+          {"id": "bd4f-9eaf-8b6a-9824", "targetId": "b5da-13eb-c81c-554d", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Estock_Flak---OR---Flambard_Assault_Launcher",
+            "id": "a475-e215-6a96-ca3f",
+            "collective": true,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}]
+          }
+        ]
+      },
+      {
+        "name": "Damocles_MKII_Sky_Pod",
+        "id": "55bd-2c29-6b36-84dc",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 35}],
+        "infoLinks": [
+          {"id": "9949-c757-79f5-7728", "targetId": "c8e09cc3-0f8a-2c53-2b7b-64f024f66d20", "type": "rule"},
+          {"id": "c97b-fda3-b159-a39e", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"},
+          {"id": "52d5-32f0-0ce2-6656", "targetId": "477a69dc-8258-f309-8b27-6ea67902b2a9", "type": "rule"},
+          {"id": "7c32-27ae-0e24-af07", "targetId": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7", "type": "rule"},
+          {"id": "3aba-f3e0-da23-72bf", "targetId": "8d8b46e8-9fca-9d13-cfa7-3ab3e6bd9e48", "type": "rule"},
+          {"id": "6bca-9f8a-e920-8e74", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "7b2d-ac81-ee69-6613", "targetId": "cac3-87ae-c391-5a10", "type": "rule"},
+          {"id": "b47a-943e-0b4f-cb9c", "targetId": "6251-9300-ca37-02fb", "type": "profile"},
+          {"id": "112c-a434-2ec0-4543", "targetId": "b5da-13eb-c81c-554d", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Erebus",
+        "id": "4938-bca7-e71b-1520",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 4},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 60}],
+        "infoLinks": [
+          {"id": "ae05-7398-3903-f2af", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+          {"id": "cb3e-66ac-40dc-f9c1", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+          {"id": "3ac7-5847-ab7f-4a58", "targetId": "6c5c30be-9145-ce42-666a-411e6dc223d0", "type": "rule"},
+          {"id": "ed9d-c5a6-a9f1-a646", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+          {"id": "7cad-b116-4ac9-f7a1", "targetId": "ca52-f382-587a-22be", "type": "profile"},
+          {"id": "7b85-7e5b-18c7-073f", "targetId": "3178-c00e-6229-97df", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Erinyes",
+        "id": "0b10-a1a9-5041-e563",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 80}],
+        "infoLinks": [
+          {"id": "c031-5dd7-6dc8-ce50", "targetId": "228b-3d34-8fc8-ea14", "type": "rule"},
+          {"id": "ce86-91ce-1a4a-48c6", "targetId": "91e7-f755-2493-8f01", "type": "rule"},
+          {"id": "2df6-3106-3ad5-b4df", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "ad6c-9a54-8e0a-cfe7", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"},
+          {"id": "a799-84b2-34ef-e85e", "targetId": "3ff2-98ca-2fce-9186", "type": "profile"},
+          {"id": "e42d-9893-85d1-9c38", "targetId": "4375-9b57-38d1-90ff", "type": "profile"},
+          {"id": "33ee-fede-2dae-b938", "targetId": "e707-f177-408f-53fd", "type": "rule"},
+          {"id": "2a28-14c1-fa06-481e", "targetId": "b5da-13eb-c81c-554d", "type": "rule"},
+          {"id": "6fb3-e189-1796-1f6a", "targetId": "85dd-fb63-ac39-f0f4", "type": "rule"},
+          {"id": "aff0-a136-b305-4b70", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Eris",
+        "id": "1193-fed4-33a5-6fbc",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 130}],
+        "infoLinks": [
+          {"id": "ab77-964f-0692-2944", "targetId": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba", "type": "rule"},
+          {"id": "a5d5-8271-11a6-cc22", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "d95e-e9a7-0882-9c82", "targetId": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737", "type": "rule"},
+          {"id": "ebc5-6d53-d183-2d3e", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "6b1c-253e-c135-411a", "targetId": "12cb-f42d-ef3b-b109", "type": "profile"},
+          {"id": "bd74-19b7-5c56-d0e2", "targetId": "efce-729e-3906-5bf0", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Gorgos",
+        "id": "fedb-3c58-4234-5dfc",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 140}],
+        "infoLinks": [
+          {"id": "b9e5-dff5-4896-abbb", "targetId": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba", "type": "rule"},
+          {"id": "d092-add7-d6e3-145a", "targetId": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737", "type": "rule"},
+          {"id": "ce94-1010-ee20-c0e5", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "0518-346e-1346-f7bc", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "ca47-e7f8-b21e-9daa", "targetId": "7946-d930-386a-fedd", "type": "profile"},
+          {"id": "3ba0-2959-28e6-23aa", "targetId": "4b96-74bf-9531-c062", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Hades",
+        "id": "9ff8-b8c7-b079-7ec3",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 130}],
+        "infoLinks": [
+          {"id": "0baf-207c-71d3-6b04", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+          {"id": "5ecc-14d8-cb2c-ac07", "targetId": "f43cc78d-e856-80aa-d39a-258b80f8c907", "type": "rule"},
+          {"id": "efbd-d748-d6f7-de43", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "25d0-43ae-b5f4-9fa6", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+          {"id": "90d1-f3d5-9c15-647e", "targetId": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737", "type": "rule"},
+          {"id": "35b1-f8b8-00ef-51cc", "targetId": "85dd-fb63-ac39-f0f4", "type": "rule"},
+          {"id": "1841-207b-eb4b-1180", "targetId": "9065-f3ad-420a-75c0", "type": "profile"},
+          {"id": "ad2d-1535-54df-3eee", "targetId": "b468-b834-e6b7-aeb0", "type": "profile"},
+          {"id": "7bd9-b4c0-300c-ba9c", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Hyperion",
+        "id": "d2c4-3c36-cc7f-8f80",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 760}],
+        "infoLinks": [
+          {"id": "1c3f-d303-a715-afae", "targetId": "a88fff3a-7d2e-e3c0-6c13-770c54f391f4", "type": "rule"},
+          {"id": "07ca-c0f4-b337-a639", "targetId": "175e-c834-ee03-496b", "type": "rule"},
+          {"id": "2c3d-7c92-6740-ea8c", "targetId": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba", "type": "rule"},
+          {"id": "2772-bb7f-f2b1-6e57", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "ffb8-5fae-7dfc-e2b0", "targetId": "5763-9b1b-500f-b3d6", "type": "rule"},
+          {"id": "299f-eca0-39dc-ec49", "targetId": "3d8d-2c4a-9a00-881f", "type": "rule"},
+          {"id": "9dfc-4193-4e7d-8197", "targetId": "1dfd-7b9f-f4c7-ca2b", "type": "rule"},
+          {"id": "ed20-1825-c242-4fb0", "targetId": "85dd-fb63-ac39-f0f4", "type": "rule"},
+          {"id": "9fcd-2bbb-f71a-5336", "targetId": "4bec51c1-8ed1-8edf-6e58-4e1ea62124a2", "type": "rule"},
+          {"id": "02aa-9db0-9dda-8195", "targetId": "bca0-2cf3-45b5-e65b", "type": "rule"},
+          {
+            "id": "4f7d-b9a1-0490-23fa",
+            "targetId": "aeda-8bc8-de08-f9d6",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c",
+                "type": "set",
+                "value": 14,
+                "conditions": [
+                  {
+                    "childId": "b5cd-6a78-bff3-d63c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"id": "8f27-55b7-ffed-4b8d", "targetId": "d9a3-3e08-1e55-2ed9", "type": "profile"},
+          {"id": "320c-a988-b4ce-ed41", "targetId": "d24a-937b-17e0-1a37", "type": "profile"},
+          {"id": "48ae-2c93-8dce-cdd5", "targetId": "a43e-99f9-b3f5-9147", "type": "profile"},
+          {"id": "2e0f-409f-4df5-7c11", "targetId": "6bba-438f-0b64-bf70", "type": "profile"},
+          {"id": "ef08-956b-9549-62c6", "targetId": "8f9d-2801-d11e-0a00", "type": "rule"},
+          {"id": "7f91-1fe4-3288-2d16", "targetId": "2c2792dc-c0fc-a93e-2b9b-303b78b28965", "type": "rule"},
+          {
+            "id": "286f-4474-9da5-d214",
+            "targetId": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b5cd-6a78-bff3-d63c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Iapetus",
+        "id": "ae62-2272-8038-0601",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 200}],
+        "infoLinks": [
+          {"id": "4d20-6dbd-c4f6-1444", "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9", "type": "rule"},
+          {"id": "4f93-7c54-bdc2-8821", "targetId": "8f9d-2801-d11e-0a00", "type": "rule"},
+          {"id": "c2b3-b284-44db-e8ed", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "b905-ede6-2b4f-460f", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+          {"id": "3355-b944-ef5e-768f", "targetId": "1dfd-7b9f-f4c7-ca2b", "type": "rule"},
+          {"id": "931b-19b2-7337-b521", "targetId": "4e6c-b6b1-7fbe-4715", "type": "rule"},
+          {"id": "45b4-c1f3-d205-434b", "targetId": "b025-bc3c-cbde-b459", "type": "profile"},
+          {"id": "a5d7-02e3-cf8a-7ff6", "targetId": "bb25-dde6-bf01-5062", "type": "profile"},
+          {"id": "addf-97ab-8e28-057d", "targetId": "e973-3662-344b-09b1", "type": "profile"},
+          {"id": "2395-1be5-5bd9-73fd", "targetId": "175e-c834-ee03-496b", "type": "rule"},
+          {"id": "8749-7782-3295-76ea", "targetId": "59d4-7c24-96e0-ec18", "type": "rule"},
+          {"id": "11e4-6911-1c40-9ff3", "targetId": "60b7-8676-02d1-980b", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Icarus",
+        "id": "0021-9374-4ed6-06d5",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 4},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 100}],
+        "infoLinks": [
+          {"id": "e912-e202-16f3-ebb8", "targetId": "91e7-f755-2493-8f01", "type": "rule"},
+          {"id": "f986-dff8-a6c3-4285", "targetId": "9641-e0e3-90bc-70f3", "type": "rule"},
+          {"id": "0fde-e936-909b-694f", "targetId": "0868-2f08-d419-519f", "type": "rule"},
+          {"id": "b9a3-fa72-b68d-d209", "targetId": "2ecf-c685-09b4-230a", "type": "rule"},
+          {"id": "36f3-29f2-7ea7-51f3", "targetId": "b638-97f4-3d23-ce4a", "type": "profile"},
+          {"id": "34aa-bc57-74e7-fbe8", "targetId": "77f7-7683-2b7b-3de3", "type": "profile"},
+          {"id": "1935-3dd8-cdcb-afb3", "targetId": "b5da-13eb-c81c-554d", "type": "rule"},
+          {"id": "f309-9367-8c0a-68d8", "targetId": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba", "type": "rule"},
+          {"id": "9bcb-e5ed-96b0-168a", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Kratos",
+        "id": "2763-6beb-8183-9189",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 2},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 230}],
+        "infoLinks": [
+          {"id": "878f-7d39-ab56-cfb4", "targetId": "a88fff3a-7d2e-e3c0-6c13-770c54f391f4", "type": "rule"},
+          {"id": "b29b-24f2-1b26-65c7", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "65b1-1932-e15a-7078", "targetId": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737", "type": "rule"},
+          {"id": "f739-3210-279c-d214", "targetId": "7425ec4e-ed87-58a9-d6b1-98ad0136fdba", "type": "rule"},
+          {"id": "0882-97bc-240e-ef42", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "970d-4bd2-5af8-efec", "targetId": "b778-1629-7c71-3f97", "type": "profile"},
+          {"id": "d790-33af-4994-483c", "targetId": "96ab-0016-52b6-b266", "type": "profile"},
+          {"id": "3f32-456b-e794-dcdb", "targetId": "6c28-3973-94c4-8572", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Leto",
+        "id": "5948-ff84-835b-4698",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 5},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 60}],
+        "infoLinks": [
+          {"id": "01fa-a043-45dd-7b71", "targetId": "b8c0d6fe-07e5-3745-cd0e-632f784170c9", "type": "rule"},
+          {"id": "6b83-87da-5d19-0810", "targetId": "3bcba4d4-a9c4-4114-ee86-7720a79eb203", "type": "rule"},
+          {"id": "d156-0061-5070-578f", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "f574-be94-13d8-7fbd", "targetId": "18fbbdc5-59a6-9fa2-790b-5fe9dfe89737", "type": "rule"},
+          {"id": "9173-9e22-3145-bedb", "targetId": "f43cc78d-e856-80aa-d39a-258b80f8c907", "type": "rule"},
+          {"id": "4223-589c-c16f-e768", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+          {"id": "130b-02ec-516f-fc8b", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "7324-f9c4-6ed8-e8de", "targetId": "4904-a590-95d2-4de5", "type": "profile"},
+          {"id": "cb86-fd03-4fa9-e3ac", "targetId": "b465-ddd9-54e0-eb88", "type": "profile"},
+          {
+            "id": "10e9-c2dd-2795-caea",
+            "targetId": "fe5b7cc9-21e8-b71f-e2c6-393ba8a842a7",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "b5cd-6a78-bff3-d63c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "minSelections",
+            "type": "set",
+            "value": 5,
+            "conditions": [{"childId": "5948-ff84-835b-4698", "field": "selections", "scope": "parent", "shared": true, "type": "equalTo", "value": 4}]
+          }
+        ]
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "d68d-203e-93ad-4a9b",
+        "collective": false,
+        "hidden": false,
+        "page": 58,
+        "publicationId": "3342-0906-pub1",
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 30}]
+      },
+      {
+        "name": "Nyx_Light_Infantry_Cadre",
+        "id": "edad-e0bb-fd44-d216",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 40}],
+        "infoLinks": [
+          {"id": "8812-bc53-7859-e507", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+          {"id": "26e4-e9f6-6b89-905c", "targetId": "f9c92945-534f-5c0d-d35d-21336a7622af", "type": "rule"},
+          {
+            "id": "02e6-97ad-5de8-9fca",
+            "targetId": "beb1-aec1-8065-0f76",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c",
+                "type": "set",
+                "value": 5,
+                "repeats": [
+                  {"childId": "2513-f485-3e2c-8cc1", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "id": "85b7-573c-effb-75d4",
+            "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {"id": "ecfa-09cb-8806-f142", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Nyx_Light_Infantry_Cadre_Gun_Team",
+        "id": "884b-b239-b22d-388f",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 45}],
+        "infoLinks": [
+          {"id": "90d9-bb21-af7b-1252", "targetId": "f9c92945-534f-5c0d-d35d-21336a7622af", "type": "rule"},
+          {"id": "a738-b854-d89a-bcc2", "targetId": "6c5c30be-9145-ce42-666a-411e6dc223d0", "type": "rule"},
+          {"id": "ead5-cd60-20a3-d40c", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+          {
+            "id": "f45b-bdbc-7033-d272",
+            "targetId": "e195-12d7-726e-2d45",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c",
+                "type": "set",
+                "value": 5,
+                "repeats": [
+                  {"childId": "2513-f485-3e2c-8cc1", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "id": "2011-8618-bab8-4729",
+            "targetId": "8969-9259-bb14-e464",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [{"childId": "884b-b239-b22d-388f", "field": "selections", "scope": "parent", "shared": true, "type": "atLeast", "value": 1}]
+              }
+            ]
+          },
+          {
+            "id": "1295-eef7-b03b-714f",
+            "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {"id": "49b2-31b2-a212-df07", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Nyx_Light_Infantry_Cadre_Officer",
+        "id": "8a34-3569-0757-d741",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 55}],
+        "infoLinks": [
+          {"id": "c5fa-c01e-b9f2-77b0", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+          {"id": "427a-c190-5b6b-6425", "targetId": "f9c92945-534f-5c0d-d35d-21336a7622af", "type": "rule"},
+          {
+            "id": "79e5-2bbd-343e-c083",
+            "targetId": "4923-fdc7-01ed-7f35",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c",
+                "type": "set",
+                "value": 5,
+                "repeats": [
+                  {"childId": "2513-f485-3e2c-8cc1", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 1}
+                ]
+              }
+            ]
+          },
+          {"id": "e596-ff47-731b-79b6", "targetId": "2124-9633-3d90-a5ed", "type": "rule"},
+          {"id": "c9f8-dedb-7be4-03c0", "targetId": "6c5c30be-9145-ce42-666a-411e6dc223d0", "type": "rule"},
+          {
+            "id": "73e5-c208-d14d-d2b2",
+            "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {"id": "7e07-672b-d1cf-dee3", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Nyx_Light_Infantry_Cadre_Sweeper_Team",
+        "id": "4555-a5a0-c2ce-97df",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 50}],
+        "infoLinks": [
+          {"id": "cabc-5c84-ce56-2840", "targetId": "6c5c30be-9145-ce42-666a-411e6dc223d0", "type": "rule"},
+          {"id": "429f-9f81-a8bd-2d2c", "targetId": "f9c92945-534f-5c0d-d35d-21336a7622af", "type": "rule"},
+          {"id": "5a45-d9c1-0628-f50a", "targetId": "105c9cd2-5e9a-2489-46a1-5a1cce963098", "type": "rule"},
+          {
+            "id": "24f3-b3ad-4d68-751b",
+            "targetId": "8d0c-241f-d179-a4b5",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c",
+                "type": "set",
+                "value": 5,
+                "repeats": [
+                  {"childId": "2513-f485-3e2c-8cc1", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 1}
+                ]
+              }
+            ]
+          },
+          {
+            "id": "f120-69d4-e787-797e",
+            "targetId": "4353c0f2-ac27-3e57-0fa1-c8a4612248b9",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "8400-e4ab-0187-7c0c",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {"id": "ae50-82e2-64b9-d208", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Orestes",
+        "id": "38c8-075f-f829-f803",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 220}],
+        "infoLinks": [
+          {"id": "e1c3-0ecc-991d-d10d", "targetId": "7f28-9301-ed84-d282", "type": "rule"},
+          {"id": "97c7-91db-b012-b23a", "targetId": "3905b541-9c28-1031-afee-524491234379", "type": "rule"},
+          {"id": "c84a-3926-6ee4-fcfc", "targetId": "91e7-f755-2493-8f01", "type": "rule"},
+          {"id": "61d7-f9c0-4f4d-570c", "targetId": "85dd-fb63-ac39-f0f4", "type": "rule"},
+          {"id": "f0dc-c85e-7e24-1b62", "targetId": "2a72-8708-2cd5-c82a", "type": "rule"},
+          {"id": "ff24-5fbf-e094-f25e", "targetId": "4bec51c1-8ed1-8edf-6e58-4e1ea62124a2", "type": "rule"},
+          {"id": "eab0-8611-4396-03b2", "targetId": "2165-7705-8ab6-893f", "type": "profile"},
+          {"id": "5ab9-1be4-bcc1-7e27", "targetId": "ab7b-7ca5-c054-5e48", "type": "profile"},
+          {"id": "b11e-e60b-7e21-ed08", "targetId": "3c64-5688-11db-2fe3", "type": "profile"},
+          {"id": "0132-2441-551f-3499", "targetId": "2ed1a424-15a7-f77a-a41c-d7801ec890cc", "type": "rule"},
+          {"id": "853b-25ed-fb85-3d66", "targetId": "228b-3d34-8fc8-ea14", "type": "rule"},
+          {"id": "783c-c588-08cc-ace7", "targetId": "e707-f177-408f-53fd", "type": "rule"},
+          {"id": "6596-7b15-0ddc-7edc", "targetId": "9708a154-3267-b441-cd5b-b2fe69190f8d", "type": "rule"},
+          {"id": "bbd6-8e27-3130-5819", "targetId": "b5da-13eb-c81c-554d", "type": "rule"}
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Command",
+        "id": "dc3b0182-ffe2-9f3a-8105-eb3d82d06bcd",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [{"id": "f861-a30d-19e0-06b4", "targetId": "8a34-3569-0757-d741", "type": "selectionEntry"}],
+        "modifiers": [
+          {
+            "field": "minSelections",
+            "type": "set",
+            "value": 1,
+            "conditions": [
+              {
+                "childId": "785d-d3d4-a132-8fbf",
+                "field": "selections",
+                "includeChildSelections": true,
+                "scope": "primary-category",
+                "shared": true,
+                "type": "atLeast",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Medium_Support_Class",
+        "id": "90b25066-2bed-69c0-536b-589734ad9516",
+        "collective": false,
+        "defaultSelectionEntryId": "b936-5754-5946-4f51",
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": 2},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": 2},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [{"id": "b936-5754-5946-4f51", "targetId": "bf4b-3fee-45b2-457e", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Nyx_Light_Infantry_Cadre",
+        "id": "9729-3ac9-4ff1-389d",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 4},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [
+          {"id": "900a-fc78-bc61-e259", "targetId": "dc3b0182-ffe2-9f3a-8105-eb3d82d06bcd", "type": "selectionEntryGroup"},
+          {"id": "17d8-2bd6-87c9-b72b", "targetId": "6e0631cc-bbbc-3674-a368-6fa8ec6228b9", "type": "selectionEntryGroup"},
+          {"id": "9f59-31b3-de45-7414", "targetId": "7fed57e3-6fb8-82dd-7b31-1ae4ed8fdfc0", "type": "selectionEntryGroup"}
+        ],
+        "modifiers": [
+          {
+            "field": "minSelections",
+            "type": "set",
+            "value": 7,
+            "repeats": [
+              {"childId": "2513-f485-3e2c-8cc1", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 1}
+            ]
+          },
+          {
+            "field": "maxSelections",
+            "type": "set",
+            "value": 7,
+            "repeats": [
+              {"childId": "2513-f485-3e2c-8cc1", "field": "selections", "includeChildSelections": true, "repeats": 1, "scope": "primary-category", "shared": true, "value": 1}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sky_Drop_Transport",
+        "id": "858b7c7d-a4b2-f869-9bfb-3e7919db1c2b",
+        "collective": false,
+        "defaultSelectionEntryId": "4011-85e5-7a50-6391",
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [{"id": "4011-85e5-7a50-6391", "targetId": "55bd-2c29-6b36-84dc", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Specialist_Troops",
+        "id": "6e0631cc-bbbc-3674-a368-6fa8ec6228b9",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [
+          {
+            "id": "098b-fbf9-c711-1019",
+            "targetId": "884b-b239-b22d-388f",
+            "type": "selectionEntry",
+            "modifiers": [
+              {
+                "field": "minSelections",
+                "type": "set",
+                "value": 3,
+                "conditions": [
+                  {
+                    "childId": "785d-d3d4-a132-8fbf",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "minSelections",
+                "type": "set",
+                "value": 3,
+                "conditions": [
+                  {
+                    "childId": "785d-d3d4-a132-8fbf",
+                    "field": "selections",
+                    "includeChildSelections": true,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"id": "4ed2-9c8a-da15-615d", "targetId": "4555-a5a0-c2ce-97df", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Troops",
+        "id": "7fed57e3-6fb8-82dd-7b31-1ae4ed8fdfc0",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": -1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "entryLinks": [{"id": "25e2-8f7f-038d-ff60", "targetId": "edad-e0bb-fd44-d216", "type": "selectionEntry"}]
+      }
+    ]
+  }
+}
