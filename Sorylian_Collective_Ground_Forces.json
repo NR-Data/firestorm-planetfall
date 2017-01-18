@@ -1,0 +1,4061 @@
+{
+  "catalogue": {
+    "name": "Sorylian Collective",
+    "id": "ed10-fe7b-580d-ca95",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "Steve",
+    "authorUrl": "http://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "fdb1b3af-37de-0c1a-4772-a6dd227e268c",
+    "gameSystemRevision": 1,
+    "revision": 6,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [{"name": "Core Rulebook", "id": "ed10-fe7b-pub1"}, {"name": "Sorylian ORBATS", "id": "ed10-fe7b-pub2"}],
+    "rules": [
+      {
+        "name": "Sorylian_Collective---Artillery_Attacks",
+        "id": "892d74ab-01f9-d491-d336-8cb0aa8f004c",
+        "description": "All Sorylian Collective Artillery Attacks use the Barrage and Scatter MARs with 5D6 Attack Dice.",
+        "hidden": false
+      },
+      {
+        "name": "Sorylian_Collective---Sky_Drop_Capability",
+        "id": "e434bc2a-e13f-8a17-9c3a-b91b227151a5",
+        "description": "Initial Drop Site Markers are set to 6. Initial Artillery Markers are set to 4.",
+        "hidden": false
+      },
+      {
+        "name": "Sorylian_Collective---Tactical-Bonus",
+        "id": "225bf97b-98ec-67b1-93e1-5f2e9c57c4a8",
+        "description": "Sorylian Collective forces have a Tactics Bonus of +2.",
+        "hidden": false
+      },
+      {
+        "name": "Sorylian_Collective---Logistical_Strength",
+        "id": "ede9-2459-c226-94f6",
+        "description": "Sorylian Collective Forces may spend up to 4 Logistics Points in a single Bid Action.\n• Sorylian Collective Forces may elect to spend Logistics Points during the Play TACs Step of the Pre-Turn Phase to place Squadrons on Overwatch:\n• It costs 1 Logistics Point to place a Light Squadron on Overwatch.\n• It costs 2 Logistics Points to place an Armoured Squadron on Overwatch, unless it is a Heavy Armoured Squadron (identified as having the word Heavy in its designation) or Leviathan Squadron (identified as having the word Leviathan in its designation) which cost 3 Logistics Points to place on Overwatch.\n• Aerial Forces may NOT use Logistics Points to be placed on Overwatch unless specifically noted.\n• In the case of mixed Squadrons (A Squadron made up of Light and Armoured Elements for example) use the largest Logistics Cost.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Instructions",
+        "id": "ca25-d587-12d5-9a55",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "rules": [
+          {
+            "name": "Instructions",
+            "id": "4ab8-deb5-0d03-8691",
+            "description": "****** REMOVE THIS SELECTION BEFORE PRINTING ******\n\nNatural Allies will appropriately be removed from the roster, but Allied forces require the appropriate \"Select if a x or y Helix is taken as an Allied Helix\" to be added in order to calculate.\n\n****** NOVEMBER 26th ORBAT ******\n\nThe Infantry from the Nov 26th ORBAT have been added in combination with the infantry from the Sept 1st ORBAT so you can choose which stats to use until one is made official.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "94a1e194-b8fe-e241-9335-253794c49bce",
+        "collective": false,
+        "hidden": false,
+        "page": 58,
+        "publicationId": "ed10-fe7b-pub1",
+        "type": "upgrade",
+        "categoryLinks": [{"id": "94a1e194-b8fe-e241-9335-253794c49bce-6124ca5f-4ae5-6c10-6b25-01af704031f6", "primary": true, "targetId": "6124ca5f-4ae5-6c10-6b25-01af704031f6"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "entryLinks": [{"id": "cfa9-14e4-157a-5e7a", "hidden": false, "targetId": "1cb7-fd5a-1b5d-2ff1", "type": "selectionEntry"}],
+        "infoLinks": [{"id": "fc956d06-0d5b-b97f-822d-dd1e242dc54e", "hidden": false, "targetId": "a6991808-4669-65f9-b711-49bba7796c0b", "type": "rule"}]
+      },
+      {
+        "name": "Select_if_a_Leviathan_or_Heavy_Helix_is_taken_as_an_Allied_Helix",
+        "id": "258e-6869-2fc0-a059",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "258e-6869-2fc0-a059-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "e3d2-b0ed-77b6-7a19",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Select_if_an_Air_or_Recon_Helix_is_taken_as_an_Allied_Helix",
+        "id": "3101-6610-547f-8d62",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "3101-6610-547f-8d62-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "e3d2-b0ed-77b6-7a19",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Select_if_an_Assault_or_Field_Support_Helix_is_taken_as_an_Allied_Helix",
+        "id": "317a-f38e-a2aa-5ad7",
+        "collective": false,
+        "hidden": true,
+        "type": "upgrade",
+        "categoryLinks": [{"id": "317a-f38e-a2aa-5ad7-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "modifiers": [
+          {
+            "field": "hidden",
+            "type": "set",
+            "value": false,
+            "conditions": [
+              {
+                "childId": "e3d2-b0ed-77b6-7a19",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "roster",
+                "shared": true,
+                "type": "equalTo",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Assault_Helix",
+        "id": "3db7-91f9-06bb-7c3c",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "3db7-91f9-06bb-7c3c-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Jyal'Ro_'Old_One'_Battle_Walker",
+            "id": "e162-cf5d-fe43-ed26",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "e162-cf5d-fe43-ed26-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "9bc4-c9aa-714c-9c6c", "hidden": false, "targetId": "3615-542f-74d0-24eb", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Samaru_Medium_Battle_Walker",
+            "id": "c927-8103-f291-7766",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "c927-8103-f291-7766-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "a51b-eb57-fe05-e4fe", "hidden": false, "targetId": "5b0b-360d-8995-a03b", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Core_Helix",
+        "id": "e3d2-b0ed-77b6-7a19",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "e3d2-b0ed-77b6-7a19-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Huk'Ka_Heavy_Battle_Walker",
+            "id": "cd78-b9f3-f787-78d6",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "cd78-b9f3-f787-78d6-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "7c4e-c9c6-1d8b-e931", "hidden": false, "targetId": "6ac8-d096-344f-e1c5", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Bor'Ka_Medium_Battle_Walker",
+            "id": "0c61-b2f7-97b1-b15c",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "0c61-b2f7-97b1-b15c-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "cea9-1b99-bca8-6b75", "hidden": false, "targetId": "e66f-1b10-25f9-e0dc", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Ka'Kun_Light_Skiff",
+            "id": "23f0-2492-c346-d3b6",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "23f0-2492-c346-d3b6-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "3b03-edb1-9961-ed25", "hidden": false, "targetId": "085f2c8d-2066-a5f1-c361-fa1bbc1a6cd7", "type": "selectionEntryGroup"}]
+          },
+          {
+            "name": "Mul'Kat_Light_Infantry_Cadre",
+            "id": "5b05-3dd2-a1bd-a526",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "5b05-3dd2-a1bd-a526-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "selectionEntryGroups": [
+              {
+                "name": "Light_Infantry",
+                "id": "2cf9-2f35-bfae-c01a",
+                "collective": false,
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "name": "Bol'Vak_Medium_Transport_Skiff",
+                    "id": "b7df-99c8-a80e-8eed",
+                    "collective": false,
+                    "hidden": false,
+                    "type": "model",
+                    "constraints": [
+                      {
+                        "id": "maxSelections",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                    "entryLinks": [{"id": "d1df-1021-1c19-ceca", "hidden": false, "targetId": "bd762206-4425-6f9d-da56-b39190008661", "type": "selectionEntryGroup"}]
+                  }
+                ],
+                "selectionEntryGroups": [
+                  {
+                    "name": "Mul'Kat_Light_Infantry",
+                    "id": "71b7-468e-f374-1a8a",
+                    "collective": false,
+                    "hidden": false,
+                    "constraints": [
+                      {
+                        "id": "minSelections",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "min",
+                        "value": 3
+                      },
+                      {
+                        "id": "maxSelections",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "max",
+                        "value": 5
+                      }
+                    ],
+                    "entryLinks": [
+                      {"id": "1cd6-fd15-5be1-fc44", "hidden": false, "targetId": "389af62a-7850-ae36-33bf-b501d7b1a558", "type": "selectionEntryGroup"},
+                      {"id": "5faa-d4fa-c270-1d3d", "hidden": false, "targetId": "c1a8bbf6-72d4-992d-e32b-b966e08e7a76", "type": "selectionEntryGroup"},
+                      {"id": "f133-77bb-7fc2-7f4b", "hidden": false, "targetId": "c4ea5b5c-d50a-a6f0-6419-312b8380b47e", "type": "selectionEntryGroup"}
+                    ],
+                    "modifiers": [
+                      {
+                        "field": "minSelections",
+                        "type": "set",
+                        "value": 5,
+                        "conditions": [
+                          {
+                            "childId": "71b7-468e-f374-1a8a",
+                            "field": "selections",
+                            "includeChildForces": false,
+                            "includeChildSelections": false,
+                            "percentValue": false,
+                            "scope": "5b05-3dd2-a1bd-a526",
+                            "shared": true,
+                            "type": "greaterThan",
+                            "value": 3
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Kul'Vok_Heavy_Infantry_Cadre",
+            "id": "88dd-e78a-8ac7-720c",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "88dd-e78a-8ac7-720c-b3b00e3b-81d8-1d89-9804-56bb2487197f", "primary": true, "targetId": "b3b00e3b-81d8-1d89-9804-56bb2487197f"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "4194-e73f-e228-48d6", "hidden": false, "targetId": "24a5-24af-2288-46cc", "type": "selectionEntryGroup"}]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Firepower_Leviathan_Helix",
+        "id": "273b-ce06-d49f-ba97",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "273b-ce06-d49f-ba97-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Nor'Bar'Ro_Firepower_Leviathan",
+            "id": "f51f-5b7d-176d-d13f",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "f51f-5b7d-176d-d13f-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "e745-c11b-3339-5fe3", "hidden": false, "targetId": "0fc8-5e0a-974d-f6ac", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Ka'Kun_Light_Skiff",
+            "id": "dd02-98db-5ffc-80b7",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "dd02-98db-5ffc-80b7-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "d204-83ac-c9c0-3d5b", "hidden": false, "targetId": "65db-9121-90a6-3d5a", "type": "selectionEntryGroup"}]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Ground_Attack_Aerial_Helix",
+        "id": "98ca-9470-9e67-672b",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "98ca-9470-9e67-672b-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Sar'Mak_Heavy_Ground_Attack_Gunship",
+            "id": "4c2a-d751-1fe7-bc2e",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "4c2a-d751-1fe7-bc2e-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "0809-d27e-da54-8245", "hidden": false, "targetId": "9d25-3580-e478-2bfe", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Vro'Mak_Ground_Attack_Gunship",
+            "id": "3ca2-f04c-c3b9-6daf",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "3ca2-f04c-c3b9-6daf-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "72c7-573a-1379-364e", "hidden": false, "targetId": "0553-60e3-8b9b-2e1e", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Ground_Command_Helix",
+        "id": "6b5c-dbb6-1043-650e",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "6b5c-dbb6-1043-650e-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Jol'Tak_Heavy_Command_Skiff",
+            "id": "a410-969f-4f66-f5a9",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "a410-969f-4f66-f5a9-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "selectionEntryGroups": [
+              {
+                "name": "Heavy_Command_Skiff",
+                "id": "562d-b478-6527-3c24",
+                "collective": false,
+                "hidden": false,
+                "entryLinks": [{"id": "856a-165e-3115-0661", "hidden": false, "targetId": "e882-e256-b325-cd1d", "type": "selectionEntry"}],
+                "selectionEntries": [
+                  {
+                    "name": "Embarked_Kul'Vok_Heavy_Infantry_Cadre",
+                    "id": "1e8c-bfd4-fef0-b3e9",
+                    "collective": false,
+                    "hidden": false,
+                    "type": "unit",
+                    "categoryLinks": [{"id": "1e8c-bfd4-fef0-b3e9-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+                    "constraints": [
+                      {
+                        "id": "minSelections",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "min",
+                        "value": 1
+                      },
+                      {
+                        "id": "maxSelections",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": false,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                    "entryLinks": [
+                      {"id": "c0a1-1457-4083-a2d4", "hidden": false, "targetId": "24a5-24af-2288-46cc", "type": "selectionEntryGroup"},
+                      {"id": "aa99-fd52-fa79-3b56", "hidden": false, "targetId": "c1b9-0fd8-1da4-64b9", "type": "selectionEntry"}
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Ja'Gor_Light_Recon_Walker",
+            "id": "a8d2-dc41-747c-5824",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "a8d2-dc41-747c-5824-bfb8-a2d8-3a3e-a671", "primary": true, "targetId": "bfb8-a2d8-3a3e-a671"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "283a-81ae-d69b-1bf3", "hidden": false, "targetId": "8585-5704-020e-06ea", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Heavy_Armour_Helix",
+        "id": "8691-1d24-631f-af1c",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "8691-1d24-631f-af1c-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Huk'Vok'Ka_Heavy_Support_Walker",
+            "id": "64d5-f0c6-f7df-4f74",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "64d5-f0c6-f7df-4f74-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "493f-9eec-dc2d-7b7a", "hidden": false, "targetId": "8a40-4192-6e0f-a707", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Sor'ka_Tank-Destroyer_Walker",
+            "id": "d3d7-f4fd-44ba-1175",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "d3d7-f4fd-44ba-1175-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "d4de-9cab-9526-57dd", "hidden": false, "targetId": "a31e-8530-b9db-4fc5", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Ka'Kun_Light_Skiff",
+            "id": "dd2e-59f1-551d-687c",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "dd2e-59f1-551d-687c-8a0e-13df-2db9-14b3", "primary": true, "targetId": "8a0e-13df-2db9-14b3"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "54de-6083-d277-a136", "hidden": false, "targetId": "085f2c8d-2066-a5f1-c361-fa1bbc1a6cd7", "type": "selectionEntryGroup"}]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Interceptor_Aerial_Helix",
+        "id": "6e59-875d-8566-a099",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "6e59-875d-8566-a099-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Jor'Mak'Ta_Heavy_Interceptor_Gunship",
+            "id": "4e15-3a4f-302c-cb2c",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "4e15-3a4f-302c-cb2c-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "47f5-b2f5-125e-7ede", "hidden": false, "targetId": "6988-15a6-5d17-6e4d", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Mak'Kun_Heavy_Interceptor",
+            "id": "0393-95bd-c68d-8c59",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "0393-95bd-c68d-8c59-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "d666-49b1-9a19-9fed", "hidden": false, "targetId": "c5e3-b3d9-918d-0d99", "type": "selectionEntry"}]
+          }
+        ]
+      },
+      {
+        "name": "Sorylian_Recon_Helix",
+        "id": "d222-af26-fd35-81c0",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "d222-af26-fd35-81c0-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Ja'Gor_Light_Recon_Walker",
+            "id": "989e-77bd-8d93-8eb4",
+            "collective": false,
+            "hidden": false,
+            "type": "unit",
+            "categoryLinks": [{"id": "989e-77bd-8d93-8eb4-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 2
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "1c79-37d5-ee99-0641", "hidden": false, "targetId": "8585-5704-020e-06ea", "type": "selectionEntry"}]
+          },
+          {
+            "name": "Bol'Vok'Ra_Heavy_Transport_Skiff",
+            "id": "9068-7340-7d76-725b",
+            "collective": false,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "minSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "2f28-8ab1-d4bf-46b5", "hidden": false, "targetId": "a3fa-dc51-c324-7224", "type": "selectionEntryGroup"}],
+            "selectionEntries": [
+              {
+                "name": "Embarked_Kul'Vok_Heavy_Infantry_Cadre",
+                "id": "3142-5060-93bd-7e60",
+                "collective": false,
+                "hidden": false,
+                "type": "unit",
+                "categoryLinks": [{"id": "3142-5060-93bd-7e60-b5e3-9583-3fcd-2774", "primary": true, "targetId": "b5e3-9583-3fcd-2774"}],
+                "constraints": [
+                  {
+                    "id": "minSelections",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "min",
+                    "value": 1
+                  },
+                  {
+                    "id": "maxSelections",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": false,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "77f1-da21-d894-a090", "hidden": false, "targetId": "24a5-24af-2288-46cc", "type": "selectionEntryGroup"}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Bol'Vak'Ra---Nexus_Designator",
+        "id": "50c0-d744-cd78-19b8",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "24", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Bol'Vak'Ra---Vaan_Scatter_Cannons",
+        "id": "7fe7-fda4-d815-64f5",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Bol'Vak'Ra_Heavy_Transport_Skiff",
+        "id": "8566-4c3a-f504-2806",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "9", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "15", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "10", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "9", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "7", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Bol'Vak---Koli_Concussion_Gun",
+        "id": "3562-b613-b7c4-f37d",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "15", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Bol'Vak_Medium_Transport_Skiff",
+        "id": "242d-71ad-2bf1-e843",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "9", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "15", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "7", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "6", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "2", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Bor'Ka---Vaan_Scatter_Cannons",
+        "id": "d2c6-cca9-0713-34cf",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "8", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "15", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F/L/R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Bor'Ka_Medium_Battle_Walker",
+        "id": "e8d0-9398-e8ea-12a8",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "10", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "6", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_6", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Huk'Ka---Kor'Nak_Heavy_Cannon",
+        "id": "0b3d-97a5-c032-a6df",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "9", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Huk'Ka---Vaan_Scatter_Cannons",
+        "id": "79ea-b692-20a3-093d",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "15", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "7", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Huk'Ka_Heavy_Battle_Walker",
+        "id": "c91a-6f81-23b3-7793",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "5", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "6", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "7", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_9", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Huk'Vok'Ka---Dual_Nar'Vak_Titan_Cannon",
+        "id": "ea82-ea49-17b7-aba2",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "24", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "10", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "48", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "16", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Huk'Vok'Ka---Nexus_Designator(1)",
+        "id": "f99a-4fa8-971e-31bd",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "36", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Huk'Vok'Ka---Nexus_Designator(2)",
+        "id": "4e59-45fd-6043-6847",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "36", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Huk'Vok'Ka_Heavy_Support_Walker",
+        "id": "1d6d-75c6-490a-2d52",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "5", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "6", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Ja'Gor---Har'Mok_Precision_Missiles",
+        "id": "0a81-2553-ba38-f48d",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "3", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Ja'Gor_Light_Recon_Walker",
+        "id": "25ae-bbd3-8e44-5470",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "1", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Jol'Tak---Heavy_Sar'Nav_Grenade_Launchers(L)",
+        "id": "6e9f-3cbb-7a32-c078",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "8", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "L", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jol'Tak---Heavy_Sar'Nav_Grenade_Launchers(R)",
+        "id": "6391-9d8a-d258-ac43",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "8", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "R", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jol'Tak---Nar'Vak_Titan_Cannon",
+        "id": "986a-7e16-28fd-44c0",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "24", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "10", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "48", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "16", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jol'Tak---Nexus_Designator",
+        "id": "9318-61ac-8507-b141",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "36", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "6", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Nexus_Designator", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jol'Tak_Heavy_Command_Skiff",
+        "id": "8987-25ff-4f15-ca0f",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "8", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "14", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "10", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "9", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "9", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "4", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "12", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "8", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Jor'Mak'Ta---Har'Mok_Precision_Missiles(1)",
+        "id": "15cc-9e93-c66a-9be9",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "24", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "7", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jor'Mak'Ta---Har'Mok_Precision_Missiles(2)",
+        "id": "1d27-b46a-6bb1-d800",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "24", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "7", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jor'Mak'Ta---Heavy_Koli_Concussion_Gun",
+        "id": "aaa1-31f2-c57d-7c9f",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "10", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "15", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "8", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jor'Mak'Ta_Heavy_Interceptor_Gunship",
+        "id": "6dbb-be2e-74ed-9cbf",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "15", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "20", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "6", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "8", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Jyal'Ro---Gurak_Power_Fist(Left_Arm)",
+        "id": "5d8a-9f28-380c-6163",
+        "hidden": false,
+        "typeId": "e0e86e6f-7cbc-581b-fc4d-e8a96c3e497f",
+        "characteristics": [{"name": "MARs", "$text": "Pinpoint(3)/Terror_Weapon", "typeId": "da4d7de0-2bb3-70e7-a3f0-4ba3afccbcae"}]
+      },
+      {
+        "name": "Jyal'Ro---Koli_Concussion_Gun(Right_Arm)",
+        "id": "8b83-de42-8d3c-934e",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "8", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "15", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "16", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Jyal'Ro_Battle_Walker",
+        "id": "80fe-f0e4-3ce2-f13c",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "8", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "16", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "10", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "8", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "6", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "4", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "6/12", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Elevated", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_9", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Ka'Kun---Light_Sar'Nav_Grenade_Launchers",
+        "id": "f357-57fc-5efe-636a",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Ka'Kun_Light_Skiff",
+        "id": "b806-de0e-d191-40fc",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "10", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "15", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "5", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3_or_5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Kul'Vok---Sar'Nav_Grenade_Launchers",
+        "id": "6c77-e21c-af67-0668",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Kul'Vok_Heavy_Infantry_Cadre",
+        "id": "3607-6fc7-abd0-cdc5",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "5", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Mak'Kun---Har'Mok_Precision_Missiles",
+        "id": "df0c-8008-cfaf-e62e",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Mak'Kun_Heavy_Interceptor",
+        "id": "3fb9-bb63-4972-5a0c",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "20", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "24", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "7", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "3", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Mul'Kat---Sar'Nav_Grenade_Launcher",
+        "id": "3d21-9b54-2aa9-5e98",
+        "hidden": true,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "5", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Mul'Kat_Gun_Team_Light_Infantry_Cadre",
+        "id": "79f9-c7c3-f6ce-5075",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "4", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "6", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3_or_4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Mul'Kat_Light_Infantry_Cadre",
+        "id": "9132-052e-c7bb-1ba7",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "4", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "6", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3_or_4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Mul'Kat_Officer_Light_Infantry_Cadre",
+        "id": "31e8-982a-879b-6803",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "4", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "6", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "2", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3_or_4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Mul'Kat_Sweeper_Team_Light_Infantry_Cadre",
+        "id": "97c9-2c69-5f02-8f10",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "4", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "6", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "4", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "4", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "3_or_4", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Nor'Bar'Ro---Dual_Nar'Vak_Titan_Cannon",
+        "id": "a523-7cfa-964f-2dc6",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "24", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "15", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "48", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "18", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Nor'Bar'Ro---Har'Mok_Precision_Missiles(L)",
+        "id": "4eb3-b287-3447-00d0",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F/L/A", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Nor'Bar'Ro---Har'Mok_Precision_Missiles(R)",
+        "id": "ba9b-7c5e-e001-72bf",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "9", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F/R/A", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Nor'Bar'Ro---Koli_Concussion_Gun(Body)",
+        "id": "8d89-e7b4-8ed1-973f",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "8", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "15", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "16", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Nor'Bar'Ro_Firepower_Leviathan",
+        "id": "c401-baad-4dfd-3c63",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "5", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "12", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "10", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "10", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "9", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "3", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "12/12", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Elevated", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "13", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Ro'Mul'Kat---Sar'Nav_Grenade_Launchers",
+        "id": "90c4-c3fb-4cdc-c688",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "12", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "-", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "-", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "AR", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Ro'Mul'Kat_War_Chief",
+        "id": "9b57-6428-2892-8e2d",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "5", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "8", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "-", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "0", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Light", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "5", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Samaru---Sar'Nav_Grenade_Launchers",
+        "id": "1c97-dd28-a189-ccad",
+        "hidden": true,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "10", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "20", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "7", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Samaru_Medium_Battle_Walker",
+        "id": "9131-cae8-7737-8c0c",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "6", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "12", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "9", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "7", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "7", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Sar'Mak---Heavy_Koli_Concussion_Gun",
+        "id": "d52c-1434-81c3-fd73",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "12", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "15", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "10", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Scatter/Terror_Weapon", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Sar'Mak_Ground_Attack_Gunship",
+        "id": "3004-9c8e-d349-5e25",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "12", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "24", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "8", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "7", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "6", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "2", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "8", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Elite", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "4_or_9", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Sor'Ka---Har'Mok_Precision_Missiles",
+        "id": "db41-43e5-1fc6-a44b",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "20", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "4", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "40", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Interceptor/Pinpoint(2)", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Sor'Ka_Tank_Destroyer_Walker",
+        "id": "9ef9-fec2-ad2b-c882",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "5", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "7", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "6", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "5", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "1", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Armoured", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "7", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      },
+      {
+        "name": "Vro'Mak---Sar'Nav_Grenade_Launcher",
+        "id": "79b9-4994-1b7d-e41d",
+        "hidden": false,
+        "typeId": "b6d7a892-595b-4a15-1099-dd0af68911b9",
+        "characteristics": [
+          {"name": "EF", "$text": "10", "typeId": "12f4d7d4-ce09-7c6c-2b69-7d2dd3baf892"},
+          {"name": "EF-AD", "$text": "8", "typeId": "9cb66a39-5ffc-c785-5c2e-7e68e7e7dd32"},
+          {"name": "LR", "$text": "15", "typeId": "dc0770ac-599e-1efc-fbca-37fb2fb088cb"},
+          {"name": "LR-AD", "$text": "6", "typeId": "27dc470e-85e8-929a-80ed-7058a163b995"},
+          {"name": "Arc", "$text": "F", "typeId": "88222587-060a-9230-b947-2bffa3b052dd"},
+          {"name": "MARs", "$text": "Anti-Personnel", "typeId": "1ca5160e-30b4-5594-dd7f-7b574cd2068f"}
+        ]
+      },
+      {
+        "name": "Vro'Mak_Ground_Attack_Gunship",
+        "id": "f4bd-8080-16a4-171f",
+        "hidden": false,
+        "typeId": "601947e0-0125-7417-9d3a-5e3caf6e031d",
+        "characteristics": [
+          {"name": "Mv Cr", "$text": "16", "typeId": "b06bce22-dd79-5941-f499-07552e47c603"},
+          {"name": "Mv FO", "$text": "24", "typeId": "45a72717-f553-eda0-574a-ed9c863706e4"},
+          {"name": "DR1", "$text": "7", "typeId": "37d832b5-effe-31e5-3d80-be0e0f0facaa"},
+          {"name": "DR2", "$text": "6", "typeId": "38ce15ef-6608-ccd3-d7c1-b01ee9c81ffa"},
+          {"name": "DR3", "$text": "-", "typeId": "98e41e8c-6557-e695-6a0e-87db5a68f78c"},
+          {"name": "DR4", "$text": "-", "typeId": "12cafa00-4b8f-fce7-d690-eb7a2d7be421"},
+          {"name": "SH", "$text": "1", "typeId": "4f478de8-54c8-4f22-5cbc-6b00963ccce1"},
+          {"name": "CQB", "$text": "5", "typeId": "ee559769-1294-e5f0-4b2f-5a39c3e493c9"},
+          {"name": "LoS Class", "$text": "Flying", "typeId": "49777571-f40c-c499-3529-609f3a86e6d3"},
+          {"name": "Quality", "$text": "Regular", "typeId": "20182b1e-6f26-0e46-1095-259ac59a2ea9"},
+          {"name": "TV", "$text": "7", "typeId": "be9c10f1-4bb5-f111-5fe8-a1eca79c317c"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Aerial_Assault",
+        "id": "39de-dca6-7bc6-6347",
+        "description": "This Squadron may fire its Main Ordnance while moving Flat Out provided the target squadron are Flying models – These shots are considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Artillery_Nexus",
+        "id": "6f78-2535-9f61-c497",
+        "description": "When called upon to deliver an Artillery Strike with a Nexus Designator this model may CHOOSE the direction of Deviation measured from the Artillery Marker rather than determining randomly",
+        "hidden": false
+      },
+      {
+        "name": "Artillery_Support(1)",
+        "id": "96a662da-c2d5-b709-5386-c77f3e929b33",
+        "description": "May use the Artillery Support rules on Page 82.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Bulky(2)",
+        "id": "47c44a18-6711-c389-58f8-5c8d113754c2",
+        "description": "These units take up 2 slots in transports.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Command_Centre",
+        "id": "4318-02f8-d73e-42b7",
+        "description": "A Force that contains a Jol’Tak Command Barge may take an ADDITIONAL Tactical Action Card over and above the number stated for the game size. In addition no friendly Sorylian forces within the Jol’Tak s Command Radius are required to take Disorder Tests due to the loss of their own Command Element",
+        "hidden": false
+      },
+      {
+        "name": "Command_Element(12\")",
+        "id": "c9dd0b43-e5c8-95f5-573d-2f6d32097d39",
+        "description": "All helix squadrons in 12\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Command_Element(16\")",
+        "id": "aad3-bd3f-77e3-8706",
+        "description": "All helix squadrons in 16\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Command_Element(24\")",
+        "id": "6be0-546e-a196-ac90",
+        "description": "All helix squadrons in 24\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Command_Element(8\")",
+        "id": "73463651-158a-76d2-1eea-7e3bd67a25ec",
+        "description": "All helix squadrons in 8\" gain an additional morale die when testing for disorder. If this model is detroyed all squadrons in the helix must take a disorder test requiring two successes.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Directed_Fury",
+        "id": "21f0-0bd0-dcb0-b6f4",
+        "description": "All friendly Sorylian Infantry Cadres within 8” of this model gain the Focused Assault MAR.",
+        "hidden": false
+      },
+      {
+        "name": "Dogfighter",
+        "id": "0258-5697-113a-6b78",
+        "description": "This Squadron may ignore the Sectored Armour MAR when targeting Flying models. Flying Target models may therefore suffer Flanking or Rear penalties to their Damage Rating when attacked by a Dogfighter!",
+        "hidden": false
+      },
+      {
+        "name": "Fearless",
+        "id": "33a0-0d64-5c92-bcbf",
+        "description": "Unit never takes Disordered Tests.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Flying_Vehicle",
+        "id": "d66d-d595-e247-f3a2",
+        "description": "When moving at Cruising Speed the unit gains Hard Target (-1), when moving at Flat Out the unit gains Hard Target (-2).",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Focused_Assault",
+        "id": "9490-a605-9e55-303d",
+        "description": "When Infantry Cadres with this MAR perform a Storming Action, resolve their Attacks simultaneously with the Defenders rather than afterwards.",
+        "hidden": false
+      },
+      {
+        "name": "Ground_Attack",
+        "id": "0107-6369-66a2-fff9",
+        "description": "This Squadron may fire its Main Ordnance while moving Flat Out provided the target squadron are Flying models – These shots are considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Hard_Target(-1)",
+        "id": "868ca32c-73e1-98c7-e533-60e7324d7b34",
+        "description": "Main Ordnance is -1 to hit this unit.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Hard_Target(-2)",
+        "id": "7cc07e10-0881-c89e-86b2-1b2e2e844d97",
+        "description": "Main Ordnance is -2 to hit this unit.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Hover_Vehicle",
+        "id": "8eaa335e-fe5c-9613-32f6-b201cb95d66a",
+        "description": "Vehicles with this MAR is treated as Hard Target (-1) when fired at with weapons in Long Range. This does not combine with other Hard Target rules.",
+        "hidden": false,
+        "page": 118,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Independent_Targeting",
+        "id": "20c8-7db4-49e7-48f7",
+        "description": "May target any target in range regardless of what the rest of the Squadron targets.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Kill_Team",
+        "id": "f9a6943e-fc39-2615-3aba-e48ac40128e1",
+        "description": "+1 CQB stat when initiating CQB.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "a6991808-4669-65f9-b711-49bba7796c0b",
+        "description": "May use up to 4 points to bid on an Opposed Tactics test.",
+        "hidden": false,
+        "page": 58,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Lumbering",
+        "id": "cc3e8e6a-3384-24b1-088d-0d25dc703db1",
+        "description": "The model must use the turning template.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Recon_Specialist",
+        "id": "7cf84782-3750-a16a-d4ad-6c0ad2495f7c",
+        "description": "May move in the Recon Phase.",
+        "hidden": false,
+        "page": 120,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Saturation_Fire",
+        "id": "2c0eec6c-effd-de66-edb0-cf3ef085013c",
+        "description": "All Sorylian Armoured and Leviathan Elements may reroll any Initial rolls of a 1 during a Main Ordnance Attack fired at Effective Range, the second result must be accepted.",
+        "hidden": false,
+        "page": 2,
+        "publicationId": "ed10-fe7b-pub2"
+      },
+      {
+        "name": "Sectored_Armour",
+        "id": "ca65-a482-dfd6-3bde",
+        "description": "Model never suffers penalties to DR from Flank or Aft Main Ordnance attacks.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Shield_Projector(2,_12”)",
+        "id": "9654-4f57-8372-cda9",
+        "description": "All friendly Elements within 12\" have a Shield Rating equal to 2. This Shield Save is not cumulative with any other Cover/Shield saves but MAY provide Elements without Shield Ratings a degree of protection.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Strafing_Run",
+        "id": "4002-003b-e91f-d3b7",
+        "description": "This Squadron may initiate a CQB Attack during its own activation while moving Flat Out provided the target squadron are Surface Models. These shots are considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Take_&_Hold",
+        "id": "7b33fb72-ef85-b14a-90c0-2944f79a46c7",
+        "description": "This unit may claim objectives.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Thunderous_Charge",
+        "id": "53dd-2ded-ce0d-77ab",
+        "description": "The Leviathan may perform a Leviathan CQB Action after moving Flat Out. This CQB Attack is considered to be Rushed.",
+        "hidden": false
+      },
+      {
+        "name": "Transport(10)",
+        "id": "2268-05b1-4407-c969",
+        "description": "May act as a transport for10 slots worth of Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Transport(8)",
+        "id": "82647206-98a5-3ac6-d2be-e0302133f2cc",
+        "description": "May act as a transport for 8 slots worth of Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Transport(Heavy_Infantry_Only,_8)",
+        "id": "53bf-7367-5820-74d0",
+        "description": "May act as a transport for 8 slots worth of Light Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Transport(Light_Infantry_Only,_10)",
+        "id": "7d597ce6-d58a-6e5f-fd03-34ce0c6af45b",
+        "description": "May act as a transport for 10 slots worth of Light Infantry.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Walker",
+        "id": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a",
+        "description": "May not move Flat Out through Vegation or Rivers.",
+        "hidden": false,
+        "page": 77,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Anti-Personnel",
+        "id": "d0c0fcab-2a57-344c-352b-81ed2eb00a71",
+        "description": "Weapon ignores Hard Target rules when targeting Infantry.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Barrage",
+        "id": "68f7-6815-6d80-7651",
+        "description": "Models targeted by a Barrage weapon do not receive cover saves.",
+        "hidden": false,
+        "page": 116,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Interceptor",
+        "id": "3771b992-4585-88e3-419b-5d4941b75057",
+        "description": "Flying targets do not gain the benefit of Hard Target against these weapons.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Nexus_Designator",
+        "id": "c083e36b-fca0-dafb-5512-2d0d45f6ac11",
+        "description": "Weapon is used to reduce Sky Drop Markers micro dice.",
+        "hidden": false,
+        "page": 79,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(2)",
+        "id": "da4f5cc1-a75b-72dd-f60c-eeaa2c58fa08",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 2d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Pinpoint(3)",
+        "id": "e405-1ae1-515b-172b",
+        "description": "If a Pinpoint weapon damages, but fails to destroy non-infantry, roll 3d6. If one or more 6's are rolled, the target suffers an additional point of damage. If multiple weapons combine with Pinpoint, use the highest value only.",
+        "hidden": false,
+        "page": 119,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Scatter",
+        "id": "d1cd0eb6-b61d-0123-949f-7069d8b87529",
+        "description": "Scatter Weapons ignore any negative modifiers from the Hard Taret MAR when firing at non-flying Targets.",
+        "hidden": false,
+        "page": 121,
+        "publicationId": "ed10-fe7b-pub1"
+      },
+      {
+        "name": "Weapon_MAR:Terror_Weapon",
+        "id": "00228c5e-1a4a-3024-a355-12c23457915d",
+        "description": "Disorder Tests caused by this weapon roll one less die.",
+        "hidden": false,
+        "page": 122,
+        "publicationId": "ed10-fe7b-pub1"
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Bol'Vak",
+        "id": "beea-17e0-5db9-228e",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 120}],
+        "infoLinks": [
+          {"id": "b8df-97f9-5a31-3af3", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "8bca-27b0-936e-6a86", "hidden": false, "targetId": "7d597ce6-d58a-6e5f-fd03-34ce0c6af45b", "type": "rule"},
+          {"id": "cf07-9e8f-1886-9dbb", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "1ef8-3d28-f3ec-74a2", "hidden": false, "targetId": "8eaa335e-fe5c-9613-32f6-b201cb95d66a", "type": "rule"},
+          {"id": "2f8b-1c18-76cf-9e0a", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "b65f-9411-2544-65e3", "hidden": false, "targetId": "3562-b613-b7c4-f37d", "type": "profile"},
+          {"id": "c635-c57f-7739-db39", "hidden": false, "targetId": "242d-71ad-2bf1-e843", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Bol'Vuk'Ra",
+        "id": "d57f-7db1-75cf-df45",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 150}],
+        "infoLinks": [
+          {"id": "034a-8b59-dae2-bcf3", "hidden": false, "targetId": "53bf-7367-5820-74d0", "type": "rule"},
+          {"id": "dff9-f7a7-c6f2-90e6", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "cc12-09c6-caa9-10ba", "hidden": false, "targetId": "8eaa335e-fe5c-9613-32f6-b201cb95d66a", "type": "rule"},
+          {"id": "d007-178f-4500-e611", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "5b23-9910-44a0-75b1", "hidden": false, "targetId": "96a662da-c2d5-b709-5386-c77f3e929b33", "type": "rule"},
+          {"id": "bcf5-6b37-bf3d-2f0c", "hidden": false, "targetId": "73463651-158a-76d2-1eea-7e3bd67a25ec", "type": "rule"},
+          {"id": "df25-18e4-7aa1-35a8", "hidden": false, "targetId": "7cf84782-3750-a16a-d4ad-6c0ad2495f7c", "type": "rule"},
+          {"id": "4474-80f7-37d9-ca55", "hidden": false, "targetId": "c083e36b-fca0-dafb-5512-2d0d45f6ac11", "type": "rule"},
+          {"id": "ad17-5db2-326a-d195", "hidden": false, "targetId": "50c0-d744-cd78-19b8", "type": "profile"},
+          {"id": "da6e-e367-2068-25dd", "hidden": false, "targetId": "7fe7-fda4-d815-64f5", "type": "profile"},
+          {"id": "8aff-cb3e-64a3-3ab1", "hidden": false, "targetId": "8566-4c3a-f504-2806", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Bor'Ka",
+        "id": "e66f-1b10-25f9-e0dc",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 2
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 125}],
+        "infoLinks": [
+          {"id": "0489-50f2-581d-5dc1", "hidden": false, "targetId": "7cf84782-3750-a16a-d4ad-6c0ad2495f7c", "type": "rule"},
+          {"id": "4731-3d0c-7309-fb1f", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"},
+          {"id": "5428-ecb8-be06-42dd", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "4560-1088-49f7-a95d", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "4659-25e0-ca8b-1cc4", "hidden": false, "targetId": "d2c6-cca9-0713-34cf", "type": "profile"},
+          {"id": "693f-1cb1-9743-deeb", "hidden": false, "targetId": "e8d0-9398-e8ea-12a8", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Huk'Ka",
+        "id": "6ac8-d096-344f-e1c5",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 240}],
+        "infoLinks": [
+          {"id": "8243-76f9-10f0-9ae8", "hidden": false, "targetId": "c9dd0b43-e5c8-95f5-573d-2f6d32097d39", "type": "rule"},
+          {"id": "cbc9-87a1-bb04-0f70", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"},
+          {"id": "2c33-f054-83d3-d995", "hidden": false, "targetId": "82647206-98a5-3ac6-d2be-e0302133f2cc", "type": "rule"},
+          {"id": "553e-0cce-f8ff-1b25", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "2204-decc-294b-6c6f", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "a671-14a5-fda3-21ee", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "6ca0-e9af-8e7b-df3b", "hidden": false, "targetId": "c91a-6f81-23b3-7793", "type": "profile"},
+          {"id": "82a6-8875-9216-ee2c", "hidden": false, "targetId": "0b3d-97a5-c032-a6df", "type": "profile"},
+          {"id": "9ad4-ebc3-b93a-01d5", "hidden": false, "targetId": "79ea-b692-20a3-093d", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Huk'Vok'Ka",
+        "id": "8a40-4192-6e0f-a707",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 300}],
+        "infoLinks": [
+          {"id": "42b7-ea8f-2a07-a4cd", "hidden": false, "targetId": "73463651-158a-76d2-1eea-7e3bd67a25ec", "type": "rule"},
+          {"id": "bd12-01c5-a255-3f60", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"},
+          {"id": "7ac1-3132-85fd-a96e", "hidden": false, "targetId": "96a662da-c2d5-b709-5386-c77f3e929b33", "type": "rule"},
+          {"id": "9950-3222-0a97-dd75", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "2d5c-4003-28b7-663a", "hidden": false, "targetId": "c083e36b-fca0-dafb-5512-2d0d45f6ac11", "type": "rule"},
+          {"id": "a774-e73c-6660-b100", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "c33a-3038-91bf-14b9", "hidden": false, "targetId": "1d6d-75c6-490a-2d52", "type": "profile"},
+          {"id": "edb2-45fa-eff7-2ae3", "hidden": false, "targetId": "ea82-ea49-17b7-aba2", "type": "profile"},
+          {"id": "880a-f22e-26a5-19de", "hidden": false, "targetId": "f99a-4fa8-971e-31bd", "type": "profile"},
+          {"id": "8479-225d-b09c-d05d", "hidden": false, "targetId": "4e59-45fd-6043-6847", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Ja'Gor",
+        "id": "8585-5704-020e-06ea",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 4
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 4
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 65}],
+        "infoLinks": [
+          {"id": "991a-a738-24fc-41dc", "hidden": false, "targetId": "7cf84782-3750-a16a-d4ad-6c0ad2495f7c", "type": "rule"},
+          {"id": "f019-9339-c4e5-9738", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"},
+          {"id": "9265-043c-05c9-2ef5", "hidden": false, "targetId": "3771b992-4585-88e3-419b-5d4941b75057", "type": "rule"},
+          {"id": "0565-ad5a-b916-97a0", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "a0c5-ff25-7fe4-0e01", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "440f-c3e8-6f00-b85a", "hidden": false, "targetId": "da4f5cc1-a75b-72dd-f60c-eeaa2c58fa08", "type": "rule"},
+          {"id": "ffc8-2a6b-83a4-b78d", "hidden": false, "targetId": "0a81-2553-ba38-f48d", "type": "profile"},
+          {"id": "f3b2-26a1-cf18-de98", "hidden": false, "targetId": "25ae-bbd3-8e44-5470", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Jol'Tak",
+        "id": "e882-e256-b325-cd1d",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 525}],
+        "infoLinks": [
+          {"id": "7bee-d313-24d3-b1a9", "hidden": false, "targetId": "aad3-bd3f-77e3-8706", "type": "rule"},
+          {"id": "8bdc-adec-dffb-3718", "hidden": false, "targetId": "6f78-2535-9f61-c497", "type": "rule"},
+          {"id": "530a-d69e-8b75-c19e", "hidden": false, "targetId": "8eaa335e-fe5c-9613-32f6-b201cb95d66a", "type": "rule"},
+          {"id": "16c0-85ce-74b0-f612", "hidden": false, "targetId": "6391-9d8a-d258-ac43", "type": "profile"},
+          {"id": "04db-8a69-aa39-5094", "hidden": false, "targetId": "96a662da-c2d5-b709-5386-c77f3e929b33", "type": "rule"},
+          {"id": "b259-b2be-0822-d065", "hidden": false, "targetId": "8987-25ff-4f15-ca0f", "type": "profile"},
+          {"id": "9e00-e5be-cf27-ca50", "hidden": false, "targetId": "986a-7e16-28fd-44c0", "type": "profile"},
+          {"id": "c292-e853-94dd-26ac", "hidden": false, "targetId": "6e9f-3cbb-7a32-c078", "type": "profile"},
+          {"id": "eb02-b8f4-9e47-77ac", "hidden": false, "targetId": "9318-61ac-8507-b141", "type": "profile"},
+          {"id": "35f4-6764-45ad-e4ee", "hidden": false, "targetId": "20c8-7db4-49e7-48f7", "type": "rule"},
+          {"id": "eff3-2610-5f5f-0dcf", "hidden": false, "targetId": "9654-4f57-8372-cda9", "type": "rule"},
+          {"id": "089f-bf1a-9994-cf7d", "hidden": false, "targetId": "4318-02f8-d73e-42b7", "type": "rule"},
+          {"id": "3653-e1bf-9992-f0da", "hidden": false, "targetId": "2268-05b1-4407-c969", "type": "rule"},
+          {"id": "07c4-bb39-b3dd-be93", "hidden": false, "targetId": "d0c0fcab-2a57-344c-352b-81ed2eb00a71", "type": "rule"},
+          {"id": "fbb1-8737-f5a9-cbfb", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "fdd1-b215-7158-82ec", "hidden": false, "targetId": "c083e36b-fca0-dafb-5512-2d0d45f6ac11", "type": "rule"},
+          {"id": "5ca9-848b-eab5-9261", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Jor'Mak'Ta",
+        "id": "6988-15a6-5d17-6e4d",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 250}],
+        "infoLinks": [
+          {"id": "d5ac-3c62-1031-371e", "hidden": false, "targetId": "aad3-bd3f-77e3-8706", "type": "rule"},
+          {"id": "9f89-1ba4-4fbf-10b6", "hidden": false, "targetId": "d66d-d595-e247-f3a2", "type": "rule"},
+          {"id": "f679-8d6a-e3bf-ebb0", "hidden": false, "targetId": "0258-5697-113a-6b78", "type": "rule"},
+          {"id": "79bc-7b20-ad71-e3f9", "hidden": false, "targetId": "39de-dca6-7bc6-6347", "type": "rule"},
+          {"id": "99e6-5745-3037-eedd", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "85ae-8299-3f2b-8c9a", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "dd31-1f5a-620b-b8db", "hidden": false, "targetId": "20c8-7db4-49e7-48f7", "type": "rule"},
+          {"id": "1efc-cfd8-4e34-9192", "hidden": false, "targetId": "3771b992-4585-88e3-419b-5d4941b75057", "type": "rule"},
+          {"id": "6f13-beea-bf7b-c27d", "hidden": false, "targetId": "da4f5cc1-a75b-72dd-f60c-eeaa2c58fa08", "type": "rule"},
+          {"id": "5bad-6e06-dd09-2c7d", "hidden": false, "targetId": "6dbb-be2e-74ed-9cbf", "type": "profile"},
+          {"id": "e394-86e9-7844-25bc", "hidden": false, "targetId": "aaa1-31f2-c57d-7c9f", "type": "profile"},
+          {"id": "a9a0-134e-eb82-3231", "hidden": false, "targetId": "15cc-9e93-c66a-9be9", "type": "profile"},
+          {"id": "bdb4-5555-43c5-0626", "hidden": false, "targetId": "1d27-b46a-6bb1-d800", "type": "profile"},
+          {"id": "0dfa-64cc-dd8d-7796", "hidden": false, "targetId": "ca65-a482-dfd6-3bde", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Jyal'Ro",
+        "id": "3615-542f-74d0-24eb",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 235}],
+        "infoLinks": [
+          {"id": "f8f1-5b86-c03d-8a81", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "7a1f-174c-e830-ebb1", "hidden": false, "targetId": "33a0-0d64-5c92-bcbf", "type": "rule"},
+          {"id": "1b6a-562c-2246-150f", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "5175-9bc0-c3f7-59fe", "hidden": false, "targetId": "73463651-158a-76d2-1eea-7e3bd67a25ec", "type": "rule"},
+          {"id": "1ddd-0120-1969-68db", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "0d20-841e-659e-dbf0", "hidden": false, "targetId": "80fe-f0e4-3ce2-f13c", "type": "profile"},
+          {"id": "3638-8ad3-efbd-e2d4", "hidden": false, "targetId": "8b83-de42-8d3c-934e", "type": "profile"},
+          {"id": "7094-620f-4af6-a6f5", "hidden": false, "targetId": "5d8a-9f28-380c-6163", "type": "profile"},
+          {"id": "aada-fd82-b7ee-17d2", "hidden": false, "targetId": "ca65-a482-dfd6-3bde", "type": "rule"},
+          {"id": "c7f8-fc4e-a05d-e468", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"},
+          {"id": "1f39-d24d-f147-0fd4", "hidden": false, "targetId": "53dd-2ded-ce0d-77ab", "type": "rule"},
+          {"id": "c12d-567c-b183-7439", "hidden": false, "targetId": "e405-1ae1-515b-172b", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Ka'Kun",
+        "id": "d600-a5c1-1909-eda0",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 3
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 5
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 50}],
+        "infoLinks": [
+          {"id": "17d8-4127-4d1d-7b5a", "hidden": false, "targetId": "868ca32c-73e1-98c7-e533-60e7324d7b34", "type": "rule"},
+          {"id": "2ee9-b57f-b790-6007", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "6af7-9822-7bd9-f29a", "hidden": false, "targetId": "7cf84782-3750-a16a-d4ad-6c0ad2495f7c", "type": "rule"},
+          {"id": "f668-b9ed-6e92-1431", "hidden": false, "targetId": "d0c0fcab-2a57-344c-352b-81ed2eb00a71", "type": "rule"},
+          {"id": "ee25-1b67-4909-fb19", "hidden": false, "targetId": "8eaa335e-fe5c-9613-32f6-b201cb95d66a", "type": "rule"},
+          {"id": "087e-f2bc-7e5f-b1b8", "hidden": false, "targetId": "f357-57fc-5efe-636a", "type": "profile"},
+          {"id": "38c5-1b7a-cc49-ef44", "hidden": false, "targetId": "b806-de0e-d191-40fc", "type": "profile"},
+          {
+            "id": "2836-a711-12ed-a545",
+            "hidden": false,
+            "targetId": "33a0-0d64-5c92-bcbf",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "65db-9121-90a6-3d5a",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "primary-category",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "minSelections",
+            "type": "set",
+            "value": 5,
+            "conditions": [
+              {
+                "childId": "d600-a5c1-1909-eda0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "equalTo",
+                "value": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kul'Vok_Heavy_Infantry_Cadre",
+        "id": "dc55-fb88-0859-6daf",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 4
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 4
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 60}],
+        "infoLinks": [
+          {"id": "d787-146d-4408-edf0", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "54f6-00f8-8e88-0d23", "hidden": false, "targetId": "f9a6943e-fc39-2615-3aba-e48ac40128e1", "type": "rule"},
+          {"id": "27b3-3159-2767-14fe", "hidden": false, "targetId": "d0c0fcab-2a57-344c-352b-81ed2eb00a71", "type": "rule"},
+          {"id": "c3a3-3888-e076-43f3", "hidden": false, "targetId": "47c44a18-6711-c389-58f8-5c8d113754c2", "type": "rule"},
+          {"id": "f1b5-65bc-c3ae-f670", "hidden": false, "targetId": "3607-6fc7-abd0-cdc5", "type": "profile"},
+          {"id": "e001-e652-6626-47e6", "hidden": false, "targetId": "6c77-e21c-af67-0668", "type": "profile"},
+          {"id": "3031-188e-4099-473d", "hidden": false, "targetId": "868ca32c-73e1-98c7-e533-60e7324d7b34", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Logistics_Points",
+        "id": "1cb7-fd5a-1b5d-2ff1",
+        "collective": false,
+        "hidden": false,
+        "page": 58,
+        "publicationId": "ed10-fe7b-pub1",
+        "type": "upgrade",
+        "costs": [{"name": "pts", "typeId": "points", "value": 25}]
+      },
+      {
+        "name": "Mak'Kun",
+        "id": "c5e3-b3d9-918d-0d99",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 3
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 120}],
+        "infoLinks": [
+          {"id": "81fa-3040-9aa8-7517", "hidden": false, "targetId": "3771b992-4585-88e3-419b-5d4941b75057", "type": "rule"},
+          {"id": "627d-78df-3847-acf0", "hidden": false, "targetId": "da4f5cc1-a75b-72dd-f60c-eeaa2c58fa08", "type": "rule"},
+          {"id": "d1c1-f05d-8baa-dd3f", "hidden": false, "targetId": "39de-dca6-7bc6-6347", "type": "rule"},
+          {"id": "4dea-ad6d-3f6c-5b92", "hidden": false, "targetId": "d66d-d595-e247-f3a2", "type": "rule"},
+          {"id": "de08-2d73-4a5e-a422", "hidden": false, "targetId": "0258-5697-113a-6b78", "type": "rule"},
+          {"id": "3404-ab60-d843-c40c", "hidden": false, "targetId": "df0c-8008-cfaf-e62e", "type": "profile"},
+          {"id": "d550-c9ef-8a8d-204b", "hidden": false, "targetId": "3fb9-bb63-4972-5a0c", "type": "profile"},
+          {"id": "39d1-4495-bbad-53df", "hidden": false, "targetId": "ca65-a482-dfd6-3bde", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Mul'Kat_Light_Infantry_Cadre",
+        "id": "d207-edff-c487-19e1",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 6
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 35}],
+        "infoLinks": [
+          {"id": "c47a-e7fa-b4dc-eca3", "hidden": false, "targetId": "7cc07e10-0881-c89e-86b2-1b2e2e844d97", "type": "rule"},
+          {"id": "f968-c497-521c-c176", "hidden": false, "targetId": "f9a6943e-fc39-2615-3aba-e48ac40128e1", "type": "rule"},
+          {"id": "52be-00e2-a8c2-d39e", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "d5eb-5b46-66f1-5aa5", "hidden": false, "targetId": "9132-052e-c7bb-1ba7", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Mul'Kat_Light_Infantry_Gun_Team",
+        "id": "3588-7995-3c2d-350d",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 45}],
+        "infoLinks": [
+          {"id": "9104-d539-b20e-a00d", "hidden": false, "targetId": "7cc07e10-0881-c89e-86b2-1b2e2e844d97", "type": "rule"},
+          {"id": "1781-fb8f-8335-22fc", "hidden": false, "targetId": "f9a6943e-fc39-2615-3aba-e48ac40128e1", "type": "rule"},
+          {"id": "ad38-4dcb-ec8f-e24e", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "4cb4-ef0c-6e0e-d787", "hidden": false, "targetId": "d0c0fcab-2a57-344c-352b-81ed2eb00a71", "type": "rule"},
+          {"id": "ec5f-8946-4a2e-ecf4", "hidden": false, "targetId": "47c44a18-6711-c389-58f8-5c8d113754c2", "type": "rule"},
+          {"id": "d36f-483b-d925-bc5d", "hidden": false, "targetId": "79f9-c7c3-f6ce-5075", "type": "profile"},
+          {
+            "id": "e16d-cf7e-2c45-340b",
+            "hidden": false,
+            "targetId": "3d21-9b54-2aa9-5e98",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": false,
+                "conditions": [
+                  {
+                    "childId": "3588-7995-3c2d-350d",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "atLeast",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mul'Kat_Light_Infantry_Officer",
+        "id": "2a81-37a1-bf82-dc70",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 45}],
+        "infoLinks": [
+          {"id": "c309-5ddd-044b-6fe1", "hidden": false, "targetId": "7cc07e10-0881-c89e-86b2-1b2e2e844d97", "type": "rule"},
+          {"id": "5c18-02a4-b46a-32ef", "hidden": false, "targetId": "f9a6943e-fc39-2615-3aba-e48ac40128e1", "type": "rule"},
+          {"id": "9b43-afe4-3210-b854", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "3b54-a932-9ed0-2456", "hidden": false, "targetId": "47c44a18-6711-c389-58f8-5c8d113754c2", "type": "rule"},
+          {"id": "6370-4032-dba3-c6b6", "hidden": false, "targetId": "31e8-982a-879b-6803", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Mul'Kat_Light_Infantry_Sweeper_Team",
+        "id": "c4ff-b194-b478-ef1e",
+        "collective": false,
+        "hidden": false,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 45}],
+        "infoLinks": [
+          {"id": "64ce-6b11-fe1b-b6d3", "hidden": false, "targetId": "7cc07e10-0881-c89e-86b2-1b2e2e844d97", "type": "rule"},
+          {"id": "b68c-52b9-b4df-2391", "hidden": false, "targetId": "f9a6943e-fc39-2615-3aba-e48ac40128e1", "type": "rule"},
+          {"id": "4969-7d45-f93b-4021", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "ac74-dad7-a300-a987", "hidden": false, "targetId": "47c44a18-6711-c389-58f8-5c8d113754c2", "type": "rule"},
+          {"id": "2d6c-232b-3f20-18a0", "hidden": false, "targetId": "97c9-2c69-5f02-8f10", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Nor'Bar'Ro",
+        "id": "0fc8-5e0a-974d-f6ac",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 800}],
+        "infoLinks": [
+          {"id": "6abf-e111-7ef4-80ac", "hidden": false, "targetId": "cc3e8e6a-3384-24b1-088d-0d25dc703db1", "type": "rule"},
+          {"id": "3f8f-17b6-bc1d-5677", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"},
+          {"id": "bc31-051f-db09-1e5d", "hidden": false, "targetId": "6be0-546e-a196-ac90", "type": "rule"},
+          {"id": "2b11-46dc-1e53-8cac", "hidden": false, "targetId": "20c8-7db4-49e7-48f7", "type": "rule"},
+          {"id": "7a1b-8875-5867-1b3f", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "a087-3248-6a76-44c6", "hidden": false, "targetId": "3771b992-4585-88e3-419b-5d4941b75057", "type": "rule"},
+          {"id": "a375-a416-0f94-1b75", "hidden": false, "targetId": "da4f5cc1-a75b-72dd-f60c-eeaa2c58fa08", "type": "rule"},
+          {"id": "77d8-2e37-794c-b75c", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "fbb4-194e-221a-c152", "hidden": false, "targetId": "c401-baad-4dfd-3c63", "type": "profile"},
+          {"id": "24f2-f3fa-52c5-061a", "hidden": false, "targetId": "a523-7cfa-964f-2dc6", "type": "profile"},
+          {"id": "f297-a563-3502-3ac8", "hidden": false, "targetId": "ba9b-7c5e-e001-72bf", "type": "profile"},
+          {"id": "2ccd-13f0-8112-d958", "hidden": false, "targetId": "4eb3-b287-3447-00d0", "type": "profile"},
+          {"id": "3af6-8654-30cb-9b54", "hidden": false, "targetId": "8d89-e7b4-8ed1-973f", "type": "profile"},
+          {"id": "5e27-e4cf-0ddd-233b", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Ro'Mul'Kat",
+        "id": "c1b9-0fd8-1da4-64b9",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 80}],
+        "infoLinks": [
+          {"id": "c097-5d10-dccd-a76e", "hidden": false, "targetId": "868ca32c-73e1-98c7-e533-60e7324d7b34", "type": "rule"},
+          {"id": "ab0a-59ea-945e-3603", "hidden": false, "targetId": "f9a6943e-fc39-2615-3aba-e48ac40128e1", "type": "rule"},
+          {"id": "889f-aa8d-2d44-9654", "hidden": false, "targetId": "7b33fb72-ef85-b14a-90c0-2944f79a46c7", "type": "rule"},
+          {"id": "0381-f84d-aa33-5348", "hidden": false, "targetId": "9b57-6428-2892-8e2d", "type": "profile"},
+          {"id": "104f-f466-6ba0-6922", "hidden": false, "targetId": "47c44a18-6711-c389-58f8-5c8d113754c2", "type": "rule"},
+          {"id": "f1eb-86cc-2566-cb5e", "hidden": false, "targetId": "90c4-c3fb-4cdc-c688", "type": "profile"},
+          {"id": "a287-00cd-fde4-6508", "hidden": false, "targetId": "21f0-0bd0-dcb0-b6f4", "type": "rule"},
+          {"id": "ac6f-383a-737a-50ef", "hidden": false, "targetId": "9490-a605-9e55-303d", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Samaru",
+        "id": "5b0b-360d-8995-a03b",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 2
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 135}],
+        "infoLinks": [
+          {"id": "1b01-c3b5-3d5e-8793", "hidden": false, "targetId": "d0c0fcab-2a57-344c-352b-81ed2eb00a71", "type": "rule"},
+          {"id": "3879-d08e-877e-bbd1", "hidden": false, "targetId": "7cf84782-3750-a16a-d4ad-6c0ad2495f7c", "type": "rule"},
+          {"id": "fcb4-97b7-e237-6147", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {
+            "id": "60b3-4e2d-8c7a-4be0",
+            "hidden": false,
+            "targetId": "1c97-dd28-a189-ccad",
+            "type": "profile",
+            "modifiers": [
+              {
+                "field": "1ca5160e-30b4-5594-dd7f-7b574cd2068f",
+                "type": "append",
+                "value": "/Barrage",
+                "repeats": [
+                  {
+                    "childId": "decc-f536-7246-fa3a",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "5b0b-360d-8995-a03b",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {"id": "2e4a-b42a-84ea-7605", "hidden": false, "targetId": "9131-cae8-7737-8c0c", "type": "profile"},
+          {"id": "5695-a183-6452-7633", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Munitions_Upgrade",
+            "id": "decc-f536-7246-fa3a",
+            "collective": true,
+            "hidden": false,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "maxSelections",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "pts", "typeId": "points", "value": 10}],
+            "infoLinks": [{"id": "b8da-ec57-0db6-96ca", "hidden": false, "targetId": "68f7-6815-6d80-7651", "type": "rule"}]
+          }
+        ]
+      },
+      {
+        "name": "Sar'Mak",
+        "id": "9d25-3580-e478-2bfe",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 2
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 220}],
+        "infoLinks": [
+          {"id": "948a-6082-de5b-8ad3", "hidden": false, "targetId": "aad3-bd3f-77e3-8706", "type": "rule"},
+          {"id": "418e-5cc7-32c2-001b", "hidden": false, "targetId": "d66d-d595-e247-f3a2", "type": "rule"},
+          {"id": "8985-4df9-d52f-96f9", "hidden": false, "targetId": "00228c5e-1a4a-3024-a355-12c23457915d", "type": "rule"},
+          {"id": "4d6e-f278-6138-f286", "hidden": false, "targetId": "d1cd0eb6-b61d-0123-949f-7069d8b87529", "type": "rule"},
+          {"id": "82f9-3c0e-70c8-ba84", "hidden": false, "targetId": "20c8-7db4-49e7-48f7", "type": "rule"},
+          {"id": "7d02-eaf8-f30d-263c", "hidden": false, "targetId": "d52c-1434-81c3-fd73", "type": "profile"},
+          {"id": "69d5-7875-aa12-079e", "hidden": false, "targetId": "3004-9c8e-d349-5e25", "type": "profile"},
+          {"id": "b988-e090-9886-8f22", "hidden": false, "targetId": "33a0-0d64-5c92-bcbf", "type": "rule"},
+          {"id": "60a3-c75b-2f1d-61d3", "hidden": false, "targetId": "ca65-a482-dfd6-3bde", "type": "rule"},
+          {"id": "bd57-19ab-95aa-7525", "hidden": false, "targetId": "0107-6369-66a2-fff9", "type": "rule"},
+          {"id": "a5f5-45dc-a7c7-1b18", "hidden": false, "targetId": "4002-003b-e91f-d3b7", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Sor'Ka",
+        "id": "a31e-8530-b9db-4fc5",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 3
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 140}],
+        "infoLinks": [
+          {"id": "c26b-05f5-2d43-ffa8", "hidden": false, "targetId": "3771b992-4585-88e3-419b-5d4941b75057", "type": "rule"},
+          {"id": "0cbc-5861-317d-ec89", "hidden": false, "targetId": "da4f5cc1-a75b-72dd-f60c-eeaa2c58fa08", "type": "rule"},
+          {"id": "1e67-3123-107c-6f0e", "hidden": false, "targetId": "ddc4397b-0b55-07d6-10bd-7cab4e571b7a", "type": "rule"},
+          {"id": "6a4c-f5dd-8f60-e2a2", "hidden": false, "targetId": "2c0eec6c-effd-de66-edb0-cf3ef085013c", "type": "rule"},
+          {"id": "b1ad-026f-c0b8-c8e3", "hidden": false, "targetId": "db41-43e5-1fc6-a44b", "type": "profile"},
+          {"id": "959e-405b-79a9-4d1a", "hidden": false, "targetId": "9ef9-fec2-ad2b-c882", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Vro'Mak",
+        "id": "0553-60e3-8b9b-2e1e",
+        "collective": false,
+        "hidden": false,
+        "type": "model",
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 3
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 3
+          }
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 140}],
+        "infoLinks": [
+          {"id": "d932-50d4-f14d-9aaf", "hidden": false, "targetId": "d0c0fcab-2a57-344c-352b-81ed2eb00a71", "type": "rule"},
+          {"id": "cd74-e56e-869f-db71", "hidden": false, "targetId": "33a0-0d64-5c92-bcbf", "type": "rule"},
+          {"id": "a6d8-6807-3b82-5429", "hidden": false, "targetId": "d66d-d595-e247-f3a2", "type": "rule"},
+          {"id": "ac4d-0643-33c4-53b6", "hidden": false, "targetId": "ca65-a482-dfd6-3bde", "type": "rule"},
+          {"id": "d816-5d04-7fc5-48a9", "hidden": false, "targetId": "0107-6369-66a2-fff9", "type": "rule"},
+          {"id": "29e6-6f7c-cd38-f195", "hidden": false, "targetId": "4002-003b-e91f-d3b7", "type": "rule"},
+          {"id": "5527-d068-a787-4be3", "hidden": false, "targetId": "79b9-4994-1b7d-e41d", "type": "profile"},
+          {"id": "fd2e-5400-67e0-7103", "hidden": false, "targetId": "f4bd-8080-16a4-171f", "type": "profile"}
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Command",
+        "id": "c1a8bbf6-72d4-992d-e32b-b966e08e7a76",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [{"id": "818e-b32f-678f-d463", "hidden": false, "targetId": "2a81-37a1-bf82-dc70", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Heavy_Infantry_Cadre",
+        "id": "24a5-24af-2288-46cc",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [{"id": "10cf-61cc-b71e-1a8b", "hidden": false, "targetId": "dc55-fb88-0859-6daf", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Heavy_Transport_Skiff(Recon)",
+        "id": "a3fa-dc51-c324-7224",
+        "collective": false,
+        "defaultSelectionEntryId": "d5a0-e7c3-a636-90c1",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [{"id": "d5a0-e7c3-a636-90c1", "hidden": false, "targetId": "d57f-7db1-75cf-df45", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Light_Skiff_Class",
+        "id": "085f2c8d-2066-a5f1-c361-fa1bbc1a6cd7",
+        "collective": false,
+        "defaultSelectionEntryId": "d4db-b665-32b1-b554",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [{"id": "d4db-b665-32b1-b554", "hidden": false, "targetId": "d600-a5c1-1909-eda0", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Light_Skiff_Class(Leviathan_Helix)",
+        "id": "65db-9121-90a6-3d5a",
+        "collective": false,
+        "defaultSelectionEntryId": "2b24-48ad-7323-2b8d",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [
+          {
+            "id": "2b24-48ad-7323-2b8d",
+            "hidden": false,
+            "targetId": "d600-a5c1-1909-eda0",
+            "type": "selectionEntry",
+            "modifiers": [{"field": "points", "type": "increment", "value": 5}]
+          }
+        ]
+      },
+      {
+        "name": "Medium_Transport_Skiff",
+        "id": "bd762206-4425-6f9d-da56-b39190008661",
+        "collective": false,
+        "defaultSelectionEntryId": "6aaa-cc7e-6420-f8b7",
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 1
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [{"id": "6aaa-cc7e-6420-f8b7", "hidden": false, "targetId": "beea-17e0-5db9-228e", "type": "selectionEntry"}]
+      },
+      {
+        "name": "Specialist_Troops",
+        "id": "c4ea5b5c-d50a-a6f0-6419-312b8380b47e",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [
+          {"id": "23e9-58e1-b56f-d84f", "hidden": false, "targetId": "3588-7995-3c2d-350d", "type": "selectionEntry"},
+          {"id": "c2d4-cff5-d26c-24ba", "hidden": false, "targetId": "c4ff-b194-b478-ef1e", "type": "selectionEntry"}
+        ]
+      },
+      {
+        "name": "Troops",
+        "id": "389af62a-7850-ae36-33bf-b501d7b1a558",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {
+            "id": "minSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxSelections",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInForce",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxInRoster",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": -1
+          },
+          {
+            "id": "minPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "min",
+            "value": 0
+          },
+          {
+            "id": "maxPoints",
+            "field": "points",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": false,
+            "type": "max",
+            "value": -1
+          }
+        ],
+        "entryLinks": [{"id": "866a-0771-3d1a-f6b7", "hidden": false, "targetId": "d207-edff-c487-19e1", "type": "selectionEntry"}]
+      }
+    ]
+  }
+}
